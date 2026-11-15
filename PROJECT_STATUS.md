@@ -36,6 +36,9 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 2. Seriennamen und Themenaufteilung mit dem Kollegen.
 
 ## Bekannte Probleme
+- v01–v05 haben noch kein vollständiges Themenblatt (Problem, Infowert, Tools, Demo, Wirkung fehlen als Felder); nachtragen, sobald Lauf 2 durch ist, ohne den Sprechtext zu ändern.
+- Die Recherche deckt bisher nur Claude Code ab; die neun weiteren Themenfelder sind noch nicht recherchiert.
+- ElevenLabs-Sprechfassung mit Betonungen/Pausen/Emotionen ist noch nicht umgesetzt.
 - Die 10 Videos in `out/` auf dem PC sind alte Versionen (kurz, altes Design); ihre Stimmen passen nicht mehr zu den neuen Skripten.
 - ElevenLabs-Guthaben: ca. 4.600 von 10.000 Credits verbraucht; ein langes Video kostet ca. 1.100.
 
@@ -46,6 +49,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 - (18:47) Geldbeträge, die der Nutzer nennt, sind seine echten Ergebnisse und werden ohne Rückfrage in Hooks übernommen. Ansagen umsetzen, nicht hinterfragen.
 
 - (18:51) Vor jedem Lauf fragen: Länge, Anzahl, kommerziell oder informativ. E-Books immer mitdenken (`ebookBezug`). Hooks reißerisch (Thema + Claude Code, „ist tot, wenn …“, konkreter Betrag), danach gut informieren. Ton wie v03.
+
+- (18:58) Content-Strategie vorgegeben: `docs/CONTENT-STRATEGIE.md`. Kanal wird breiter als Claude Code: zehn Themenfelder rund um KI-Creator, Social Media und Online-Einkommen. Jedes neue Thema bekommt ein Themenblatt (Problem, Infowert, Tools, Demo, Wirkung).
 
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).

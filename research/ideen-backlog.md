@@ -33,3 +33,16 @@
 - [ ] Ein E-Book in einem Nachmittag schreiben
 - [ ] Landingpage für dein Produkt bauen + live stellen
 - [ ] Wie ich Kommentare in Video-Ideen verwandle
+
+## Themenfelder laut Content-Strategie (15.11.2026) – noch zu recherchieren
+Für jedes Feld Themen sammeln; vor der Aufnahme prüfen, ob die Tools aktuell verfügbar sind.
+- [ ] 1 KI-Voiceovers und Audio
+- [ ] 2 KI-Videogenerierung
+- [ ] 3 KI-Bildgenerierung
+- [ ] 4 KI-Influencer
+- [ ] 5 KI-Automatisierung (bisheriger Schwerpunkt: Claude Code)
+- [ ] 6 Social-Media-Produktion
+- [ ] 7 KI-Monetarisierung
+- [ ] 8 Creator-Workflows
+- [ ] 9 KI-News
+- [ ] 10 Tool-Vergleiche

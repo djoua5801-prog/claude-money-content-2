@@ -1,6 +1,6 @@
 # Anweisungen für Claude Code in diesem Repo
 
-**Zuerst lesen:** `PROJECT_STATUS.md` (wo wir stehen) und `docs/MASTER-PROMPT.md` (Auftrag und Arbeitsweise des Nutzers). Bei jeder neuen Sitzung: Status lesen, mit den tatsächlichen Dateien vergleichen, kurz sagen, wo wir stehen, beim nächsten offenen Schritt weitermachen. Nach jedem abgeschlossenen Schritt `PROJECT_STATUS.md` aktualisieren.
+**Zuerst lesen:** `PROJECT_STATUS.md` (wo wir stehen), `docs/MASTER-PROMPT.md` (Auftrag und Arbeitsweise des Nutzers) und `docs/CONTENT-STRATEGIE.md` (Zielgruppe, Themenfelder, Anforderungen an jedes Thema). Bei jeder neuen Sitzung: Status lesen, mit den tatsächlichen Dateien vergleichen, kurz sagen, wo wir stehen, beim nächsten offenen Schritt weitermachen. Nach jedem abgeschlossenen Schritt `PROJECT_STATUS.md` aktualisieren.
 
 ## Arbeitsweise (aus dem Master-Prompt)
 - Nur **eine** Aufgabe für den Nutzer gleichzeitig. Alles, was technisch selbst geht, selbst erledigen.
@@ -19,7 +19,7 @@
 - **Ordner:** Skripte liegen in `content/videos/`, Stimmen in `public/audio/` + `content/timing/`, fertige Videos in `out/`, Vorlagen in `src/`. Der Status (Entwurf/freigegeben/vertont) steht im Skript selbst statt in getrennten Ordnern.
 - **Premiere Pro:** nicht angebunden. Remotion ist der Produktionsweg. Eine Anbindung kommt nur mit einer regulär lizenzierten Installation in Frage.
 
-Projekt: automatisierte Kurzvideos (Deutsch) für TikTok, Reels und Shorts rund um Claude Code, KI-Automatisierung und digitale Geschäftsmodelle, plus E-Books und Landingpage. Zwei Personen posten im selben Stil; die Videos sollen gleich aussehen und sich inhaltlich ergänzen.
+Projekt: deutschsprachiger KI-Creator-Kanal mit automatisierten Kurzvideos für TikTok, Reels und Shorts. Zielgruppe: Menschen, die mit KI Social-Media-Content erstellen, Reichweite aufbauen und damit Geld verdienen wollen. Themenfelder laut `docs/CONTENT-STRATEGIE.md` (Voiceover, Video- und Bild-KI, KI-Influencer, Automatisierung mit Claude Code und anderen, Social-Media-Produktion, Monetarisierung, Workflows, News, Tool-Vergleiche). Dazu E-Books und Landingpage. Zwei Personen posten im selben Stil; die Videos sollen gleich aussehen und sich inhaltlich ergänzen.
 
 ## Ablauf – immer in dieser Reihenfolge
 1. **Skript schreiben** (`content/videos/vNN.json`, `"approved": false`). Keine Stimme, kein Render.
@@ -45,6 +45,18 @@ Regeln dazu:
 - Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
 - Du-Form. Vom Nutzer genannte Beträge und Ergebnisse verwenden; selbst keine Zahlen erfinden.
 - Ideen aus `research/ideen-backlog.md`; erledigte abhaken. Mit dem Kollegen abgestimmte Themen dort eintragen, damit nichts doppelt entsteht.
+
+## Themenblatt (Pflicht für jedes neue Thema, aus der Content-Strategie)
+Jedes Skript enthält zusätzlich zu `scenes`:
+- `title` (aufmerksamkeitsstark), `hooks` (mindestens drei unterschiedliche Varianten; wir schreiben fünf und bewerten sie),
+- `problem` (konkretes Problem der Zielgruppe), `infowert` (was der Zuschauer danach kann),
+- `tools` (benötigte KI-Tools), `demo` (praktische Demonstration, wenn möglich – sonst „keine“ mit Grund),
+- `wirkung`: `Reichweite`, `Vertrauen` oder `Monetarisierung`,
+- `post` mit passender CTA (siehe unten) und `ebookBezug`.
+- Eine ElevenLabs-fertige Sprechfassung mit Betonungen, Pausen und Emotionen gehört dazu; die technische Umsetzung dafür steht noch aus (Phase 4) – bis dahin Pausen über Satzzeichen und kurze Sätze steuern.
+Länge laut Strategie 30–60 s; die genaue Länge wird vor jedem Lauf erfragt.
+
+Vor jedem Thema prüfen (Web-Suche), ob genannte Tools und Funktionen wirklich existieren und aktuell verfügbar sind. Im Skript und in `research/` trennen: eigener Test · belegte Tatsache · Vermutung. Nicht jedes Video bewirbt ein Tool. Jedes Video vermittelt etwas, das der Zuschauer direkt umsetzen kann.
 
 ## Unterschrift und Verweise (Pflicht für jedes Video)
 Jedes Skript hat ein Feld `post`:

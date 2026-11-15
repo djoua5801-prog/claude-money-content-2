@@ -25,6 +25,11 @@ export type VideoSpec = {
     pinnedComment: string; // erster, angepinnter Kommentar
   };
   hashtags: string[];
+  problem?: string; // konkretes Problem der Zielgruppe
+  infowert?: string; // was der Zuschauer danach kann
+  tools?: string[]; // benötigte KI-Tools
+  demo?: string; // praktische Demonstration oder "keine" mit Grund
+  wirkung?: "Reichweite" | "Vertrauen" | "Monetarisierung";
   zielSekunden?: number;
   ebookBezug?: string; // zu welchem E-Book / Angebot dieses Video hinführt
   hooks?: { text: string; bewertung: number; grund: string }[];
