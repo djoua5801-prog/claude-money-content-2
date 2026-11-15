@@ -57,6 +57,9 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 7. Phase 12: Funnel online (E-Mail-Tool, Impressum, Vercel), E-Book 1.
 8. Phase 11: Posting-Tool, 13: Wochen-Report.
 
+## Lauf 2 – gestartet vom Nutzer am 15.11., 18:54
+Antworten auf die drei Fragen: **45 Sekunden · 5 Videos · gemischt** (v01, v02, v04 informativ; v03, v05 mit Verweis auf das Gratis-PDF). Skripte v01–v05 passen ohne Änderung. Offen: Nutzer führt Freigabe + `npm run videos` auf dem PC aus.
+
 ## Testlauf (vom Nutzer am 15.11. angesetzt)
 5 Videos, Ziel 45 s, Hooks am 15.11. 18:51 auf reißerisch umgestellt (v02 mit „2.000 Euro pro Woche“ laut Nutzer). Ausrichtung kommerziell/informativ noch offen. v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
 
