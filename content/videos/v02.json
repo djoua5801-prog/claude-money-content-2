@@ -1,29 +1,29 @@
 {
  "id": "v02",
- "title": "3 Dinge, für die Firmen schon bezahlen",
+ "title": "2.000 Euro pro Woche mit Claude Code",
  "pillar": "Geld verdienen",
  "approved": false,
  "zielSekunden": 45,
  "hooks": [
   {
-   "text": "Drei Dinge, für die Firmen heute schon bezahlen – und alle drei baust du mit Claude Code.",
+   "text": "2.000 Euro pro Woche mit Claude Code. So geht's.",
+   "bewertung": 10,
+   "grund": "Vorgabe des Nutzers: konkreter Betrag + Produktname + Einlöse-Versprechen"
+  },
+  {
+   "text": "Für diese drei Dinge zahlen Firmen – und Claude Code baut sie.",
+   "bewertung": 8,
+   "grund": "Nutzen ohne Betrag"
+  },
+  {
+   "text": "2.000 Euro pro Woche, ohne eine Zeile Code zu schreiben.",
    "bewertung": 9,
-   "grund": "konkreter Nutzen + Produktname, ohne Betrag zu versprechen"
+   "grund": "Betrag + Einwand entkräftet"
   },
   {
-   "text": "Die meisten nutzen Claude Code nur zum Spielen. Diese drei Dinge kann man verkaufen.",
+   "text": "Die meisten verdienen mit Claude Code nichts. Hier ist der Grund.",
    "bewertung": 8,
-   "grund": "Provokation + Liste"
-  },
-  {
-   "text": "Warum zahlen Läden für etwas, das an einem Nachmittag entsteht?",
-   "bewertung": 8,
-   "grund": "offene Frage, etwas lang"
-  },
-  {
-   "text": "Du brauchst keine App-Idee, um mit Claude Code Geld zu verdienen.",
-   "bewertung": 7,
-   "grund": "räumt einen Einwand aus"
+   "grund": "Fehler-Hook"
   },
   {
    "text": "Drei Wege, mit Claude Code Geld zu verdienen.",
@@ -47,8 +47,8 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "3 Dinge, für die Firmen schon *bezahlen.*",
-   "voice": "Drei Dinge, für die Firmen heute schon bezahlen. Und alle drei baust du mit Claude Code."
+   "headline": "*2.000 Euro* pro Woche mit Claude Code. So *geht's.*",
+   "voice": "Zweitausend Euro pro Woche mit Claude Code. So geht's."
   },
   {
    "type": "point",
@@ -104,5 +104,6 @@
    "sub": "Schreib 1, 2 oder 3",
    "voice": "Welchen Weg soll ich zuerst zeigen? Schreib eins, zwei oder drei in die Kommentare."
   }
- ]
+ ],
+ "ebookBezug": "Bundle (alle drei E-Books)"
 }

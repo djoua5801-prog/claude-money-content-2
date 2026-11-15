@@ -1,34 +1,34 @@
 {
  "id": "v01",
- "title": "Dieses Video ist nur eine Textdatei",
+ "title": "Videoerstellung mit Claude Code",
  "pillar": "Videos automatisieren",
  "approved": false,
  "zielSekunden": 45,
  "hooks": [
   {
-   "text": "Dieses Video ist eigentlich nur eine Textdatei.",
+   "text": "Videoerstellung mit Claude Code: Dieses Video hat kein Mensch geschnitten.",
    "bewertung": 9,
-   "grund": "Neugier + Widerspruch: ein Video kann keine Textdatei sein"
+   "grund": "Thema + Produktname sofort klar, Überraschung im zweiten Satz"
   },
   {
-   "text": "Dieses Video hat kein Mensch geschnitten.",
+   "text": "Video-Schnitt ist tot. Dieses Video hat Claude Code gebaut.",
+   "bewertung": 9,
+   "grund": "Muster „ist tot“, sehr laut"
+  },
+  {
+   "text": "Dieses Video ist eigentlich nur eine Textdatei.",
    "bewertung": 8,
-   "grund": "Überraschung, aber inzwischen häufig gehört"
+   "grund": "Neugier, aber Thema erst später klar"
   },
   {
-   "text": "Für dieses Video habe ich null Zeilen Code geschrieben.",
+   "text": "Ich schneide keine Videos mehr. Das macht jetzt Claude Code.",
+   "bewertung": 8,
+   "grund": "persönlich, klar"
+  },
+  {
+   "text": "Zehn Videos aus einem Befehl – mit Claude Code.",
    "bewertung": 7,
-   "grund": "konkretes Ergebnis, spricht eher Technik-Interessierte an"
-  },
-  {
-   "text": "Kein Schnittprogramm. Kein Editor. Trotzdem fertig.",
-   "bewertung": 7,
-   "grund": "rhythmisch, aber ohne offene Frage"
-  },
-  {
-   "text": "So entstehen zehn Videos aus einem Befehl.",
-   "bewertung": 6,
-   "grund": "Tutorial-Versprechen, wenig Spannung"
+   "grund": "Ergebnis, wenig Spannung"
   }
  ],
  "post": {
@@ -47,8 +47,8 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Dieses Video ist eigentlich nur eine *Textdatei.*",
-   "voice": "Dieses Video ist eigentlich nur eine Textdatei. Kein Mensch hat es geschnitten."
+   "headline": "Videoerstellung mit Claude Code: *kein Schnitt.*",
+   "voice": "Videoerstellung mit Claude Code. Dieses Video hat kein Mensch geschnitten."
   },
   {
    "type": "point",
@@ -102,5 +102,6 @@
    "sub": "Folgen",
    "voice": "Im nächsten Video zeige ich das komplette Setup. Folg mir, damit du Teil zwei nicht verpasst."
   }
- ]
+ ],
+ "ebookBezug": "E-Book 1 (Videos auf Autopilot)"
 }

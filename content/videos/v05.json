@@ -1,34 +1,34 @@
 {
  "id": "v05",
- "title": "Du kannst nicht programmieren? Gut.",
+ "title": "Null Zeilen Code, fertiges Produkt",
  "pillar": "Mythen",
  "approved": false,
  "zielSekunden": 45,
  "hooks": [
   {
-   "text": "Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes.",
+   "text": "Null Zeilen Code. Trotzdem ein fertiges Produkt. So geht's mit Claude Code.",
    "bewertung": 9,
-   "grund": "spricht die Zielgruppe direkt an, dreht den Einwand um, offene Frage"
+   "grund": "konkretes Ergebnis + Produktname + Versprechen"
   },
   {
-   "text": "Für dieses Video habe ich null Zeilen Code geschrieben.",
+   "text": "Programmieren lernen ist tot. Du brauchst etwas anderes.",
    "bewertung": 8,
-   "grund": "konkretes Ergebnis"
+   "grund": "Muster „ist tot“, schon in v03 und v04 benutzt"
   },
   {
-   "text": "„Dafür musst du programmieren können.“ Stimmt nur halb.",
+   "text": "Du kannst nicht programmieren? Gut.",
    "bewertung": 8,
-   "grund": "bekannter Einwand, Auflösung angekündigt"
+   "grund": "Einwand umgedreht"
+  },
+  {
+   "text": "Wer programmieren kann, ist mit Claude Code nicht im Vorteil.",
+   "bewertung": 7,
+   "grund": "Provokation, angreifbar"
   },
   {
    "text": "Drei Fähigkeiten schlagen Programmierkenntnisse.",
    "bewertung": 6,
-   "grund": "Liste, wenig Emotion"
-  },
-  {
-   "text": "Die größte Lüge über Claude Code.",
-   "bewertung": 5,
-   "grund": "reißerisch, wenig glaubwürdig"
+   "grund": "Liste"
   }
  ],
  "post": {
@@ -47,8 +47,8 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Du kannst nicht programmieren? *Gut.*",
-   "voice": "Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes."
+   "headline": "Null Zeilen Code. Trotzdem ein fertiges *Produkt.*",
+   "voice": "Null Zeilen Code. Trotzdem ein fertiges Produkt. So geht's mit Claude Code."
   },
   {
    "type": "point",
@@ -102,5 +102,6 @@
    "sub": "Link in Bio",
    "voice": "Am schnellsten lernst du mit guten Beispielen. Meine fünfzehn besten Prompts gibt es gratis über den Link in meiner Bio."
   }
- ]
+ ],
+ "ebookBezug": "Gratis-PDF (Einstieg)"
 }

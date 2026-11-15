@@ -34,8 +34,8 @@ Regeln dazu:
 - Stand ansehen: `npm run skripte` (Entwurf / freigegeben / vertont / Text geändert, Länge, Zeichen).
 
 ## Skript-Regeln
-- **Länge: vor jeder Erstellung fragen.** Bevor neue Skripte geschrieben oder bestehende umgeschrieben werden, den Nutzer fragen, wie lang die Videos im Schnitt sein sollen. Keine Länge annehmen. Umrechnung für diese Stimme: ≈ 16,5 Zeichen Sprechtext pro Sekunde (45 s ≈ 740 Zeichen, 65 s ≈ 1.070 Zeichen). `npm run skripte` zeigt die Zeichenzahl. v01–v10 liegen derzeit als Entwurf mit ~65–69 s vor.
-- Aufbau wie in v01–v10: `hook` → 3 Kapitel (`chapter` 01/02/03, abwechselnd `"alt": true`) mit je 1–2 Szenen → `cta`.
+- **Länge, Anzahl, Ausrichtung: vor jedem Lauf fragen** (siehe „Vor jedem Lauf“). Keine Länge annehmen. Umrechnung für diese Stimme: ≈ 16,5 Zeichen Sprechtext pro Sekunde (45 s ≈ 740 Zeichen, 65 s ≈ 1.070 Zeichen). `npm run skripte` zeigt die Zeichenzahl. v01–v05 sind auf 45 s geschrieben, v06–v10 noch lange Entwürfe.
+- Aufbau wie in v01–v05: `hook` → Problem → Kapitelkarte → Lösung → Kapitelkarte (`"alt": true`) → Beweis/Haken → `cta`. Längere Videos bekommen eine dritte Kapitelkarte.
 - **Hook-Pflichtprozess:** vor jedem Skript `research/hook-patterns.md` lesen, mindestens fünf Hooks schreiben, jede 1–10 bewerten (Aufmerksamkeit, Neugier, Verständlichkeit, Glaubwürdigkeit, Zielgruppe, Viralität), die stärkste nehmen. Die fünf Hooks mit Bewertung im Skript unter `"hooks"` ablegen. Kein „Hallo zusammen“, kein „Heute zeige ich euch“.
 - Dramaturgie: Hook → Problem → Lösung → Beweis (echte Demo oder nachvollziehbares Ergebnis) → CTA.
 - Szene 1 ist immer `hook`: ein konkreter Satz; Akzent-Wörter in der `headline` mit `*Sternchen*`, letztes Akzent-Wort kurz (wird groß gezeigt).
@@ -55,8 +55,19 @@ Jedes Skript hat ein Feld `post`:
 Lead-Aufwärmen als Leiter: zuerst Vertrauen (Folgen/Kommentar), dann Gratis-PDF, erst später E-Book. Über eine Serie mischen, nicht in jedem Video verkaufen. Das gesprochene CTA am Ende muss zum `ziel` passen.
 `npm run posting` schreibt die fertigen Texte nach `out/posting/vNN.txt`.
 
-## Zweiter Lauf
-**Gesperrt, bis der Nutzer ihn ausdrücklich startet.** Bis dahin nichts freigeben, nichts vertonen, nichts für die Veröffentlichung rendern.
+## Vor jedem Lauf: drei Fragen
+Bevor neue Skripte entstehen oder ein Lauf startet, den Nutzer fragen (eine Nachricht, drei kurze Punkte) und die Antworten in `PROJECT_STATUS.md` notieren:
+1. **Wie lang** sollen die Videos im Schnitt sein?
+2. **Wie viele** Videos?
+3. **Kommerziell oder rein informativ?** Kommerziell = Schluss und Unterschrift führen zu Gratis-PDF oder E-Book. Informativ = Schluss führt zu Folgen/Kommentar.
+In beiden Fällen die E-Books mitdenken: jedes Skript bekommt `ebookBezug` (zu welchem E-Book oder Angebot das Thema hinführt), auch wenn im Video nichts verkauft wird.
+Ein Lauf startet erst nach diesen Antworten und der Ansage des Nutzers. Nichts vorher freigeben oder vertonen.
+
+## Hook-Stil und Ton (Vorgabe des Nutzers, 15.11.)
+- **Hooks reißerisch**, nach diesen Mustern: Thema + Produktname („Videoerstellung mit Claude Code …“), „… ist tot, wenn du das nicht machst“, konkreter Betrag („2.000 Euro pro Woche mit Claude Code. So geht's.“).
+- **Danach gut informieren:** Das Video löst den Hook mit konkreten, nachmachbaren Inhalten ein.
+- **Ton wie v03:** kurze Ansagen, echte Prompts zum Mitschreiben, klare Schritte, ein ehrlicher Haken am Ende.
+- Muster abwechseln; nicht in jedem Video „ist tot“.
 
 ## Stil (gemeinsam mit dem Kollegen)
 Dunkler Grund, Amber als Akzent, Violett als Zweitfarbe, schmale fette Überschriften (Archivo), kleine Mono-Labels, Eck-Markierungen, Kapitelkarten vollflächig, Untertitel als dunkle Pille. Alles in `brand/brand.json`, `src/Explainer.tsx`, `src/scenes/Scenes.tsx`. Stil nicht ohne Rückfrage ändern.

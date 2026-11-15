@@ -1,34 +1,34 @@
 {
  "id": "v03",
- "title": "Drei Prompts. Eine Website.",
+ "title": "Website-Baukästen sind tot",
  "pillar": "Websites verkaufen",
  "approved": false,
  "zielSekunden": 45,
  "hooks": [
   {
+   "text": "Website-Baukästen sind tot. Du brauchst nur drei Prompts.",
+   "bewertung": 9,
+   "grund": "Muster „ist tot“ + konkrete Zahl + Einlösen im Video"
+  },
+  {
    "text": "Drei Prompts. Eine fertige Website. Ich zeige dir alle drei.",
    "bewertung": 9,
-   "grund": "Zahl + Versprechen, das im Video eingelöst wird"
+   "grund": "bisheriger Hook, vom Ton her Favorit des Nutzers"
+  },
+  {
+   "text": "Claude Code baut dir eine komplette Website – mit drei Prompts.",
+   "bewertung": 8,
+   "grund": "Produktname vorn"
+  },
+  {
+   "text": "Agenturen brauchen Wochen. Claude Code braucht drei Prompts.",
+   "bewertung": 8,
+   "grund": "Gegensatz"
   },
   {
    "text": "Kopier dir diese drei Prompts für deine erste Website.",
-   "bewertung": 8,
-   "grund": "Nutzen sofort klar, lädt zum Speichern ein"
-  },
-  {
-   "text": "Eine komplette Website mit nur drei Prompts.",
-   "bewertung": 8,
-   "grund": "stark, aber ohne Einlöse-Versprechen"
-  },
-  {
-   "text": "Du brauchst genau drei Prompts für eine Laden-Website.",
    "bewertung": 7,
-   "grund": "sachlich"
-  },
-  {
-   "text": "Hör auf, einen einzigen riesigen Prompt zu schreiben.",
-   "bewertung": 7,
-   "grund": "Fehler-Hook, Thema erst spät klar"
+   "grund": "Nutzen, wenig Reibung"
   }
  ],
  "post": {
@@ -47,8 +47,8 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Drei Prompts. Eine fertige *Website.*",
-   "voice": "Drei Prompts. Eine fertige Website. Ich zeige dir alle drei."
+   "headline": "Website-Baukästen sind *tot.*",
+   "voice": "Website-Baukästen sind tot. Du brauchst nur drei Prompts. Ich zeige dir alle drei."
   },
   {
    "type": "point",
@@ -114,5 +114,6 @@
    "sub": "Link in Bio",
    "voice": "Alle Prompts zum Kopieren bekommst du gratis über den Link in meiner Bio."
   }
- ]
+ ],
+ "ebookBezug": "E-Book 2 (Websites bauen und verkaufen)"
 }

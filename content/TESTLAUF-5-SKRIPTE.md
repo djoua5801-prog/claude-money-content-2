@@ -3,19 +3,19 @@
 Zum Durchlesen vor der Freigabe. In Klammern steht, was im Bild erscheint; danach, was die Stimme sagt.
 
 
-## v01 – Dieses Video ist nur eine Textdatei  (≈ 44 s, 721 Zeichen)
+## v01 – Videoerstellung mit Claude Code  (≈ 43 s, 716 Zeichen) · führt zu: E-Book 1 (Videos auf Autopilot)
 
 **Hook-Auswahl** (5 Varianten, bewertet 1–10; die erste wird verwendet):
 
-- 9/10 – Dieses Video ist eigentlich nur eine Textdatei. _(Neugier + Widerspruch: ein Video kann keine Textdatei sein)_
-- 8/10 – Dieses Video hat kein Mensch geschnitten. _(Überraschung, aber inzwischen häufig gehört)_
-- 7/10 – Für dieses Video habe ich null Zeilen Code geschrieben. _(konkretes Ergebnis, spricht eher Technik-Interessierte an)_
-- 7/10 – Kein Schnittprogramm. Kein Editor. Trotzdem fertig. _(rhythmisch, aber ohne offene Frage)_
-- 6/10 – So entstehen zehn Videos aus einem Befehl. _(Tutorial-Versprechen, wenig Spannung)_
+- 9/10 – Videoerstellung mit Claude Code: Dieses Video hat kein Mensch geschnitten. _(Thema + Produktname sofort klar, Überraschung im zweiten Satz)_
+- 9/10 – Video-Schnitt ist tot. Dieses Video hat Claude Code gebaut. _(Muster „ist tot“, sehr laut)_
+- 8/10 – Dieses Video ist eigentlich nur eine Textdatei. _(Neugier, aber Thema erst später klar)_
+- 8/10 – Ich schneide keine Videos mehr. Das macht jetzt Claude Code. _(persönlich, klar)_
+- 7/10 – Zehn Videos aus einem Befehl – mit Claude Code. _(Ergebnis, wenig Spannung)_
 
 **Ablauf:**
 
-- *(Hook: Dieses Video ist eigentlich nur eine Textdatei.)* Dieses Video ist eigentlich nur eine Textdatei. Kein Mensch hat es geschnitten.
+- *(Hook: Videoerstellung mit Claude Code: kein Schnitt.)* Videoerstellung mit Claude Code. Dieses Video hat kein Mensch geschnitten.
 - *(Tafel: Das Problem)* Videos schneiden kostet Stunden. Clips schieben, Untertitel setzen, exportieren. Und beim nächsten Video wieder von vorn.
 - *(Kapitelkarte: Die Lösung)* So geht es ohne.
 - *(Fenster: Mein Auftrag)* Ich schreibe nur den Text und gebe Claude Code einen Auftrag. Es holt die Stimme, baut jede Szene und setzt die Untertitel wortgenau.
@@ -29,19 +29,19 @@ Zum Durchlesen vor der Freigabe. In Klammern steht, was im Bild erscheint; danac
 **Angepinnter Kommentar:** Welchen der drei Bausteine soll ich zuerst genauer zeigen: Skript, Stimme oder Animation?
 
 
-## v02 – 3 Dinge, für die Firmen schon bezahlen  (≈ 45 s, 749 Zeichen)
+## v02 – 2.000 Euro pro Woche mit Claude Code  (≈ 43 s, 715 Zeichen) · führt zu: Bundle (alle drei E-Books)
 
 **Hook-Auswahl** (5 Varianten, bewertet 1–10; die erste wird verwendet):
 
-- 9/10 – Drei Dinge, für die Firmen heute schon bezahlen – und alle drei baust du mit Claude Code. _(konkreter Nutzen + Produktname, ohne Betrag zu versprechen)_
-- 8/10 – Die meisten nutzen Claude Code nur zum Spielen. Diese drei Dinge kann man verkaufen. _(Provokation + Liste)_
-- 8/10 – Warum zahlen Läden für etwas, das an einem Nachmittag entsteht? _(offene Frage, etwas lang)_
-- 7/10 – Du brauchst keine App-Idee, um mit Claude Code Geld zu verdienen. _(räumt einen Einwand aus)_
+- 10/10 – 2.000 Euro pro Woche mit Claude Code. So geht's. _(Vorgabe des Nutzers: konkreter Betrag + Produktname + Einlöse-Versprechen)_
+- 8/10 – Für diese drei Dinge zahlen Firmen – und Claude Code baut sie. _(Nutzen ohne Betrag)_
+- 9/10 – 2.000 Euro pro Woche, ohne eine Zeile Code zu schreiben. _(Betrag + Einwand entkräftet)_
+- 8/10 – Die meisten verdienen mit Claude Code nichts. Hier ist der Grund. _(Fehler-Hook)_
 - 6/10 – Drei Wege, mit Claude Code Geld zu verdienen. _(klar, aber austauschbar)_
 
 **Ablauf:**
 
-- *(Hook: 3 Dinge, für die Firmen schon bezahlen.)* Drei Dinge, für die Firmen heute schon bezahlen. Und alle drei baust du mit Claude Code.
+- *(Hook: 2.000 Euro pro Woche mit Claude Code. So geht's.)* Zweitausend Euro pro Woche mit Claude Code. So geht's.
 - *(Tafel: Das Problem)* Die meisten probieren Claude Code aus, bauen irgendwas und verdienen damit nichts. Weil niemand danach gefragt hat.
 - *(Kapitelkarte: Was sich verkauft)* Das hier wird gebraucht.
 - *(Liste: Dafür wird bezahlt:)* Erstens: Websites für lokale Läden. Viele haben keine oder eine völlig veraltete. Zweitens: Kurzvideos in Serie. Firmen brauchen sie ständig und haben keine Zeit dafür. Drittens: eigene Vorlagen und E-Books. Einmal bauen, mehrfach verkaufen.
@@ -55,19 +55,19 @@ Zum Durchlesen vor der Freigabe. In Klammern steht, was im Bild erscheint; danac
 **Angepinnter Kommentar:** 1 = Websites, 2 = Videos, 3 = eigene Produkte. Was soll ich zuerst Schritt für Schritt zeigen?
 
 
-## v03 – Drei Prompts. Eine Website.  (≈ 44 s, 718 Zeichen)
+## v03 – Website-Baukästen sind tot  (≈ 45 s, 740 Zeichen) · führt zu: E-Book 2 (Websites bauen und verkaufen)
 
 **Hook-Auswahl** (5 Varianten, bewertet 1–10; die erste wird verwendet):
 
-- 9/10 – Drei Prompts. Eine fertige Website. Ich zeige dir alle drei. _(Zahl + Versprechen, das im Video eingelöst wird)_
-- 8/10 – Kopier dir diese drei Prompts für deine erste Website. _(Nutzen sofort klar, lädt zum Speichern ein)_
-- 8/10 – Eine komplette Website mit nur drei Prompts. _(stark, aber ohne Einlöse-Versprechen)_
-- 7/10 – Du brauchst genau drei Prompts für eine Laden-Website. _(sachlich)_
-- 7/10 – Hör auf, einen einzigen riesigen Prompt zu schreiben. _(Fehler-Hook, Thema erst spät klar)_
+- 9/10 – Website-Baukästen sind tot. Du brauchst nur drei Prompts. _(Muster „ist tot“ + konkrete Zahl + Einlösen im Video)_
+- 9/10 – Drei Prompts. Eine fertige Website. Ich zeige dir alle drei. _(bisheriger Hook, vom Ton her Favorit des Nutzers)_
+- 8/10 – Claude Code baut dir eine komplette Website – mit drei Prompts. _(Produktname vorn)_
+- 8/10 – Agenturen brauchen Wochen. Claude Code braucht drei Prompts. _(Gegensatz)_
+- 7/10 – Kopier dir diese drei Prompts für deine erste Website. _(Nutzen, wenig Reibung)_
 
 **Ablauf:**
 
-- *(Hook: Drei Prompts. Eine fertige Website.)* Drei Prompts. Eine fertige Website. Ich zeige dir alle drei.
+- *(Hook: Website-Baukästen sind tot.)* Website-Baukästen sind tot. Du brauchst nur drei Prompts. Ich zeige dir alle drei.
 - *(Tafel: Das Problem)* Die meisten schreiben einen einzigen riesigen Prompt und wundern sich, warum das Ergebnis beliebig aussieht.
 - *(Kapitelkarte: Die drei Prompts)* So geht es besser.
 - *(Fenster: Prompt 1 · Beschreiben)* Prompt eins: beschreiben. Name, Stadt, Stil und was auf die Seite soll.
@@ -82,19 +82,19 @@ Zum Durchlesen vor der Freigabe. In Klammern steht, was im Bild erscheint; danac
 **Angepinnter Kommentar:** Passende Prompts zum Kopieren (Demo-Website, Veröffentlichen, Angebot) stehen im Gratis-PDF – Link in Bio. Für welchen Laden würdest du so eine Seite bauen?
 
 
-## v04 – Ein Chatbot antwortet. Claude Code arbeitet.  (≈ 42 s, 700 Zeichen)
+## v04 – Claude Code ist tot, wenn du es so nutzt  (≈ 41 s, 683 Zeichen) · führt zu: Gratis-PDF (Einstieg)
 
 **Hook-Auswahl** (5 Varianten, bewertet 1–10; die erste wird verwendet):
 
-- 9/10 – Ein Chatbot antwortet. Claude Code arbeitet. _(Gegensatz in sechs Wörtern, sofort verständlich, auch ohne Ton)_
-- 8/10 – Claude Code ist kein Chatbot. _(Widerspruch zur Erwartung)_
-- 8/10 – Du nutzt Claude wie einen Chatbot? Dann verschenkst du das Beste. _(spricht direkt an, etwas lang)_
-- 7/10 – Hör auf, Antworten zu kopieren. _(Fehler-Hook, Thema erst im zweiten Satz klar)_
-- 5/10 – Der Unterschied zwischen chatten und arbeiten lassen. _(zu abstrakt)_
+- 9/10 – Claude Code ist tot, wenn du es wie einen Chatbot benutzt. _(Vorgabe-Muster des Nutzers, Warnung + Produktname)_
+- 8/10 – Ein Chatbot antwortet. Claude Code arbeitet. _(Gegensatz, ruhiger)_
+- 8/10 – Du nutzt Claude Code falsch. So geht es richtig. _(Fehler-Hook)_
+- 7/10 – Hör auf, Antworten zu kopieren. _(Befehl, Thema erst später klar)_
+- 7/10 – Claude Code ist kein Chatbot. _(sachlich)_
 
 **Ablauf:**
 
-- *(Hook: Ein Chatbot antwortet. Claude Code arbeitet.)* Ein Chatbot antwortet. Claude Code arbeitet. Das ist der ganze Unterschied.
+- *(Hook: Wie ein Chatbot genutzt, ist Claude Code tot.)* Claude Code ist tot, wenn du es wie einen Chatbot benutzt.
 - *(Tafel: Das Problem)* Beim Chatbot kopierst du Text hin und her, legst Dateien an und machst die Arbeit am Ende selbst.
 - *(Kapitelkarte: Die Lösung)* So läuft es hier.
 - *(Tafel: So läuft es)* Claude Code arbeitet direkt auf deinem Rechner. Du nennst das Ziel, und es legt Dateien an, führt Programme aus und korrigiert eigene Fehler, bis das Ergebnis steht.
@@ -108,19 +108,19 @@ Zum Durchlesen vor der Freigabe. In Klammern steht, was im Bild erscheint; danac
 **Angepinnter Kommentar:** Was würdest du als Erstes von so einem „Mitarbeiter“ erledigen lassen?
 
 
-## v05 – Du kannst nicht programmieren? Gut.  (≈ 43 s, 707 Zeichen)
+## v05 – Null Zeilen Code, fertiges Produkt  (≈ 43 s, 715 Zeichen) · führt zu: Gratis-PDF (Einstieg)
 
 **Hook-Auswahl** (5 Varianten, bewertet 1–10; die erste wird verwendet):
 
-- 9/10 – Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes. _(spricht die Zielgruppe direkt an, dreht den Einwand um, offene Frage)_
-- 8/10 – Für dieses Video habe ich null Zeilen Code geschrieben. _(konkretes Ergebnis)_
-- 8/10 – „Dafür musst du programmieren können.“ Stimmt nur halb. _(bekannter Einwand, Auflösung angekündigt)_
-- 6/10 – Drei Fähigkeiten schlagen Programmierkenntnisse. _(Liste, wenig Emotion)_
-- 5/10 – Die größte Lüge über Claude Code. _(reißerisch, wenig glaubwürdig)_
+- 9/10 – Null Zeilen Code. Trotzdem ein fertiges Produkt. So geht's mit Claude Code. _(konkretes Ergebnis + Produktname + Versprechen)_
+- 8/10 – Programmieren lernen ist tot. Du brauchst etwas anderes. _(Muster „ist tot“, schon in v03 und v04 benutzt)_
+- 8/10 – Du kannst nicht programmieren? Gut. _(Einwand umgedreht)_
+- 7/10 – Wer programmieren kann, ist mit Claude Code nicht im Vorteil. _(Provokation, angreifbar)_
+- 6/10 – Drei Fähigkeiten schlagen Programmierkenntnisse. _(Liste)_
 
 **Ablauf:**
 
-- *(Hook: Du kannst nicht programmieren? Gut.)* Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes.
+- *(Hook: Null Zeilen Code. Trotzdem ein fertiges Produkt.)* Null Zeilen Code. Trotzdem ein fertiges Produkt. So geht's mit Claude Code.
 - *(Tafel: Das Problem)* Viele fangen gar nicht erst an, weil sie glauben, sie müssten erst eine Programmiersprache lernen.
 - *(Kapitelkarte: Was du brauchst)* Das brauchst du wirklich.
 - *(Liste: Drei Fähigkeiten:)* Drei Dinge. Klar beschreiben, was du willst. Ergebnisse prüfen, statt blind zu vertrauen. Und Geduld, wenn etwas nicht sofort klappt.

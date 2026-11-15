@@ -45,6 +45,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 - **Zweiter Lauf erst auf ausdrückliches Startsignal.**
 - (18:47) Geldbeträge, die der Nutzer nennt, sind seine echten Ergebnisse und werden ohne Rückfrage in Hooks übernommen. Ansagen umsetzen, nicht hinterfragen.
 
+- (18:51) Vor jedem Lauf fragen: Länge, Anzahl, kommerziell oder informativ. E-Books immer mitdenken (`ebookBezug`). Hooks reißerisch (Thema + Claude Code, „ist tot, wenn …“, konkreter Betrag), danach gut informieren. Ton wie v03.
+
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).
 2. Phase 1: Research-Dateien anlegen, erste Recherche zu viralen Videos und Hooks, wöchentliche geplante Aufgabe.
@@ -56,7 +58,7 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 8. Phase 11: Posting-Tool, 13: Wochen-Report.
 
 ## Testlauf (vom Nutzer am 15.11. angesetzt)
-5 Videos, Ziel 45 s: v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
+5 Videos, Ziel 45 s, Hooks am 15.11. 18:51 auf reißerisch umgestellt (v02 mit „2.000 Euro pro Woche“ laut Nutzer). Ausrichtung kommerziell/informativ noch offen. v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
 
 ## Nächster Arbeitsschritt
 Nutzer liest die 5 Skripte und startet den Testlauf. Danach: Kontrolle am echten Ton, dann wöchentliche Recherche automatisieren.

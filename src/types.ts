@@ -25,6 +25,9 @@ export type VideoSpec = {
     pinnedComment: string; // erster, angepinnter Kommentar
   };
   hashtags: string[];
+  zielSekunden?: number;
+  ebookBezug?: string; // zu welchem E-Book / Angebot dieses Video hinführt
+  hooks?: { text: string; bewertung: number; grund: string }[];
   kineticHook?: boolean; // true = Hook als Kinetic-Typografie; Standard: Wort-für-Wort-Überschrift
   scenes: SceneSpec[];
 };

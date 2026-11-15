@@ -1,34 +1,34 @@
 {
  "id": "v04",
- "title": "Ein Chatbot antwortet. Claude Code arbeitet.",
+ "title": "Claude Code ist tot, wenn du es so nutzt",
  "pillar": "Grundlagen",
  "approved": false,
  "zielSekunden": 45,
  "hooks": [
   {
-   "text": "Ein Chatbot antwortet. Claude Code arbeitet.",
+   "text": "Claude Code ist tot, wenn du es wie einen Chatbot benutzt.",
    "bewertung": 9,
-   "grund": "Gegensatz in sechs Wörtern, sofort verständlich, auch ohne Ton"
+   "grund": "Vorgabe-Muster des Nutzers, Warnung + Produktname"
   },
   {
-   "text": "Claude Code ist kein Chatbot.",
+   "text": "Ein Chatbot antwortet. Claude Code arbeitet.",
    "bewertung": 8,
-   "grund": "Widerspruch zur Erwartung"
+   "grund": "Gegensatz, ruhiger"
   },
   {
-   "text": "Du nutzt Claude wie einen Chatbot? Dann verschenkst du das Beste.",
+   "text": "Du nutzt Claude Code falsch. So geht es richtig.",
    "bewertung": 8,
-   "grund": "spricht direkt an, etwas lang"
+   "grund": "Fehler-Hook"
   },
   {
    "text": "Hör auf, Antworten zu kopieren.",
    "bewertung": 7,
-   "grund": "Fehler-Hook, Thema erst im zweiten Satz klar"
+   "grund": "Befehl, Thema erst später klar"
   },
   {
-   "text": "Der Unterschied zwischen chatten und arbeiten lassen.",
-   "bewertung": 5,
-   "grund": "zu abstrakt"
+   "text": "Claude Code ist kein Chatbot.",
+   "bewertung": 7,
+   "grund": "sachlich"
   }
  ],
  "post": {
@@ -47,8 +47,8 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Ein Chatbot antwortet. Claude Code *arbeitet.*",
-   "voice": "Ein Chatbot antwortet. Claude Code arbeitet. Das ist der ganze Unterschied."
+   "headline": "Wie ein Chatbot genutzt, ist Claude Code *tot.*",
+   "voice": "Claude Code ist tot, wenn du es wie einen Chatbot benutzt."
   },
   {
    "type": "point",
@@ -101,5 +101,6 @@
    "sub": "Folgen",
    "voice": "Prüfen musst du trotzdem alles selbst. Folg mir, ich zeige dir, welche Aufgaben sich verkaufen lassen."
   }
- ]
+ ],
+ "ebookBezug": "Gratis-PDF (Einstieg)"
 }
