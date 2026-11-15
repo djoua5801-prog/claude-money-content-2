@@ -12,7 +12,7 @@
 - Zugangsdaten nur in `.env`, nie ins Repo, nie in den Chat.
 
 ## Wo dieses Repo vom Master-Prompt abweicht (bewusst)
-- **Videolänge:** Master-Prompt nennt 30–45 s; der Nutzer hat danach „ab 60 Sekunden“ festgelegt. Bis er anders entscheidet, gilt ≥ 61 s (siehe Skript-Regeln).
+- **Videolänge:** wird vor jeder Erstellung beim Nutzer erfragt (Master-Prompt nennt 30–45 s, zwischendurch galt „ab 60 s“).
 - **Untertitel:** Zeitmarken kommen direkt von ElevenLabs; Whisper wird nur gebraucht, wenn fremdes Audio (z. B. Bildschirmaufnahmen mit Ton) untertitelt werden soll.
 - **Ordner:** Skripte liegen in `content/videos/`, Stimmen in `public/audio/` + `content/timing/`, fertige Videos in `out/`, Vorlagen in `src/`. Der Status (Entwurf/freigegeben/vertont) steht im Skript selbst statt in getrennten Ordnern.
 - **Premiere Pro:** nicht angebunden. Remotion ist der Produktionsweg. Eine Anbindung kommt nur mit einer regulär lizenzierten Installation in Frage.
@@ -32,7 +32,7 @@ Regeln dazu:
 - Stand ansehen: `npm run skripte` (Entwurf / freigegeben / vertont / Text geändert, Länge, Zeichen).
 
 ## Skript-Regeln
-- Länge: **mindestens 61 Sekunden**, Ziel 65–70 s. Das sind bei dieser Stimme ca. 1.080–1.150 Zeichen Sprechtext (≈ 16,5 Zeichen/Sekunde). `npm run skripte` zeigt die Zeichenzahl.
+- **Länge: vor jeder Erstellung fragen.** Bevor neue Skripte geschrieben oder bestehende umgeschrieben werden, den Nutzer fragen, wie lang die Videos im Schnitt sein sollen. Keine Länge annehmen. Umrechnung für diese Stimme: ≈ 16,5 Zeichen Sprechtext pro Sekunde (45 s ≈ 740 Zeichen, 65 s ≈ 1.070 Zeichen). `npm run skripte` zeigt die Zeichenzahl. v01–v10 liegen derzeit als Entwurf mit ~65–69 s vor.
 - Aufbau wie in v01–v10: `hook` → 3 Kapitel (`chapter` 01/02/03, abwechselnd `"alt": true`) mit je 1–2 Szenen → `cta`.
 - **Hook-Pflichtprozess:** vor jedem Skript `research/hook-patterns.md` lesen, mindestens fünf Hooks schreiben, jede 1–10 bewerten (Aufmerksamkeit, Neugier, Verständlichkeit, Glaubwürdigkeit, Zielgruppe, Viralität), die stärkste nehmen. Die fünf Hooks mit Bewertung im Skript unter `"hooks"` ablegen. Kein „Hallo zusammen“, kein „Heute zeige ich euch“.
 - Dramaturgie: Hook → Problem → Lösung → Beweis (echte Demo oder nachvollziehbares Ergebnis) → CTA.
@@ -41,6 +41,18 @@ Regeln dazu:
 - Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
 - Du-Form. Keine Einkommensversprechen, keine erfundenen Ergebnisse, keine erfundenen Zahlen.
 - Ideen aus `research/ideen-backlog.md`; erledigte abhaken. Mit dem Kollegen abgestimmte Themen dort eintragen, damit nichts doppelt entsteht.
+
+## Unterschrift und Verweise (Pflicht für jedes Video)
+Jedes Skript hat ein Feld `post`:
+- `caption`: 1–2 Sätze unter dem Video, die den Nutzen benennen (kein Wiederholen des Hooks, keine Versprechen).
+- `ziel`: wohin dieses Video führt – `Folgen`, `Kommentar`, `Gratis-PDF` oder `E-Book`.
+- `verweis`: der konkrete letzte Satz (z. B. Link in Bio zum Gratis-PDF). Nur auf Dinge verweisen, die es wirklich schon gibt.
+- `pinnedComment`: erster, angepinnter Kommentar (Frage oder Verweis).
+Lead-Aufwärmen als Leiter: zuerst Vertrauen (Folgen/Kommentar), dann Gratis-PDF, erst später E-Book. Über eine Serie mischen, nicht in jedem Video verkaufen. Das gesprochene CTA am Ende muss zum `ziel` passen.
+`npm run posting` schreibt die fertigen Texte nach `out/posting/vNN.txt`.
+
+## Zweiter Lauf
+**Gesperrt, bis der Nutzer ihn ausdrücklich startet.** Bis dahin nichts freigeben, nichts vertonen, nichts für die Veröffentlichung rendern.
 
 ## Stil (gemeinsam mit dem Kollegen)
 Dunkler Grund, Amber als Akzent, Violett als Zweitfarbe, schmale fette Überschriften (Archivo), kleine Mono-Labels, Eck-Markierungen, Kapitelkarten vollflächig, Untertitel als dunkle Pille. Alles in `brand/brand.json`, `src/Explainer.tsx`, `src/scenes/Scenes.tsx`. Stil nicht ohne Rückfrage ändern.

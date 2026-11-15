@@ -32,15 +32,20 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 - Fehlende Zugänge: E-Mail-Tool (Brevo/Kit), Vercel, Posting-Tool, Verkaufsplattform, TikTok/Instagram/YouTube-Konten.
 
 ## Offene Entscheidungen des Nutzers
-1. **Videolänge:** Master-Prompt sagt 30–45 s, die letzte Ansage war „ab 60 Sekunden“. Aktuell gebaut: ≥ 61 s.
+1. **Videolänge:** wird vor jeder Erstellung erfragt (Regel vom 15.11.). Für v01–v10 noch offen; Entwürfe haben ~65–69 s.
 2. Seriennamen und Themenaufteilung mit dem Kollegen.
 
 ## Bekannte Probleme
 - Die 10 Videos in `out/` auf dem PC sind alte Versionen (kurz, altes Design); ihre Stimmen passen nicht mehr zu den neuen Skripten.
 - ElevenLabs-Guthaben: ca. 4.600 von 10.000 Credits verbraucht; ein langes Video kostet ca. 1.100.
 
+## Festlegungen des Nutzers (15.11., 18:34)
+- Vor jeder Erstellung nach der Durchschnittslänge fragen.
+- Jedes Video braucht Unterschrift, Verweis und angepinnten Kommentar, die Zuschauer zu Leads aufwärmen → Feld `post`, für v01–v10 angelegt.
+- **Zweiter Lauf erst auf ausdrückliches Startsignal.**
+
 ## Roadmap (priorisiert)
-1. Videolänge klären (Nutzer).
+1. Länge für v01–v10 erfragen (Nutzer).
 2. Phase 1: Research-Dateien anlegen, erste Recherche zu viralen Videos und Hooks, wöchentliche geplante Aufgabe.
 3. Phase 2: Hook Engine – je Skript fünf Hooks mit Bewertung; v01–v10 überarbeiten.
 4. Zweiter Lauf: Nutzer gibt Skripte frei → Stimme → Videos; Kontrolle am echten Ton.
@@ -50,4 +55,4 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 8. Phase 11: Posting-Tool, 13: Wochen-Report.
 
 ## Nächster Arbeitsschritt
-Antwort des Nutzers zur Videolänge abwarten, dann Phase 1 starten.
+Phase 1 (Recherche) kann ohne den Nutzer starten. Für Skript-Überarbeitung (Phase 2) zuerst die Länge erfragen. Zweiter Lauf gesperrt bis Startsignal.

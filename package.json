@@ -12,7 +12,8 @@
     "kinetic": "tsx tools/kinetic.ts",
     "leadmagnet": "tsx tools/build-leadmagnet.ts",
     "skripte": "tsx tools/build-data.ts",
-    "freigeben": "tsx tools/approve.ts"
+    "freigeben": "tsx tools/approve.ts",
+    "posting": "tsx tools/posting.ts"
   },
   "keywords": [],
   "author": "",

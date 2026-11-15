@@ -14,7 +14,7 @@ const story = storySchema.parse(storyData);
 
 export const RemotionRoot: React.FC = () => (
   <>
-    {(videos as TimedVideo[]).map((v) => (
+    {(videos as unknown as TimedVideo[]).map((v) => (
       <Composition
         key={v.id}
         id={v.id}

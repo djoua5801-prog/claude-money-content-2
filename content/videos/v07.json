@@ -3,7 +3,12 @@
  "title": "30 Videos aus einem Prompt",
  "pillar": "Content-Maschine",
  "approved": false,
- "caption": "Ein Monat Content an einem Nachmittag. So ist das System aufgebaut.",
+ "post": {
+  "caption": "Ein Monat Content an einem Nachmittag: So ist meine Pipeline aufgebaut – und an welcher Stelle du selbst ran musst.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Die 15 Prompts aus meinen Videos gibt es gratis als PDF – Link in meiner Bio.",
+  "pinnedComment": "Die Prompts für Skripte, Ideen und Posting-Texte stehen im Gratis-PDF (Link in Bio)."
+ },
  "hashtags": [
   "claudecode",
   "contentstrategie",
@@ -83,9 +88,9 @@
   },
   {
    "type": "cta",
-   "headline": "Das System gibt's als *E-Book.*",
+   "headline": "Die Prompts gibt's *gratis.*",
    "sub": "Link in Bio",
-   "voice": "Das komplette System mit allen Vorlagen erkläre ich in meinem E-Book. Den Link findest du in meiner Bio."
+   "voice": "Die Prompts für Skripte, Ideen und Posting-Texte bekommst du gratis als PDF. Den Link findest du in meiner Bio."
   }
  ]
 }

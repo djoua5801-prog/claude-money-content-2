@@ -3,7 +3,12 @@
  "title": "So verkaufst du Websites an lokale Läden",
  "pillar": "Websites verkaufen",
  "approved": false,
- "caption": "Der Trick: Bau die Seite, bevor du fragst.",
+ "post": {
+  "caption": "Der einfachste Weg, eine Website zu verkaufen: Bau sie, bevor du fragst. So gehst du in drei Schritten vor.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Die Nachricht an den Laden und das Angebot gibt es als Vorlage im Gratis-PDF – Link in meiner Bio.",
+  "pinnedComment": "Vorlage für die erste Nachricht: im Gratis-PDF, Prompt Nummer 5 (Link in Bio)."
+ },
  "hashtags": [
   "claudecode",
   "webdesign",

@@ -3,7 +3,12 @@
  "title": "Was ist Claude Code überhaupt?",
  "pillar": "Grundlagen",
  "approved": false,
- "caption": "Claude Code in einer Minute erklärt – für alle, die keine Programmierer sind.",
+ "post": {
+  "caption": "Claude Code ist kein Chatbot. Der Unterschied in einer Minute – für alle, die nicht programmieren.",
+  "ziel": "Folgen",
+  "verweis": "Folg mir für die nächsten Videos: Ich zeige, welche Aufgaben sich damit verkaufen lassen.",
+  "pinnedComment": "Was würdest du als Erstes von so einem „Mitarbeiter“ erledigen lassen?"
+ },
  "hashtags": [
   "claudecode",
   "ki",

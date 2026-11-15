@@ -3,7 +3,12 @@
  "title": "3 Wege, mit Claude Code Geld zu verdienen",
  "pillar": "Geld verdienen",
  "approved": false,
- "caption": "Kein Hype, keine Versprechen – drei Wege, die real funktionieren. Welchen willst du zuerst sehen?",
+ "post": {
+  "caption": "Drei Wege, mit Claude Code Geld zu verdienen – ohne Programmieren, aber auch nicht ohne Arbeit. Welcher passt zu dir?",
+  "ziel": "Kommentar",
+  "verweis": "Schreib 1, 2 oder 3 in die Kommentare – der meistgenannte Weg bekommt das nächste Video.",
+  "pinnedComment": "1 = Websites, 2 = Videos, 3 = eigene Produkte. Was soll ich zuerst Schritt für Schritt zeigen?"
+ },
  "hashtags": [
   "claudecode",
   "geldverdienen",

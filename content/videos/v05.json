@@ -3,7 +3,12 @@
  "title": "Mythos: Du musst programmieren können",
  "pillar": "Mythen",
  "approved": false,
- "caption": "Was du wirklich können musst – und was nicht.",
+ "post": {
+  "caption": "„Dafür musst du programmieren können“ stimmt nur zur Hälfte. Das brauchst du wirklich – und das nicht.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Die 15 Prompts aus meinen Videos gibt es gratis als PDF – Link in meiner Bio.",
+  "pinnedComment": "Meine 15 besten Prompts für den Einstieg: gratis über den Link in meiner Bio."
+ },
  "hashtags": [
   "claudecode",
   "ki",

@@ -18,7 +18,12 @@ export type VideoSpec = {
   pillar: string;
   series?: string; // z. B. "CLAUDE-CODE · 01" – steht klein über dem Video
   approved?: boolean; // erst wenn true, wird die Stimme erzeugt (Skript zuerst, dann Voice)
-  caption: string; // Posting-Text für TikTok
+  post: {
+    caption: string; // Text unter dem Video (ohne Hashtags)
+    ziel: "Folgen" | "Kommentar" | "Gratis-PDF" | "E-Book"; // wohin das Video den Zuschauer führt
+    verweis: string; // letzter Satz der Unterschrift: der konkrete Verweis
+    pinnedComment: string; // erster, angepinnter Kommentar
+  };
   hashtags: string[];
   kineticHook?: boolean; // true = Hook als Kinetic-Typografie; Standard: Wort-für-Wort-Überschrift
   scenes: SceneSpec[];

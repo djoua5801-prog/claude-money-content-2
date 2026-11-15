@@ -3,7 +3,12 @@
  "title": "Der größte Fehler am Anfang",
  "pillar": "Mythen",
  "approved": false,
- "caption": "Bauen ist leicht geworden. Verkaufen nicht.",
+ "post": {
+  "caption": "Bauen ist leicht geworden, verkaufen nicht. Der häufigste Anfängerfehler – und meine 50/50-Regel dagegen.",
+  "ziel": "Kommentar",
+  "verweis": "Schreib in die Kommentare, was du gerade baust – ich schaue es mir an.",
+  "pinnedComment": "Was baust du gerade? Schreib es hier drunter."
+ },
  "hashtags": [
   "claudecode",
   "business",

@@ -3,7 +3,12 @@
  "title": "Dieses Video hat kein Mensch geschnitten",
  "pillar": "Videos automatisieren",
  "approved": false,
- "caption": "Skript, Stimme, Schnitt, Untertitel – alles aus einem System. So ist es aufgebaut.",
+ "post": {
+  "caption": "Kein Schnittprogramm, kein Editor: Dieses Video ist aus einer Textdatei entstanden. Im Video siehst du die drei Bausteine dahinter.",
+  "ziel": "Folgen",
+  "verweis": "Teil 2 zeigt das komplette Setup – folg mir, damit du ihn nicht verpasst.",
+  "pinnedComment": "Welchen der drei Bausteine soll ich zuerst genauer zeigen: Skript, Stimme oder Animation?"
+ },
  "hashtags": [
   "claudecode",
   "ki",

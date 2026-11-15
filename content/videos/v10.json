@@ -3,7 +3,12 @@
  "title": "Was du am ersten Tag brauchst",
  "pillar": "Grundlagen",
  "approved": false,
- "caption": "Die komplette Start-Checkliste. Speichern für später.",
+ "post": {
+  "caption": "Die komplette Start-Checkliste für Claude Code. Speichern, damit du sie am ersten Tag parat hast.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Zum Start passend: 15 Prompts zum Kopieren, gratis über den Link in meiner Bio.",
+  "pinnedComment": "Checkliste gespeichert? Die 15 Start-Prompts gibt es gratis über den Link in meiner Bio."
+ },
  "hashtags": [
   "claudecode",
   "anfaenger",

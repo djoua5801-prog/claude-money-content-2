@@ -3,7 +3,12 @@
  "title": "Skills: das Feature, das kaum einer nutzt",
  "pillar": "Grundlagen",
  "approved": false,
- "caption": "Skills = Claude einmal etwas beibringen und immer wieder nutzen.",
+ "post": {
+  "caption": "Skills sind das Claude-Code-Feature, das kaum jemand nutzt: einmal erklären, immer wieder verwenden.",
+  "ziel": "Folgen",
+  "verweis": "In den nächsten Videos zeige ich meine Skills einzeln – folg mir dafür.",
+  "pinnedComment": "Was erklärst du Claude immer wieder neu? Genau das wäre dein erster Skill."
+ },
  "hashtags": [
   "claudecode",
   "ki",

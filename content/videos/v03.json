@@ -3,7 +3,12 @@
  "title": "Eine Website mit 3 Prompts",
  "pillar": "Websites verkaufen",
  "approved": false,
- "caption": "Von null zur fertigen Friseur-Website. Die drei Prompts stehen im Video.",
+ "post": {
+  "caption": "Von null zur fertigen Friseur-Website mit drei Prompts. Alle drei stehen im Video – zum Mitschreiben speichern.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Die 15 Prompts aus meinen Videos gibt es gratis als PDF – Link in meiner Bio.",
+  "pinnedComment": "Passende Prompts zum Kopieren (Demo-Website, Veröffentlichen, Angebot) stehen im Gratis-PDF – Link in Bio. Für welchen Laden würdest du so eine Seite bauen?"
+ },
  "hashtags": [
   "claudecode",
   "webdesign",
