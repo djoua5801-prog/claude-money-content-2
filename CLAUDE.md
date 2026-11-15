@@ -25,5 +25,11 @@ Szene 1 wird automatisch als Kinetic-Typografie gerendert (`src/KineticHook.tsx`
 - **Kinetic Typography** (`story.json`, `src/kinetic/`, `npm run kinetic`): Wort-für-Wort-Typo-Videos, z. B. als Intro oder eigenständiger Clip. Regeln im Skill `kinetic-storytelling` — nur die dort gelisteten Enum-Werte verwenden. Rendern: `npx remotion render src/index.ts KineticStory out/kinetic.mp4`. Recraft-Formen kosten Geld: nie `--force` ohne Rückfrage.
 - **Remotion Bits** (npm `remotion-bits`): fertige Bausteine wie `AnimatedText`, `AnimatedCounter`, `TypeWriter`, `CodeBlock`, `StaggeredMotion`, `Particles`, `Scene3D`. Für neue Szenentypen in `src/scenes/` zuerst passende Beispiele suchen (`npx remotion-bits find "<effekt>"`), siehe Skill `remotion-bits`. Projektfarben aus `brand/brand.json` statt der Bits-Standardfarben.
 
+## Remotion-Skills
+Offizielle Skills aus `remotion-dev/skills` liegen in `.claude/skills/` (`remotion-best-practices` ist der Einstieg). Vor neuem Remotion-Code dort nachsehen.
+
+## Figur
+Entwürfe als SVG in `brand/figur/` (blink, brace, caret; je neutral/happy/blink). Die Auswahl steht noch aus – erst nach Entscheidung des Nutzers in Szenen einbauen. Eigene Figur, keine Nachbildung fremder Maskottchen.
+
 ## Marke
 Farben/Schriften/Stimme in `brand/brand.json`. Keine Emojis im Video, kein Anthropic-Logo, „Claude“ nur beschreibend nennen.

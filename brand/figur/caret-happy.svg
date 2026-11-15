@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700"><path d="M430,520 L500,470 L430,420" fill="none" stroke="#C6FF3D" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="215" y="560" width="60" height="50" rx="20" fill="#15151C" stroke="#C6FF3D" stroke-width="8"/><rect x="325" y="560" width="60" height="50" rx="20" fill="#15151C" stroke="#C6FF3D" stroke-width="8"/>
+<path d="M172,250 L205,120 L285,205 Z" fill="#C6FF3D" stroke="#C6FF3D" stroke-width="16" stroke-linejoin="round"/>
+<path d="M428,250 L395,120 L315,205 Z" fill="#C6FF3D" stroke="#C6FF3D" stroke-width="16" stroke-linejoin="round"/>
+<rect x="160" y="190" width="280" height="390" rx="120" fill="#15151C" stroke="#C6FF3D" stroke-width="10"/>
+<path d="M228,330 Q250,294 272,330" fill="none" stroke="#C6FF3D" stroke-width="12" stroke-linecap="round"/><path d="M328,330 Q350,294 372,330" fill="none" stroke="#C6FF3D" stroke-width="12" stroke-linecap="round"/><path d="M274,380 Q300,410 326,380" fill="none" stroke="#C6FF3D" stroke-width="10" stroke-linecap="round"/>
+<rect x="262" y="470" width="76" height="12" rx="6" fill="#C6FF3D"/></svg>
