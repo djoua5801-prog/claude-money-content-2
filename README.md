@@ -33,6 +33,13 @@ research/         ← Ideen-Backlog
 ebooks/  site/    ← E-Books und Landingpage (folgen)
 ```
 
+## Animations-Pakete
+
+- **Kinetic Typography** – aus [tombrewsviews/BYOA](https://github.com/tombrewsviews/BYOA) (MIT). Story in `story.json`, Render: `npx remotion render src/index.ts KineticStory out/kinetic.mp4`. Formen-Generator: `npm run kinetic shapes` (Recraft-API-Key nötig für neue Formen). Original-Beispiel: `content/kinetic-beispiel-byoa.json`.
+- **Remotion Bits** – [av/remotion-bits](https://github.com/av/remotion-bits) (MIT), als npm-Paket installiert. Beispiele finden: `npx remotion-bits find "typewriter terminal"`.
+
+Beide Skills liegen in `.claude/skills/` und werden von Claude Code in diesem Ordner automatisch erkannt.
+
 ## Szenentypen
 
 `hook` · `point` · `stat` · `terminal` · `list` · `cta` – siehe `src/types.ts`.

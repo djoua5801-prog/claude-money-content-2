@@ -15,5 +15,9 @@ Wenn der Nutzer z. B. „mach 10 neue Videos“ sagt:
    - Keine Einkommensversprechen, keine erfundenen Ergebnisse. Echte Demos statt Hype.
 4. `npm run videos` ausführen, dann Cover in `out/` prüfen.
 
+## Animations-Pakete
+- **Kinetic Typography** (`story.json`, `src/kinetic/`, `npm run kinetic`): Wort-für-Wort-Typo-Videos, z. B. als Intro oder eigenständiger Clip. Regeln im Skill `kinetic-storytelling` — nur die dort gelisteten Enum-Werte verwenden. Rendern: `npx remotion render src/index.ts KineticStory out/kinetic.mp4`. Recraft-Formen kosten Geld: nie `--force` ohne Rückfrage.
+- **Remotion Bits** (npm `remotion-bits`): fertige Bausteine wie `AnimatedText`, `AnimatedCounter`, `TypeWriter`, `CodeBlock`, `StaggeredMotion`, `Particles`, `Scene3D`. Für neue Szenentypen in `src/scenes/` zuerst passende Beispiele suchen (`npx remotion-bits find "<effekt>"`), siehe Skill `remotion-bits`. Projektfarben aus `brand/brand.json` statt der Bits-Standardfarben.
+
 ## Marke
 Farben/Schriften/Stimme in `brand/brand.json`. Keine Emojis im Video, kein Anthropic-Logo, „Claude“ nur beschreibend nennen.

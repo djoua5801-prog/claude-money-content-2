@@ -5,6 +5,12 @@ import { FPS, H, W } from "./theme";
 import type { TimedVideo } from "./types";
 // Wird von `npm run build:data` erzeugt (aus content/videos + ElevenLabs-Timings)
 import videos from "./generated/videos.json";
+// Kinetic Typography (aus tombrewsviews/BYOA, MIT) — story.json im Projektordner
+import { KineticStory } from "./kinetic/KineticStory";
+import { storySchema, storyDurationInFrames } from "./kinetic/schema";
+import storyData from "../story.json";
+
+const story = storySchema.parse(storyData);
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -20,5 +26,15 @@ export const RemotionRoot: React.FC = () => (
         defaultProps={{ video: v }}
       />
     ))}
+    <Composition
+      id="KineticStory"
+      component={KineticStory}
+      schema={storySchema}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={story}
+      calculateMetadata={({ props }) => ({ durationInFrames: storyDurationInFrames(props, 30) })}
+    />
   </>
 );

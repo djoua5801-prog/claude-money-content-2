@@ -1,0 +1,19 @@
+{
+  "fontSize": 190,
+  "fontFamily": "SpaceGrotesk",
+  "bgColor": "#0B0B0F",
+  "bgColor2": "#15151C",
+  "textColor": "#F4F4F0",
+  "accentColor": "#C6FF3D",
+  "accent2Color": "#8C8C99",
+  "glowIntensity": 0.4,
+  "background": { "kind": "gradient", "shaderStyle": "aurora", "motion": 0.4, "grain": 0 },
+  "beats": [
+    { "text": "Kein", "kind": "reveal", "durationInSeconds": 0.9, "easing": "power4.out", "enterDirection": "up", "exitKind": "drop", "dynamics": 0.7, "fontFamily": "RobotoFlex" },
+    { "text": "Schnitt.", "kind": "oscillate", "durationInSeconds": 1.3, "easing": "elastic", "enterDirection": "scale", "exitKind": "scatter", "dynamics": 0.8, "color": "#C6FF3D", "fontFamily": "RobotoFlex" },
+    { "text": "Kein", "kind": "reveal", "durationInSeconds": 0.9, "easing": "power4.out", "enterDirection": "left", "exitKind": "blur", "dynamics": 0.7, "fontFamily": "RobotoFlex" },
+    { "text": "Editor.", "kind": "reveal", "durationInSeconds": 1.3, "easing": "back.out", "enterDirection": "vertical-roll", "exitKind": "rotate", "dynamics": 0.8, "color": "#C6FF3D", "fontFamily": "RobotoFlex" },
+    { "text": "Nur", "kind": "reveal", "durationInSeconds": 0.9, "easing": "power3.out", "enterDirection": "down", "exitKind": "zoom", "dynamics": 0.6, "fontFamily": "RobotoFlex" },
+    { "text": "Code.", "kind": "cinema", "durationInSeconds": 2.2, "easing": "power3.inOut", "enterDirection": "scale", "exitKind": "none", "dynamics": 0.9, "color": "#C6FF3D", "fontFamily": "RobotoFlex" }
+  ]
+}
