@@ -36,6 +36,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 2. Seriennamen und Themenaufteilung mit dem Kollegen.
 
 ## Bekannte Probleme
+- ElevenLabs-Guthaben nach Lauf 2: ca. 1.800 von 10.000 Credits übrig (reicht für etwa zwei 45-Sekunden-Videos). Für den nächsten Lauf mit fünf Videos ist ein bezahlter Tarif oder der neue Monat nötig.
+- Modell `eleven_v3` (für Regie-Anweisungen wie [excited]) ist ungetestet.
 - v01–v05 haben noch kein vollständiges Themenblatt (Problem, Infowert, Tools, Demo, Wirkung fehlen als Felder); nachtragen, sobald Lauf 2 durch ist, ohne den Sprechtext zu ändern.
 - Die Recherche deckt bisher nur Claude Code ab; die neun weiteren Themenfelder sind noch nicht recherchiert.
 - ElevenLabs-Sprechfassung mit Betonungen/Pausen/Emotionen ist noch nicht umgesetzt.
@@ -51,6 +53,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 - (18:51) Vor jedem Lauf fragen: Länge, Anzahl, kommerziell oder informativ. E-Books immer mitdenken (`ebookBezug`). Hooks reißerisch (Thema + Claude Code, „ist tot, wenn …“, konkreter Betrag), danach gut informieren. Ton wie v03.
 
 - (18:58) Content-Strategie vorgegeben: `docs/CONTENT-STRATEGIE.md`. Kanal wird breiter als Claude Code: zehn Themenfelder rund um KI-Creator, Social Media und Online-Einkommen. Jedes neue Thema bekommt ein Themenblatt (Problem, Infowert, Tools, Demo, Wirkung).
+
+- (19:19) Rückmeldung zu Lauf 2: mehr Verbildlichung, mehr „wie macht man das / was braucht man“, Sprecher mit mehr Elan (Hook als Frage, z. B. „2.000 Euro pro Woche mit Claude Code?“). Umgesetzt für den nächsten Lauf: Szenen `flow`, `brauchst`, `vergleich` mit Symbolen; Regie-Anweisungen im Sprechtext; Stimm-Einstellungen lebhafter. Beim nächsten Lauf zusätzlich die Content-Strategie anwenden. v01–v05 aus Lauf 2 sind noch im alten Stil.
 
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).

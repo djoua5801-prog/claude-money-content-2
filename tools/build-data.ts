@@ -19,6 +19,9 @@ const estimate = (text: string): Word[] => {
     });
 };
 
+// Regie-Anweisungen in eckigen Klammern gehören nicht zum sichtbaren Text
+const clean = (t: string) => t.replace(/\[[^\]]*\]/g, " ").replace(/\s+/g, " ").trim();
+
 const out: TimedVideo[] = [];
 const dir = "content/videos";
 for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
@@ -30,11 +33,11 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
   const timing = fs.existsSync(timingPath) && fs.existsSync(`public/${audioFile}`) ? JSON.parse(fs.readFileSync(timingPath, "utf8")) : null;
   // Die Stimme wird nur benutzt, wenn sie zum aktuellen Skripttext gehört
   const hasAudio = !!timing && timing.hash === hash;
-  const words: Word[] = hasAudio ? timing.words : estimate(fullText);
+  const words: Word[] = hasAudio ? timing.words : estimate(clean(fullText));
   const status = hasAudio ? "♪ vertont      " : timing ? "! Text geändert" : spec.approved ? "✓ freigegeben  " : "✎ Entwurf      ";
 
   // Szenen über Wortanzahl auf die Wortliste abbilden
-  const counts = spec.scenes.map((s) => s.voice.trim().split(/\s+/).filter(Boolean).length);
+  const counts = spec.scenes.map((s) => clean(s.voice).split(/\s+/).filter(Boolean).length);
   const total = counts.reduce((a, b) => a + b, 0);
   const scale = words.length / total; // falls ElevenLabs anders trennt
   let idx = 0;

@@ -33,7 +33,13 @@ const toWords = (chars: string[], starts: number[], ends: number[]): Word[] => {
   let cur = "";
   let s = 0;
   let e = 0;
+  let inTag = false; // Regie-Anweisungen wie [begeistert] nicht als Wörter übernehmen
   chars.forEach((ch, i) => {
+    if (ch === "[") inTag = true;
+    if (inTag) {
+      if (ch === "]") inTag = false;
+      return;
+    }
     if (/\s/.test(ch)) {
       if (cur) words.push({ text: cur, start: s, end: e });
       cur = "";
@@ -53,8 +59,10 @@ for (const f of files) {
   if (only.length && !only.includes(spec.id)) continue;
   const audioPath = `public/audio/${spec.id}.mp3`;
   const timingPath = `content/timing/${spec.id}.json`;
-  const text = spec.scenes.map((s) => s.voice.trim()).join(" ");
-  const hash = createHash("sha1").update(text).digest("hex");
+  const raw = spec.scenes.map((s) => s.voice.trim()).join(" ");
+  // Regie-Anweisungen in [Klammern] versteht nur Eleven v3; bei anderen Modellen vor dem Senden entfernen
+  const text = brand.voice.model === "eleven_v3" ? raw : raw.replace(/\[[^\]]*\]/g, " ").replace(/\s+/g, " ").trim();
+  const hash = createHash("sha1").update(raw).digest("hex");
   if (!spec.approved) {
     console.log(`· ${spec.id} wartet auf Freigabe (npm run freigeben -- ${spec.id})`);
     continue;
@@ -95,6 +103,10 @@ for (const f of files) {
   fs.writeFileSync(audioPath, Buffer.from(data.audio_base64, "base64"));
   const a = data.alignment;
   const words = toWords(a.characters, a.character_start_times_seconds, a.character_end_times_seconds);
+  if (!words.length) {
+    console.error(`✗ ${spec.id}: Keine Zeitmarken erhalten (Modell ${brand.voice.model}). Audio nicht übernommen.`);
+    process.exit(1);
+  }
   fs.writeFileSync(timingPath, JSON.stringify({ hash, voiceId: VOICE, model: brand.voice.model, words }, null, 1));
   chars += text.length;
   const secs = words.at(-1)?.end ?? 0;

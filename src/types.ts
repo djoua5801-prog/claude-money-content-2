@@ -8,6 +8,9 @@ export type SceneVisual =
   | { type: "stat"; value: string; label: string }
   | { type: "terminal"; lines: string[]; title?: string }
   | { type: "list"; title?: string; items: string[] }
+  | { type: "flow"; title?: string; steps: { icon: string; label: string }[] } // Ablauf in Bildern: Symbol → Symbol → Symbol
+  | { type: "brauchst"; title?: string; items: { icon: string; label: string; note?: string }[] } // „Das brauchst du“ als Kacheln
+  | { type: "vergleich"; left: { title: string; icon?: string; items: string[] }; right: { title: string; icon?: string; items: string[] } } // z. B. Vorher / Nachher
   | { type: "cta"; headline: string; sub?: string };
 
 export type SceneSpec = SceneVisual & { voice: string };

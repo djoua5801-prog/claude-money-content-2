@@ -20,11 +20,12 @@
     "model": "eleven_multilingual_v2",
     "voiceId": "SET_IN_ENV",
     "settings": {
-      "stability": 0.45,
+      "stability": 0.3,
       "similarity_boost": 0.8,
-      "style": 0.25,
+      "style": 0.5,
       "use_speaker_boost": true
-    }
+    },
+    "hinweis": "Mehr Elan seit 15.11. (stability 0.30, style 0.50). Regie-Anweisungen in [eckigen Klammern] wirken nur mit model eleven_v3; bei anderen Modellen werden sie vor dem Senden entfernt."
   },
   "tone": "Direkt, ehrlich, kein Hype. Zeigt echte Ergebnisse statt Einkommensversprechen. Du-Form.",
   "mascot": false,

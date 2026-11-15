@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { BRAND, C, DISPLAY, FONT_BODY, FONT_MONO, SAFE } from "../theme";
 import type { TimedScene } from "../types";
 import { Dog } from "../Dog";
+import { Icon } from "./Icons";
 
 // Gemeinsamer Ein-Effekt: von unten hereinschieben + einblenden
 const useEnter = (delay = 0) => {
@@ -238,6 +239,98 @@ const ListItem: React.FC<{ delay: number; text: string }> = ({ delay, text }) =>
   );
 };
 
+// Ablauf in Bildern: Kacheln mit Symbol, die nacheinander aufleuchten
+const Flow: React.FC<{ s: Extract<TimedScene, { type: "flow" }> }> = ({ s }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const dur = (s.end - s.start) * fps;
+  const t = useEnter(0);
+  const per = (dur * 0.8) / s.steps.length;
+  return (
+    <Stage>
+      {s.title && (
+        <div style={{ ...t, ...DISPLAY, fontSize: 70, lineHeight: 1.05, marginBottom: 44 }}>
+          <Rich text={s.title} />
+        </div>
+      )}
+      <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+        {s.steps.map((st, i) => {
+          const p = spring({ frame: frame - (6 + i * per), fps, config: { damping: 16, stiffness: 150 } });
+          const active = frame >= 6 + i * per && (i === s.steps.length - 1 || frame < 6 + (i + 1) * per);
+          return (
+            <React.Fragment key={i}>
+              {i > 0 && <div style={{ width: 4, height: 34, marginLeft: 78, background: p > 0.5 ? C.accent : C.line }} />}
+              <div style={{ opacity: p, transform: `translateX(${(1 - p) * -60}px)`, display: "flex", alignItems: "center", gap: 30, background: C.surface, border: `3px solid ${active ? C.accent : C.line}`, borderRadius: 24, padding: "22px 28px", boxShadow: active ? `0 0 50px ${C.accent}33` : "none" }}>
+                <div style={{ flex: "none", width: 104, height: 104, borderRadius: 22, background: active ? C.accent : "#ffffff0d", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <Icon name={st.icon} size={70} color={active ? C.accentInk : C.text} />
+                </div>
+                <div style={{ ...DISPLAY, fontSize: 54, lineHeight: 1.1 }}>
+                  <Rich text={st.label} />
+                </div>
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    </Stage>
+  );
+};
+
+// „Das brauchst du“: Kacheln im Raster
+const Brauchst: React.FC<{ s: Extract<TimedScene, { type: "brauchst" }> }> = ({ s }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const dur = (s.end - s.start) * fps;
+  const t = useEnter(0);
+  const per = Math.min(20, (dur * 0.6) / s.items.length);
+  return (
+    <Stage>
+      <div style={{ ...t, ...DISPLAY, fontSize: 70, lineHeight: 1.05, marginBottom: 40 }}>
+        <Rich text={s.title ?? "Das brauchst du:"} />
+      </div>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        {s.items.map((it, i) => {
+          const p = spring({ frame: frame - (8 + i * per), fps, config: { damping: 14, stiffness: 160 } });
+          return (
+            <div key={i} style={{ opacity: p, transform: `scale(${0.8 + p * 0.2})`, background: C.surface, border: `2px solid ${C.line}`, borderRadius: 24, padding: "30px 26px", minHeight: 250 }}>
+              <Icon name={it.icon} size={84} color={C.accent} />
+              <div style={{ ...DISPLAY, fontSize: 46, lineHeight: 1.1, marginTop: 18 }}>
+                <Rich text={it.label} />
+              </div>
+              {it.note && <div style={{ fontSize: 30, color: C.muted, marginTop: 8, lineHeight: 1.25 }}>{it.note}</div>}
+            </div>
+          );
+        })}
+      </div>
+    </Stage>
+  );
+};
+
+// Zwei Spalten gegeneinander, die rechte hervorgehoben
+const Vergleich: React.FC<{ s: Extract<TimedScene, { type: "vergleich" }> }> = ({ s }) => {
+  const a = useEnter(0);
+  const b = useEnter(Math.round(((s.end - s.start) * 30) / 2.4));
+  const col = (side: typeof s.left, good: boolean, st: React.CSSProperties) => (
+    <div style={{ ...st, flex: 1, background: C.surface, border: `3px solid ${good ? C.accent : C.line}`, borderRadius: 24, padding: "28px 24px", boxShadow: good ? `0 0 60px ${C.accent}33` : "none" }}>
+      <Icon name={side.icon ?? (good ? "haken" : "kreuz")} size={76} color={good ? C.accent : C.muted} />
+      <div style={{ ...DISPLAY, fontSize: 50, lineHeight: 1.05, margin: "14px 0 18px", color: good ? C.accent : C.text }}>{side.title}</div>
+      {side.items.map((it, i) => (
+        <div key={i} style={{ fontSize: 34, lineHeight: 1.25, color: good ? C.text : C.muted, padding: "12px 0", borderTop: `2px solid ${C.line}` }}>
+          <Rich text={it} />
+        </div>
+      ))}
+    </div>
+  );
+  return (
+    <Stage>
+      <div style={{ display: "flex", gap: 22, alignItems: "stretch" }}>
+        {col(s.left, false, a)}
+        {col(s.right, true, b)}
+      </div>
+    </Stage>
+  );
+};
+
 const Cta: React.FC<{ s: Extract<TimedScene, { type: "cta" }> }> = ({ s }) => {
   const frame = useCurrentFrame();
   const a = useEnter(0);
@@ -277,6 +370,12 @@ export const SceneView: React.FC<{ scene: TimedScene; stepTotal: number }> = ({ 
       return <Terminal s={scene} />;
     case "list":
       return <List s={scene} />;
+    case "flow":
+      return <Flow s={scene} />;
+    case "brauchst":
+      return <Brauchst s={scene} />;
+    case "vergleich":
+      return <Vergleich s={scene} />;
     case "cta":
       return <Cta s={scene} />;
   }

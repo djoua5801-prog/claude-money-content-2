@@ -1,0 +1,26 @@
+{
+ "id": "v99",
+ "title": "BEISPIEL neuer Stil: 2.000 Euro pro Woche mit Claude Code",
+ "pillar": "Geld verdienen",
+ "approved": false,
+ "post": {"caption": "Beispiel", "ziel": "Kommentar", "verweis": "Beispiel", "pinnedComment": "Beispiel"},
+ "hashtags": ["claudecode"],
+ "scenes": [
+  {"type": "hook", "headline": "*2.000 Euro* pro Woche mit Claude Code? So *geht's!*", "voice": "[excited] Zweitausend Euro pro Woche mit Claude Code? So geht's!"},
+  {"type": "brauchst", "title": "Das brauchst du:", "items": [
+    {"icon": "terminal", "label": "Claude Code", "note": "baut die Website"},
+    {"icon": "web", "label": "Hosting-Konto", "note": "stellt sie online"},
+    {"icon": "lupe", "label": "Kartendienst", "note": "findet die Läden"},
+    {"icon": "mail", "label": "E-Mail-Adresse", "note": "für den ersten Kontakt"}],
+   "voice": "Du brauchst genau vier Dinge: Claude Code, ein Konto zum Veröffentlichen, einen Kartendienst und eine E-Mail-Adresse. Mehr nicht!"},
+  {"type": "flow", "title": "So gehst du vor:", "steps": [
+    {"icon": "lupe", "label": "Laden *ohne* gute Website finden"},
+    {"icon": "terminal", "label": "Demo mit *echtem Namen* bauen"},
+    {"icon": "mail", "label": "Link schicken"},
+    {"icon": "euro", "label": "*Festpreis* nennen"}],
+   "voice": "[confident] Schritt eins: Such einen Laden ohne gute Website. Schritt zwei: Bau mit Claude Code eine Demo mit seinem echten Namen. Schritt drei: Schick ihm den Link. Schritt vier: Nenn einen festen Preis."},
+  {"type": "vergleich", "left": {"title": "Agentur", "items": ["Wochen Wartezeit", "viele Abstimmungen"]}, "right": {"title": "Du", "items": ["Demo am *selben Tag*", "Kunde sieht sofort das Ergebnis"]},
+   "voice": "Und warum zahlt der Laden dafür? Eine Agentur braucht Wochen. Du zeigst die fertige Demo noch am selben Tag!"},
+  {"type": "cta", "headline": "Welchen Schritt zuerst?", "sub": "Schreib 1, 2, 3 oder 4", "voice": "[excited] Welchen Schritt soll ich dir genau zeigen? Schreib die Zahl in die Kommentare!"}
+ ]
+}
