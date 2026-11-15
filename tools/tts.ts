@@ -62,7 +62,10 @@ for (const f of files) {
   // "|" sind Einblend-Marker fürs Bild und werden nie gesprochen
   const raw = spec.scenes.map((s) => s.voice.trim()).join(" ").replace(/\s*\|\s*/g, " ").replace(/\s+/g, " ").trim();
   // Regie-Anweisungen in [Klammern] versteht nur Eleven v3; bei anderen Modellen vor dem Senden entfernen
-  const text = brand.voice.model === "eleven_v3" ? raw : raw.replace(/\[[^\]]*\]/g, " ").replace(/\s+/g, " ").trim();
+  // Pro Video kann ein eigenes Modell samt Einstellungen gesetzt werden ("stimme" im Skript), sonst gilt brand.json
+  const model = spec.stimme?.model ?? brand.voice.model;
+  const settings = spec.stimme?.settings ?? brand.voice.settings;
+  const text = model === "eleven_v3" ? raw : raw.replace(/\[[^\]]*\]/g, " ").replace(/\s+/g, " ").trim();
   const hash = createHash("sha1").update(raw).digest("hex");
   if (!spec.approved) {
     console.log(`· ${spec.id} wartet auf Freigabe (npm run freigeben -- ${spec.id})`);
@@ -85,7 +88,7 @@ for (const f of files) {
   const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE}/with-timestamps?output_format=mp3_44100_128`, {
     method: "POST",
     headers: { "xi-api-key": KEY, "Content-Type": "application/json" },
-    body: JSON.stringify({ text, model_id: brand.voice.model, language_code: "de", voice_settings: brand.voice.settings }),
+    body: JSON.stringify({ text, model_id: model, language_code: "de", voice_settings: settings }),
   });
   if (!res.ok) {
     const body = await res.text();
@@ -101,14 +104,14 @@ for (const f of files) {
   };
   fs.mkdirSync("public/audio", { recursive: true });
   fs.mkdirSync("content/timing", { recursive: true });
-  fs.writeFileSync(audioPath, Buffer.from(data.audio_base64, "base64"));
   const a = data.alignment;
-  const words = toWords(a.characters, a.character_start_times_seconds, a.character_end_times_seconds);
+  const words = a ? toWords(a.characters, a.character_start_times_seconds, a.character_end_times_seconds) : [];
   if (!words.length) {
-    console.error(`✗ ${spec.id}: Keine Zeitmarken erhalten (Modell ${brand.voice.model}). Audio nicht übernommen.`);
+    console.error(`✗ ${spec.id}: Keine Zeitmarken erhalten (Modell ${model}). Audio nicht übernommen. Bitte diese Meldung weitergeben.`);
     process.exit(1);
   }
-  fs.writeFileSync(timingPath, JSON.stringify({ hash, voiceId: VOICE, model: brand.voice.model, words }, null, 1));
+  fs.writeFileSync(audioPath, Buffer.from(data.audio_base64, "base64"));
+  fs.writeFileSync(timingPath, JSON.stringify({ hash, voiceId: VOICE, model, words }, null, 1));
   chars += text.length;
   const secs = words.at(-1)?.end ?? 0;
   console.log(`✓ ${spec.id}: ${secs.toFixed(1)} s${secs < 61 ? "  (unter 61 s – Skript etwas verlängern, falls über 1 Minute nötig)" : ""}`);

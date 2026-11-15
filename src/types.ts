@@ -34,6 +34,7 @@ export type VideoSpec = {
   demo?: string; // praktische Demonstration oder "keine" mit Grund
   wirkung?: "Reichweite" | "Vertrauen" | "Monetarisierung";
   belege?: string; // eigener Test · belegte Tatsache · Vermutung
+  stimme?: { model: string; settings: Record<string, number | boolean> }; // eigenes Stimm-Modell nur für dieses Video
   zielSekunden?: number;
   ebookBezug?: string; // zu welchem E-Book / Angebot dieses Video hinführt
   hooks?: { text: string; bewertung: number; grund: string }[];

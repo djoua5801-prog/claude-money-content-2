@@ -1,0 +1,168 @@
+{
+ "id": "v14",
+ "title": "Keine Ideen mehr für Videos?",
+ "pillar": "Social-Media-Produktion",
+ "approved": false,
+ "zielSekunden": 60,
+ "stimme": {
+  "model": "eleven_v3",
+  "settings": {
+   "stability": 0.0,
+   "similarity_boost": 0.8,
+   "use_speaker_boost": true
+  }
+ },
+ "problem": "Wer regelmäßig posten will, sitzt oft vor dem leeren Blatt und postet am Ende gar nicht.",
+ "infowert": "Der Zuschauer kennt drei kopierbare Prompts (Ideen, Skript, Karussell) und einen einfachen Wochenablauf.",
+ "tools": [
+  "Claude Code"
+ ],
+ "demo": "Die drei Prompts stehen wörtlich im Bild; sie stammen aus dem Gratis-PDF (Prompts 6, 7 und 9).",
+ "wirkung": "Monetarisierung",
+ "belege": "Eigener Bestand: Prompts aus dem Gratis-PDF. Keine Ergebnis-Zahlen.",
+ "ebookBezug": "Gratis-PDF, danach E-Book 3 (Content-Maschine)",
+ "hooks": [
+  {
+   "text": "Keine Ideen mehr für Videos? Drei Prompts – und Claude Code plant dir die ganze Woche!",
+   "bewertung": 9,
+   "grund": "Problem als Frage + Zahl + Produktname + konkretes Ergebnis"
+  },
+  {
+   "text": "Das leere Blatt ist tot. Diese drei Prompts füllen deinen Content-Plan!",
+   "bewertung": 8,
+   "grund": "Muster „ist tot“, schon mehrfach benutzt"
+  },
+  {
+   "text": "Du postest nichts, weil dir nichts einfällt? Kopier dir diese drei Prompts!",
+   "bewertung": 8,
+   "grund": "spricht direkt an, etwas lang"
+  },
+  {
+   "text": "Content-Planung mit Claude Code: drei Prompts, eine Woche Videos.",
+   "bewertung": 8,
+   "grund": "Muster Thema + Produktname, sachlicher"
+  },
+  {
+   "text": "So plane ich meine Videos in zehn Minuten.",
+   "bewertung": 6,
+   "grund": "persönlich, aber Zeitangabe nicht belegt"
+  }
+ ],
+ "post": {
+  "caption": "Drei Prompts gegen das leere Blatt: Ideen, Skript und Karussell – plus ein einfacher Wochenablauf.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Alle Prompts zum Kopieren gibt es gratis als PDF – Link in meiner Bio.",
+  "pinnedComment": "Die drei Prompts aus dem Video stehen im Gratis-PDF (Nummer 6, 7 und 9) – Link in Bio. Zu welchem Thema brauchst du Ideen?"
+ },
+ "hashtags": [
+  "contentideen",
+  "claudecode",
+  "contentplanung",
+  "kitools",
+  "socialmediatipps"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Keine Ideen mehr für *Videos?*",
+   "voice": "[excited] Keine Ideen mehr für Videos? Drei Prompts – und Claude Code plant dir die ganze Woche!"
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "tag": "Das Problem",
+   "headline": "Jeden Tag das *leere Blatt*",
+   "sub": "Und am Ende postest du gar nichts.",
+   "voice": "[sighs] Du sitzt vor dem leeren Blatt. Jeden Tag neu. Und am Ende postest du gar nichts."
+  },
+  {
+   "type": "brauchst",
+   "title": "Das brauchst du:",
+   "items": [
+    {
+     "icon": "terminal",
+     "label": "Claude Code",
+     "note": "schreibt für dich"
+    },
+    {
+     "icon": "stift",
+     "label": "Dein Thema",
+     "note": "ein Satz reicht"
+    },
+    {
+     "icon": "kunde",
+     "label": "Deine Zielgruppe",
+     "note": "für wen ist es?"
+    }
+   ],
+   "voice": "[confident] Du brauchst nur drei Dinge: Claude Code, dein Thema in einem Satz und deine Zielgruppe. Mehr brauchst du wirklich nicht!"
+  },
+  {
+   "type": "terminal",
+   "title": "Prompt 1 · Ideen",
+   "lines": [
+    "> Gib mir 10 Ideen für Kurzvideos",
+    "  zum Thema [Thema] für [Zielgruppe].",
+    "  Pro Idee: Titel, erster Satz,",
+    "  Kernaussage."
+   ],
+   "voice": "Prompt eins – die Ideen: Gib mir zehn Ideen für Kurzvideos zu meinem Thema. Pro Idee: Titel, erster Satz, Kernaussage."
+  },
+  {
+   "type": "terminal",
+   "title": "Prompt 2 · Skript",
+   "lines": [
+    "> Schreib ein Skript für 35 Sekunden",
+    "  zu Idee [Nummer]. Erster Satz:",
+    "  eine überraschende Aussage."
+   ],
+   "voice": "Prompt zwei – das Skript: Schreib ein Skript für fünfunddreißig Sekunden. [excited] Und der erste Satz muss überraschen!"
+  },
+  {
+   "type": "terminal",
+   "title": "Prompt 3 · Karussell",
+   "lines": [
+    "> Mach aus dem Skript ein Karussell",
+    "  mit 6 Bildern im Hochformat."
+   ],
+   "voice": "Prompt drei – die Zweitverwertung: Mach aus dem Skript ein Karussell mit sechs Bildern. [excited] Ein Thema, zwei Posts!"
+  },
+  {
+   "type": "flow",
+   "title": "So läuft deine Woche:",
+   "steps": [
+    {
+     "icon": "kalender",
+     "label": "Montag: Ideen *sammeln*"
+    },
+    {
+     "icon": "stift",
+     "label": "Skripte *schreiben* lassen"
+    },
+    {
+     "icon": "haken",
+     "label": "Lesen und *aussortieren*"
+    },
+    {
+     "icon": "rakete",
+     "label": "*Posten*"
+    }
+   ],
+   "voice": "[confident] So läuft deine Woche: |Montag sammelst du Ideen. |Dann lässt du die Skripte schreiben. |Du liest alles und sortierst aus. |Und dann wird gepostet – jeden Tag ein Video!"
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "tag": "Der Haken",
+   "headline": "Ohne *dich* klingt es austauschbar",
+   "sub": "Eigene Beispiele machen den Unterschied.",
+   "voice": "Der Haken? Ohne deine eigenen Beispiele klingt alles austauschbar. Also schreib sie dazu – ein Satz pro Video reicht!"
+  },
+  {
+   "type": "cta",
+   "headline": "Alle Prompts *gratis.*",
+   "sub": "Link in Bio",
+   "voice": "[excited] Alle Prompts zum Kopieren gibt es gratis als PDF! Den Link findest du in meiner Bio."
+  }
+ ]
+}
