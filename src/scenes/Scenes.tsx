@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, FONT_DISPLAY, FONT_MONO, SAFE } from "../theme";
 import type { TimedScene } from "../types";
+import { Dog } from "../Dog";
 
 // Gemeinsamer Ein-Effekt: von unten hereinschieben + einblenden
 const useEnter = (delay = 0) => {
@@ -111,9 +112,9 @@ const Terminal: React.FC<{ s: Extract<TimedScene, { type: "terminal" }> }> = ({ 
   const cursorOn = Math.floor(frame / 15) % 2 === 0;
   return (
     <Stage>
-      <div style={{ ...a, background: C.surface, borderRadius: 28, border: `2px solid #26262f`, overflow: "hidden" }}>
-        <div style={{ display: "flex", gap: 14, padding: "26px 30px", borderBottom: "2px solid #26262f" }}>
-          {["#3a3a46", "#3a3a46", "#3a3a46"].map((c, i) => (
+      <div style={{ ...a, background: C.surface, borderRadius: 28, border: `2px solid #1E2F5C`, overflow: "hidden" }}>
+        <div style={{ display: "flex", gap: 14, padding: "26px 30px", borderBottom: "2px solid #1E2F5C" }}>
+          {["#2C4078", "#2C4078", "#2C4078"].map((c, i) => (
             <div key={i} style={{ width: 22, height: 22, borderRadius: 11, background: c }} />
           ))}
         </div>
@@ -193,6 +194,9 @@ const Cta: React.FC<{ s: Extract<TimedScene, { type: "cta" }> }> = ({ s }) => {
           {s.sub}
         </div>
       )}
+      <div style={{ ...useEnter(14), alignSelf: "flex-end", marginTop: 20, marginBottom: -120 }}>
+        <Dog size={330} mood="happy" />
+      </div>
     </Stage>
   );
 };

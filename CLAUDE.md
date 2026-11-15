@@ -29,7 +29,7 @@ Szene 1 wird automatisch als Kinetic-Typografie gerendert (`src/KineticHook.tsx`
 Offizielle Skills aus `remotion-dev/skills` liegen in `.claude/skills/` (`remotion-best-practices` ist der Einstieg). Vor neuem Remotion-Code dort nachsehen.
 
 ## Figur
-Entwürfe als SVG in `brand/figur/` (blink, brace, caret; je neutral/happy/blink). Die Auswahl steht noch aus – erst nach Entscheidung des Nutzers in Szenen einbauen. Eigene Figur, keine Nachbildung fremder Maskottchen.
+Eigener Roboterhund in Weiß-Blau: animierte Komponente `src/Dog.tsx` (Props `size`, `mood`, `talking`), statische SVGs in `brand/figur/`. Erscheint in der CTA-Szene und auf der Landingpage. Eigenes Design – nicht an fremde Maskottchen oder Produkte angleichen.
 
 ## Marke
 Farben/Schriften/Stimme in `brand/brand.json`. Keine Emojis im Video, kein Anthropic-Logo, „Claude“ nur beschreibend nennen.
