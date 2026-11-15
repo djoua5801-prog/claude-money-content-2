@@ -59,7 +59,7 @@ export const buildHookStory = (scene: TimedScene, words: Word[]): Story => {
       startSeconds: start,
       durationInSeconds: dur,
       animateInPortion: Math.min(0.6, 0.25 / dur + 0.15),
-      animateOutPortion: isLast ? 0 : 0.15,
+      animateOutPortion: isLast ? 0.08 : 0.15,
       easing: c.accent ? "back.out" : "power4.out",
       enterDirection: ENTER[i % ENTER.length],
       exitKind: isLast ? "none" : EXIT[i % EXIT.length],
