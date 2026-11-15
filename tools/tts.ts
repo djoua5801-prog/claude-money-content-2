@@ -66,8 +66,12 @@ for (const f of files) {
     },
   );
   if (!res.ok) {
-    console.error(`✗ ${spec.id}: ${res.status} ${await res.text()}`);
-    continue;
+    const body = await res.text();
+    console.error(`✗ ${spec.id}: ${res.status} ${body}`);
+    if (body.includes("voice_not_found")) console.error("  → ELEVENLABS_VOICE_ID in .env ist keine gültige Voice-ID (ca. 20 Zeichen, in ElevenLabs unter Voices → ⋯ → Copy voice ID).");
+    if (res.status === 401) console.error("  → ELEVENLABS_API_KEY in .env ist ungültig.");
+    console.error("Abbruch: Es wird nichts gerendert, solange die Stimme fehlt.");
+    process.exit(1);
   }
   const data = (await res.json()) as {
     audio_base64: string;
