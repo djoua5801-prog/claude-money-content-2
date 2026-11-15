@@ -29,5 +29,11 @@
   },
   "tone": "Direkt, ehrlich, kein Hype. Zeigt echte Ergebnisse statt Einkommensversprechen. Du-Form.",
   "mascot": false,
-  "kicker": "CLAUDE-CODE"
+  "kicker": "CLAUDE-CODE",
+  "sfx": {
+    "enabled": true,
+    "volume": 0.6,
+    "hinweis": "Effekt-Töne: Wischen beim Szenenwechsel, Schlag bei Kapitelkarten, Klick bei Listenpunkten, Glocke am Schluss. volume 0–1."
+  },
+  "uebergang": "slide"
 }

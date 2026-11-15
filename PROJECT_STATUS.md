@@ -56,6 +56,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 
 - (19:19) Rückmeldung zu Lauf 2: mehr Verbildlichung, mehr „wie macht man das / was braucht man“, Sprecher mit mehr Elan (Hook als Frage, z. B. „2.000 Euro pro Woche mit Claude Code?“). Umgesetzt für den nächsten Lauf: Szenen `flow`, `brauchst`, `vergleich` mit Symbolen; Regie-Anweisungen im Sprechtext; Stimm-Einstellungen lebhafter. Beim nächsten Lauf zusätzlich die Content-Strategie anwenden. v01–v05 aus Lauf 2 sind noch im alten Stil.
 
+- (19:48) Folien-Übergänge und Effekt-Töne eingebaut und am Beispielvideo geprüft (Übergang im Bild, Tonspur vorhanden). Gilt für alle künftigen Renders; v01–v05 bekommen sie durch erneutes Rendern ohne neue Stimme.
+
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).
 2. Phase 1: Research-Dateien anlegen, erste Recherche zu viralen Videos und Hooks, wöchentliche geplante Aufgabe.

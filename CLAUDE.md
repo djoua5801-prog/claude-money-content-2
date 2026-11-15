@@ -95,6 +95,11 @@ Der Sprecher informiert mit Schwung, nicht wie ein Vorleser. Das `voice`-Feld is
 - Symbole aus `src/scenes/Icons.tsx` (text, mikro, video, bild, web, euro, uhr, ordner, terminal, handy, kunde, rakete, haken, kreuz, zahnrad, stift, kalender, mail, buch, lupe). Fehlt eines, dort ergänzen. Keine Marken-Logos.
 - Vorlage zum Abschauen: `content/entwuerfe/beispiel-neuer-stil.json`.
 
+## Übergänge und Effekt-Töne (15.11. 19:48)
+- **Folien-Übergang:** Jede Szene schiebt von rechts herein und nach links hinaus (`"uebergang": "slide"` in `brand/brand.json`). Kapitelkarten wischen von oben auf.
+- **Effekt-Töne** (`src/Sfx.tsx`, Dateien in `public/sfx/`, selbst erzeugt, keine Lizenzfragen): Anschwellen am Anfang, Wischen bei jedem Szenenwechsel, Schlag bei Kapitelkarten, Klick bei jedem Listen-, Ablauf- und Kachel-Punkt, Glocke bei Zahl und Schluss. An/aus und Lautstärke unter `"sfx"` in `brand/brand.json`.
+- Beides wirkt beim Rendern und kostet keine ElevenLabs-Credits. Hintergrundmusik gibt es noch nicht.
+
 ## Stil (gemeinsam mit dem Kollegen)
 Dunkler Grund, Amber als Akzent, Violett als Zweitfarbe, schmale fette Überschriften (Archivo), kleine Mono-Labels, Eck-Markierungen, Kapitelkarten vollflächig, Untertitel als dunkle Pille. Alles in `brand/brand.json`, `src/Explainer.tsx`, `src/scenes/Scenes.tsx`. Stil nicht ohne Rückfrage ändern.
 

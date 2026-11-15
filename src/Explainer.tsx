@@ -1,8 +1,9 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Captions } from "./Captions";
 import { KineticHook } from "./KineticHook";
 import { SceneView } from "./scenes/Scenes";
+import { Sfx } from "./Sfx";
 import { BRAND, C, FONT_MONO, H, SAFE, W } from "./theme";
 import type { TimedVideo } from "./types";
 
@@ -51,6 +52,17 @@ const TopBar: React.FC<{ label: string }> = ({ label }) => {
   );
 };
 
+// Folien-Übergang: Szene schiebt von rechts herein und nach links hinaus
+const Slide: React.FC<{ frames: number; children: React.ReactNode }> = ({ frames, children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if ((BRAND as { uebergang?: string }).uebergang !== "slide") return <>{children}</>;
+  const inP = spring({ frame, fps, config: { damping: 22, stiffness: 190 } });
+  const outP = interpolate(frame, [frames - 6, frames], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = (1 - inP) * 900 - outP * 500;
+  return <AbsoluteFill style={{ transform: `translateX(${x}px)`, opacity: Math.min(1, inP * 1.4) * (1 - outP) }}>{children}</AbsoluteFill>;
+};
+
 export const Explainer: React.FC<{ video: TimedVideo }> = ({ video }) => {
   const { fps } = useVideoConfig();
   const stepTotal = video.scenes.filter((s) => s.type === "point" && !s.tag).length;
@@ -69,7 +81,19 @@ export const Explainer: React.FC<{ video: TimedVideo }> = ({ video }) => {
         const to = Math.round(s.end * fps);
         return (
           <Sequence key={i} from={from} durationInFrames={Math.max(1, to - from)}>
-            {i === 0 && kinetic ? <KineticHook scene={s} words={video.words} /> : <SceneView scene={s} stepTotal={stepTotal} />}
+            {i === 0 && kinetic ? (
+              <KineticHook scene={s} words={video.words} />
+            ) : i === 0 || s.type === "chapter" ? (
+              <SceneView scene={s} stepTotal={stepTotal} />
+            ) : (
+              <Slide frames={Math.max(1, to - from)}>
+                <SceneView scene={s} stepTotal={stepTotal} />
+              </Slide>
+            )}
+            {i === 0 && <Sfx name="riser" at={0} />}
+            {i > 0 && <Sfx name={s.type === "chapter" ? "impact" : "whoosh"} at={0} />}
+            {s.type === "cta" && <Sfx name="ding" at={12} />}
+            {s.type === "stat" && <Sfx name="ding" at={18} volume={0.6} />}
           </Sequence>
         );
       })}

@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { BRAND, C, DISPLAY, FONT_BODY, FONT_MONO, SAFE } from "../theme";
 import type { TimedScene } from "../types";
 import { Dog } from "../Dog";
+import { Sfx } from "../Sfx";
 import { Icon } from "./Icons";
 
 // Gemeinsamer Ein-Effekt: von unten hereinschieben + einblenden
@@ -217,7 +218,10 @@ const List: React.FC<{ s: Extract<TimedScene, { type: "list" }> }> = ({ s }) => 
       )}
       <Panel title="Checkliste" style={p}>
         {s.items.map((it, i) => (
-          <ListItem key={i} delay={10 + i * step} text={it} />
+          <React.Fragment key={i}>
+            <Sfx name="pop" at={10 + i * step} />
+            <ListItem delay={10 + i * step} text={it} />
+          </React.Fragment>
         ))}
       </Panel>
     </Stage>
@@ -259,6 +263,7 @@ const Flow: React.FC<{ s: Extract<TimedScene, { type: "flow" }> }> = ({ s }) => 
           const active = frame >= 6 + i * per && (i === s.steps.length - 1 || frame < 6 + (i + 1) * per);
           return (
             <React.Fragment key={i}>
+              <Sfx name="pop" at={6 + i * per} />
               {i > 0 && <div style={{ width: 4, height: 34, marginLeft: 78, background: p > 0.5 ? C.accent : C.line }} />}
               <div style={{ opacity: p, transform: `translateX(${(1 - p) * -60}px)`, display: "flex", alignItems: "center", gap: 30, background: C.surface, border: `3px solid ${active ? C.accent : C.line}`, borderRadius: 24, padding: "22px 28px", boxShadow: active ? `0 0 50px ${C.accent}33` : "none" }}>
                 <div style={{ flex: "none", width: 104, height: 104, borderRadius: 22, background: active ? C.accent : "#ffffff0d", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -288,6 +293,9 @@ const Brauchst: React.FC<{ s: Extract<TimedScene, { type: "brauchst" }> }> = ({ 
       <div style={{ ...t, ...DISPLAY, fontSize: 70, lineHeight: 1.05, marginBottom: 40 }}>
         <Rich text={s.title ?? "Das brauchst du:"} />
       </div>
+      {s.items.map((_, i) => (
+        <Sfx key={i} name="pop" at={8 + i * per} />
+      ))}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
         {s.items.map((it, i) => {
           const p = spring({ frame: frame - (8 + i * per), fps, config: { damping: 14, stiffness: 160 } });
