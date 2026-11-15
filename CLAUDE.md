@@ -1,6 +1,23 @@
 # Anweisungen für Claude Code in diesem Repo
 
-Projekt: automatisierte TikTok-Erklärvideos (Deutsch) zum Thema „Mit Claude Code Geld verdienen“, plus E-Books und Landingpage. Zwei Personen posten im selben Stil; die Videos sollen gleich aussehen und sich inhaltlich ergänzen.
+**Zuerst lesen:** `PROJECT_STATUS.md` (wo wir stehen) und `docs/MASTER-PROMPT.md` (Auftrag und Arbeitsweise des Nutzers). Bei jeder neuen Sitzung: Status lesen, mit den tatsächlichen Dateien vergleichen, kurz sagen, wo wir stehen, beim nächsten offenen Schritt weitermachen. Nach jedem abgeschlossenen Schritt `PROJECT_STATUS.md` aktualisieren.
+
+## Arbeitsweise (aus dem Master-Prompt)
+- Nur **eine** Aufgabe für den Nutzer gleichzeitig. Alles, was technisch selbst geht, selbst erledigen.
+- Erklären ohne Vorkenntnisse vorauszusetzen; Befehle zum Kopieren; genau sagen, welche Datei.
+- Nach jeder Umsetzung prüfen, ob sie funktioniert. Nie etwas als erledigt melden, das nicht ausgeführt und geprüft wurde.
+- Nach jeder abgeschlossenen Aktion diese Struktur: ✅ Erledigt · 📍 Aktueller Status · ➡️ Nächster Schritt · 🛠️ Was ich jetzt tun muss · ⏸️ Rückmeldung.
+- Ohne ausdrückliches Ja des Nutzers: keine kostenpflichtigen Buchungen, keine Veröffentlichungen, keine externen Nachrichten, nichts Unumkehrbares. Stimmen kosten Credits → nur freigegebene Skripte.
+- Keine erfundenen Einnahmen, Statistiken oder Erfolgsgeschichten; keine gefälschten Demos; fremde Skripte nie kopieren.
+- Zugangsdaten nur in `.env`, nie ins Repo, nie in den Chat.
+
+## Wo dieses Repo vom Master-Prompt abweicht (bewusst)
+- **Videolänge:** Master-Prompt nennt 30–45 s; der Nutzer hat danach „ab 60 Sekunden“ festgelegt. Bis er anders entscheidet, gilt ≥ 61 s (siehe Skript-Regeln).
+- **Untertitel:** Zeitmarken kommen direkt von ElevenLabs; Whisper wird nur gebraucht, wenn fremdes Audio (z. B. Bildschirmaufnahmen mit Ton) untertitelt werden soll.
+- **Ordner:** Skripte liegen in `content/videos/`, Stimmen in `public/audio/` + `content/timing/`, fertige Videos in `out/`, Vorlagen in `src/`. Der Status (Entwurf/freigegeben/vertont) steht im Skript selbst statt in getrennten Ordnern.
+- **Premiere Pro:** nicht angebunden. Remotion ist der Produktionsweg. Eine Anbindung kommt nur mit einer regulär lizenzierten Installation in Frage.
+
+Projekt: automatisierte Kurzvideos (Deutsch) für TikTok, Reels und Shorts rund um Claude Code, KI-Automatisierung und digitale Geschäftsmodelle, plus E-Books und Landingpage. Zwei Personen posten im selben Stil; die Videos sollen gleich aussehen und sich inhaltlich ergänzen.
 
 ## Ablauf – immer in dieser Reihenfolge
 1. **Skript schreiben** (`content/videos/vNN.json`, `"approved": false`). Keine Stimme, kein Render.
@@ -17,6 +34,8 @@ Regeln dazu:
 ## Skript-Regeln
 - Länge: **mindestens 61 Sekunden**, Ziel 65–70 s. Das sind bei dieser Stimme ca. 1.080–1.150 Zeichen Sprechtext (≈ 16,5 Zeichen/Sekunde). `npm run skripte` zeigt die Zeichenzahl.
 - Aufbau wie in v01–v10: `hook` → 3 Kapitel (`chapter` 01/02/03, abwechselnd `"alt": true`) mit je 1–2 Szenen → `cta`.
+- **Hook-Pflichtprozess:** vor jedem Skript `research/hook-patterns.md` lesen, mindestens fünf Hooks schreiben, jede 1–10 bewerten (Aufmerksamkeit, Neugier, Verständlichkeit, Glaubwürdigkeit, Zielgruppe, Viralität), die stärkste nehmen. Die fünf Hooks mit Bewertung im Skript unter `"hooks"` ablegen. Kein „Hallo zusammen“, kein „Heute zeige ich euch“.
+- Dramaturgie: Hook → Problem → Lösung → Beweis (echte Demo oder nachvollziehbares Ergebnis) → CTA.
 - Szene 1 ist immer `hook`: ein konkreter Satz; Akzent-Wörter in der `headline` mit `*Sternchen*`, letztes Akzent-Wort kurz (wird groß gezeigt).
 - `point`-Szenen werden als „Schritt n von N“ gezeigt; `num` fortlaufend.
 - Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
