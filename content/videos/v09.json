@@ -1,0 +1,14 @@
+{
+  "id": "v09",
+  "title": "Der größte Fehler am Anfang",
+  "pillar": "Mythen",
+  "caption": "Bauen ist leicht geworden. Verkaufen nicht.",
+  "hashtags": ["claudecode", "business", "fehler", "selbststaendig", "ki"],
+  "scenes": [
+    { "type": "hook", "kicker": "Fehler Nr. 1", "headline": "Der größte Fehler: *nur bauen*.", "voice": "Der größte Fehler, den ich bei Anfängern sehe: Sie bauen nur." },
+    { "type": "point", "num": 1, "headline": "Bauen ist *leicht* geworden.", "sub": "Mit Claude Code dauert es Stunden statt Wochen.", "voice": "Mit Claude Code ist Bauen leicht geworden. Stunden statt Wochen." },
+    { "type": "point", "num": 2, "headline": "Verkaufen *nicht*.", "sub": "Niemand kauft, was er nicht sieht.", "voice": "Verkaufen ist aber nicht leichter geworden. Niemand kauft etwas, das er nie zu sehen bekommt." },
+    { "type": "stat", "value": "50/50", "label": "Zeit fürs *Bauen* und fürs *Zeigen*", "voice": "Meine Regel: halbe Zeit bauen, halbe Zeit zeigen. Posten, Leute anschreiben, Feedback holen." },
+    { "type": "cta", "headline": "Was baust du gerade?", "sub": "Schreib's in die Kommentare", "voice": "Was baust du gerade? Schreib es in die Kommentare, ich schau es mir an." }
+  ]
+}

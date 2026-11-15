@@ -1,0 +1,14 @@
+{
+  "id": "v05",
+  "title": "Mythos: Du musst programmieren können",
+  "pillar": "Mythen",
+  "caption": "Was du wirklich können musst – und was nicht.",
+  "hashtags": ["claudecode", "ki", "mythos", "programmieren", "nocode"],
+  "scenes": [
+    { "type": "hook", "kicker": "Mythos", "headline": "„Dafür musst du *programmieren* können.“", "voice": "Dafür musst du programmieren können. Das höre ich ständig. Stimmt nur halb." },
+    { "type": "list", "title": "Was du *wirklich* brauchst:", "items": ["Klar beschreiben, was du willst", "Ergebnisse prüfen", "Geduld bei Fehlern"], "voice": "Was du wirklich brauchst: klar beschreiben, was du willst. Ergebnisse prüfen. Und Geduld, wenn mal etwas nicht klappt." },
+    { "type": "point", "num": 1, "headline": "Code *lesen* hilft.", "sub": "Schreiben musst du ihn nicht.", "voice": "Ehrlich gesagt: Ein bisschen Code lesen zu können hilft. Schreiben musst du ihn nicht." },
+    { "type": "stat", "value": "0 Zeilen", "label": "Code habe ich für *dieses Video* geschrieben", "voice": "Für dieses Video habe ich null Zeilen Code selbst geschrieben." },
+    { "type": "cta", "headline": "Die wichtigste Fähigkeit: *gute Prompts*.", "sub": "Gratis-Liste: Link in Bio", "voice": "Die wichtigste Fähigkeit sind gute Prompts. Meine besten bekommst du gratis über den Link in meiner Bio." }
+  ]
+}

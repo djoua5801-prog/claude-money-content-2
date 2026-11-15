@@ -1,0 +1,14 @@
+{
+  "id": "v10",
+  "title": "Was du am ersten Tag brauchst",
+  "pillar": "Grundlagen",
+  "caption": "Die komplette Start-Checkliste. Speichern für später.",
+  "hashtags": ["claudecode", "anfaenger", "ki", "setup", "checkliste"],
+  "scenes": [
+    { "type": "hook", "kicker": "Speichern", "headline": "Das brauchst du an *Tag 1*.", "voice": "Das brauchst du an Tag eins, wenn du mit Claude Code starten willst. Speicher dir das." },
+    { "type": "list", "title": "Die Basis:", "items": ["Claude-Abo oder API-Zugang", "Claude Code installiert", "Einen Ordner pro Projekt"], "voice": "Die Basis: ein Claude Abo oder API Zugang, Claude Code installiert und einen eigenen Ordner für jedes Projekt." },
+    { "type": "list", "title": "Für Websites:", "items": ["GitHub-Konto", "Vercel-Konto (gratis)"], "voice": "Für Websites: ein GitHub Konto und ein kostenloses Vercel Konto zum Veröffentlichen." },
+    { "type": "list", "title": "Für Videos:", "items": ["Remotion", "ElevenLabs für die Stimme"], "voice": "Für Videos: Remotion für die Animation und ElevenLabs für die Stimme." },
+    { "type": "cta", "headline": "Die Installation zeig ich dir *Schritt für Schritt*.", "sub": "Folgen", "voice": "Die Installation zeige ich dir im nächsten Video Schritt für Schritt. Folg mir." }
+  ]
+}

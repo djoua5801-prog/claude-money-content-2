@@ -1,0 +1,14 @@
+{
+  "id": "v04",
+  "title": "Was ist Claude Code überhaupt?",
+  "pillar": "Grundlagen",
+  "caption": "Claude Code in 40 Sekunden erklärt – für alle, die keine Programmierer sind.",
+  "hashtags": ["claudecode", "ki", "anthropic", "tech", "lernen"],
+  "scenes": [
+    { "type": "hook", "kicker": "In 40 Sekunden", "headline": "Claude Code ist *kein Chatbot*.", "voice": "Claude Code ist kein Chatbot. Und genau das ist der Unterschied, der Geld bringt." },
+    { "type": "point", "num": 1, "headline": "Ein Chatbot *antwortet*.", "sub": "Du kopierst, du klickst, du machst die Arbeit.", "voice": "Ein Chatbot antwortet dir. Danach kopierst du, klickst und machst die Arbeit selbst." },
+    { "type": "point", "num": 2, "headline": "Claude Code *arbeitet*.", "sub": "Legt Dateien an, führt Programme aus, baut fertige Projekte.", "voice": "Claude Code arbeitet selbst. Es legt Dateien an, führt Programme aus und baut fertige Projekte auf deinem Rechner." },
+    { "type": "terminal", "lines": ["> Erstelle 10 Instagram-Grafiken", "  aus meiner Preisliste", "✓ 10 Dateien in /grafiken"], "voice": "Du sagst, was du willst. Es erledigt die Schritte, bis das Ergebnis da ist." },
+    { "type": "cta", "headline": "Stell es dir vor wie einen *Mitarbeiter*.", "sub": "Folgen für mehr", "voice": "Stell es dir vor wie einen Mitarbeiter, der nie müde wird. Folg mir, ich zeig dir, was man damit verkaufen kann." }
+  ]
+}

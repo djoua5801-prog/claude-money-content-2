@@ -1,0 +1,15 @@
+{
+  "id": "v03",
+  "title": "Eine Website mit 3 Prompts",
+  "pillar": "Websites verkaufen",
+  "caption": "Von null zur fertigen Friseur-Website. Die Prompts stehen im Video.",
+  "hashtags": ["claudecode", "webdesign", "website", "ki", "freelancer"],
+  "scenes": [
+    { "type": "hook", "kicker": "Live-Test", "headline": "Eine komplette Website mit *3 Prompts*.", "voice": "Eine komplette Website mit nur drei Prompts. Ich zeig dir genau welche." },
+    { "type": "terminal", "lines": ["> Bau eine Website für Salon Mira,", "  Friseur in Köln. Modern, warm,", "  mit Preisliste und Terminbutton."], "voice": "Prompt eins: Ich beschreibe den Laden. Name, Stadt, Stil und was drauf soll." },
+    { "type": "terminal", "lines": ["> Mach die Startseite mobil", "  perfekt und füg Google-Maps", "  und Öffnungszeiten ein."], "voice": "Prompt zwei: mobil optimieren, Karte und Öffnungszeiten rein. Die meisten Kunden kommen übers Handy." },
+    { "type": "terminal", "lines": ["> Veröffentliche die Seite", "✓ Live unter salon-mira.vercel.app"], "voice": "Prompt drei: veröffentlichen. Die Seite ist live und der Kunde kann sie sofort ansehen." },
+    { "type": "stat", "value": "3 Prompts", "label": "statt *Wochen* mit einer Agentur", "voice": "Drei Prompts statt wochenlanger Abstimmung mit einer Agentur. Feinschliff kommt natürlich noch dazu." },
+    { "type": "cta", "headline": "Wie du sie *verkaufst*, zeig ich im nächsten Video.", "sub": "Folgen", "voice": "Wie du so eine Seite an echte Kunden verkaufst, zeige ich dir im nächsten Video." }
+  ]
+}

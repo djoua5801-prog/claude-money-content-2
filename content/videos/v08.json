@@ -1,0 +1,14 @@
+{
+  "id": "v08",
+  "title": "Skills: das Feature, das kaum einer nutzt",
+  "pillar": "Grundlagen",
+  "caption": "Skills = Claude einmal etwas beibringen, für immer nutzen.",
+  "hashtags": ["claudecode", "ki", "produktivitaet", "automatisierung", "tipps"],
+  "scenes": [
+    { "type": "hook", "kicker": "Unterschätzt", "headline": "Das Claude-Code-Feature, das *kaum einer* nutzt.", "voice": "Das Claude Code Feature, das kaum einer nutzt, und das alles verändert: Skills." },
+    { "type": "point", "num": 1, "headline": "Ein Skill ist eine *Anleitung*.", "sub": "Einmal schreiben – Claude hält sich jedes Mal dran.", "voice": "Ein Skill ist eine Anleitung, die du einmal schreibst. Claude hält sich danach jedes Mal daran." },
+    { "type": "list", "title": "Zum Beispiel:", "items": ["Deine Markenfarben + Schriften", "Dein Video-Stil", "Deine Kunden-Angebote"], "voice": "Zum Beispiel deine Markenfarben, dein Video-Stil oder wie deine Angebote für Kunden aussehen sollen." },
+    { "type": "stat", "value": "1 Mal", "label": "erklären statt *jedes Mal* neu", "voice": "Du erklärst es einmal, statt jedes Mal von vorne." },
+    { "type": "cta", "headline": "Meine Skills zeig ich dir *einzeln*.", "sub": "Folgen", "voice": "Meine wichtigsten Skills zeige ich dir in den nächsten Videos einzeln. Folg mir." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Arbeitstitel: Code & Cash",
+  "colors": {
+    "bg": "#0B0B0F",
+    "surface": "#15151C",
+    "text": "#F4F4F0",
+    "muted": "#8C8C99",
+    "accent": "#C6FF3D",
+    "accentInk": "#0B0B0F"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "mono": "JetBrains Mono"
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "voiceId": "SET_IN_ENV",
+    "settings": { "stability": 0.45, "similarity_boost": 0.8, "style": 0.25, "use_speaker_boost": true }
+  },
+  "tone": "Direkt, ehrlich, kein Hype. Zeigt echte Ergebnisse statt Einkommensversprechen. Du-Form."
+}

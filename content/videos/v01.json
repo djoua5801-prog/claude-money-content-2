@@ -1,0 +1,14 @@
+{
+  "id": "v01",
+  "title": "Dieses Video hat kein Mensch geschnitten",
+  "pillar": "Videos automatisieren",
+  "caption": "Skript, Stimme, Schnitt, Untertitel – alles aus einem System. So funktioniert's 👇",
+  "hashtags": ["claudecode", "ki", "automatisierung", "contentcreator", "nebeneinkommen"],
+  "scenes": [
+    { "type": "hook", "kicker": "Ehrlich jetzt", "headline": "Dieses Video hat *kein Mensch* geschnitten.", "voice": "Dieses Video hat kein Mensch geschnitten. Kein Schnittprogramm, kein Editor." },
+    { "type": "terminal", "lines": ["> Mach aus Skript 01 ein TikTok-Video", "✓ Voiceover erstellt", "✓ 6 Szenen animiert", "✓ Untertitel synchron", "✓ out/v01.mp4"], "voice": "Ich gebe Claude Code einen einzigen Auftrag. Es schreibt das Skript, holt die Stimme, animiert jede Szene und setzt die Untertitel." },
+    { "type": "list", "title": "Das System:", "items": ["*Claude Code* steuert alles", "*Remotion* baut die Animation", "*ElevenLabs* liefert die Stimme"], "voice": "Dahinter stecken drei Werkzeuge: Claude Code als Gehirn, Remotion für die Animation und ElevenLabs für die Stimme." },
+    { "type": "stat", "value": "10 Videos", "label": "aus *einem* Befehl", "voice": "Und statt einem Video mache ich so zehn auf einmal." },
+    { "type": "cta", "headline": "Ich zeig dir das *ganze Setup*.", "sub": "Folgen für Teil 2", "voice": "In den nächsten Videos zeige ich dir das komplette Setup. Folg mir, damit du es nicht verpasst." }
+  ]
+}

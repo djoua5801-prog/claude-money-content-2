@@ -1,0 +1,14 @@
+{
+  "id": "v07",
+  "title": "30 Videos aus einem Prompt",
+  "pillar": "Content-Maschine",
+  "caption": "Ein Monat Content an einem Nachmittag. So ist das System aufgebaut.",
+  "hashtags": ["claudecode", "contentstrategie", "automatisierung", "tiktokgrowth", "ki"],
+  "scenes": [
+    { "type": "hook", "kicker": "Content-Maschine", "headline": "Ein Monat Content an *einem* Nachmittag.", "voice": "Ein ganzer Monat Content an einem einzigen Nachmittag. So baue ich das." },
+    { "type": "list", "title": "Die Pipeline:", "items": ["Ideen-Liste", "Skripte", "KI-Stimme", "Animation + Untertitel", "Fertige MP4s"], "voice": "Die Pipeline: eine Ideen-Liste, daraus Skripte, dann die KI-Stimme, dann Animation mit Untertiteln, am Ende fertige Videos." },
+    { "type": "terminal", "lines": ["> Nimm die nächsten 30 Ideen", "  und mach daraus Videos", "✓ 30 Skripte", "✓ 30 Voiceovers", "✓ 30 Videos in /out"], "voice": "Und gestartet wird das Ganze mit einem einzigen Auftrag an Claude Code." },
+    { "type": "point", "num": 1, "headline": "Du machst nur noch die *Freigabe*.", "sub": "Durchsehen, aussortieren, posten.", "voice": "Deine Arbeit ist nur noch die Freigabe. Durchsehen, Schlechtes aussortieren, posten." },
+    { "type": "cta", "headline": "Das ganze System gibt's als *E-Book*.", "sub": "Link in Bio", "voice": "Das komplette System mit allen Vorlagen erkläre ich in meinem E-Book. Link in der Bio." }
+  ]
+}

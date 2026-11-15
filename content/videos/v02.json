@@ -1,0 +1,14 @@
+{
+  "id": "v02",
+  "title": "3 Wege, mit Claude Code Geld zu verdienen",
+  "pillar": "Geld verdienen",
+  "caption": "Kein Hype, keine 10k-Versprechen – drei Wege, die real funktionieren. Welchen willst du zuerst sehen?",
+  "hashtags": ["claudecode", "geldverdienen", "ki", "selbststaendig", "sidehustle"],
+  "scenes": [
+    { "type": "hook", "kicker": "Ohne Programmieren", "headline": "3 Wege, mit *Claude Code* Geld zu verdienen.", "voice": "Drei Wege, mit Claude Code Geld zu verdienen. Ohne dass du programmieren kannst." },
+    { "type": "point", "num": 1, "headline": "Websites für *lokale Läden*", "sub": "Friseur, Café, Handwerker – viele haben keine gute Seite.", "voice": "Erstens: Websites für lokale Läden. Friseure, Cafés, Handwerker. Viele haben keine oder eine furchtbare Website." },
+    { "type": "point", "num": 2, "headline": "Kurzvideos für *Firmen*", "sub": "Erklärvideos, Produktclips, Social-Media-Serien.", "voice": "Zweitens: Kurzvideos für Firmen. Erklärvideos und Social-Media-Clips, automatisch produziert, so wie dieses hier." },
+    { "type": "point", "num": 3, "headline": "Eigene *digitale Produkte*", "sub": "E-Books, Vorlagen, kleine Tools.", "voice": "Drittens: eigene digitale Produkte. E-Books, Vorlagen oder kleine Tools, die du einmal baust und oft verkaufst." },
+    { "type": "cta", "headline": "Welchen Weg zuerst?", "sub": "Schreib 1, 2 oder 3", "voice": "Welchen Weg soll ich dir zuerst Schritt für Schritt zeigen? Schreib eins, zwei oder drei in die Kommentare." }
+  ]
+}

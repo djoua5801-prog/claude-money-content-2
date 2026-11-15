@@ -1,0 +1,14 @@
+{
+  "id": "v06",
+  "title": "So verkaufst du Websites an lokale Läden",
+  "pillar": "Websites verkaufen",
+  "caption": "Der Trick: Bau die Seite, BEVOR du fragst.",
+  "hashtags": ["claudecode", "webdesign", "kundengewinnung", "freelancer", "selbststaendig"],
+  "scenes": [
+    { "type": "hook", "kicker": "Kundengewinnung", "headline": "Bau die Website, *bevor* du fragst.", "voice": "Der beste Trick, um Websites zu verkaufen: Bau sie, bevor du überhaupt fragst." },
+    { "type": "point", "num": 1, "headline": "Läden mit *schlechter* Website finden", "sub": "Google Maps → Website anklicken → veraltet?", "voice": "Schritt eins: Such auf Google Maps Läden in deiner Stadt mit veralteter oder gar keiner Website." },
+    { "type": "point", "num": 2, "headline": "Mit Claude Code eine *Demo* bauen", "sub": "Echter Name, echte Infos, echte Fotos vom Laden.", "voice": "Schritt zwei: Bau mit Claude Code eine Demo mit ihrem echten Namen und ihren echten Infos." },
+    { "type": "point", "num": 3, "headline": "Link schicken, *nicht* pitchen", "sub": "„Ich hab das mal für euch gebaut – gefällt's?“", "voice": "Schritt drei: Schick einfach den Link. Kein Verkaufsgespräch. Ich hab das mal für euch gebaut, gefällt es euch?" },
+    { "type": "cta", "headline": "Eine fertige Seite verkauft sich *selbst*.", "sub": "Folgen für die Nachricht-Vorlage", "voice": "Eine fertige Seite verkauft sich fast von selbst. Im nächsten Video bekommst du meine Nachricht-Vorlage." }
+  ]
+}
