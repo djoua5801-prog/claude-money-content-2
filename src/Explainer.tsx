@@ -53,7 +53,7 @@ const TopBar: React.FC<{ label: string }> = ({ label }) => {
 
 export const Explainer: React.FC<{ video: TimedVideo }> = ({ video }) => {
   const { fps } = useVideoConfig();
-  const stepTotal = video.scenes.filter((s) => s.type === "point").length;
+  const stepTotal = video.scenes.filter((s) => s.type === "point" && !s.tag).length;
   const kinetic = video.kineticHook === true && video.scenes[0]?.type === "hook";
   // Keine Untertitel während Kapitelkarten (und während eines Kinetic-Hooks)
   const hidden = video.scenes.filter((s, i) => s.type === "chapter" || (kinetic && i === 0));

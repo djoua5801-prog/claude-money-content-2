@@ -1,8 +1,36 @@
 {
  "id": "v03",
- "title": "Eine Website mit 3 Prompts",
+ "title": "Drei Prompts. Eine Website.",
  "pillar": "Websites verkaufen",
  "approved": false,
+ "zielSekunden": 45,
+ "hooks": [
+  {
+   "text": "Drei Prompts. Eine fertige Website. Ich zeige dir alle drei.",
+   "bewertung": 9,
+   "grund": "Zahl + Versprechen, das im Video eingelöst wird"
+  },
+  {
+   "text": "Kopier dir diese drei Prompts für deine erste Website.",
+   "bewertung": 8,
+   "grund": "Nutzen sofort klar, lädt zum Speichern ein"
+  },
+  {
+   "text": "Eine komplette Website mit nur drei Prompts.",
+   "bewertung": 8,
+   "grund": "stark, aber ohne Einlöse-Versprechen"
+  },
+  {
+   "text": "Du brauchst genau drei Prompts für eine Laden-Website.",
+   "bewertung": 7,
+   "grund": "sachlich"
+  },
+  {
+   "text": "Hör auf, einen einzigen riesigen Prompt zu schreiben.",
+   "bewertung": 7,
+   "grund": "Fehler-Hook, Thema erst spät klar"
+  }
+ ],
  "post": {
   "caption": "Von null zur fertigen Friseur-Website mit drei Prompts. Alle drei stehen im Video – zum Mitschreiben speichern.",
   "ziel": "Gratis-PDF",
@@ -19,75 +47,72 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Eine komplette Website mit nur *3 Prompts.*",
-   "voice": "Eine komplette Website mit nur drei Prompts. Ich zeige dir genau, welche das sind."
+   "headline": "Drei Prompts. Eine fertige *Website.*",
+   "voice": "Drei Prompts. Eine fertige Website. Ich zeige dir alle drei."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Ein Riesen-Prompt *reicht nicht*",
+   "sub": "Zu viel auf einmal – das Ergebnis wird beliebig.",
+   "voice": "Die meisten schreiben einen einzigen riesigen Prompt und wundern sich, warum das Ergebnis beliebig aussieht.",
+   "tag": "Das Problem"
   },
   {
    "type": "chapter",
    "num": 1,
-   "label": "Beschreiben",
+   "label": "Die drei Prompts",
    "alt": false,
-   "voice": "Prompt eins: beschreiben."
+   "voice": "So geht es besser."
   },
   {
    "type": "terminal",
    "lines": [
-    "> Bau eine Website für Salon Mira,",
-    "  Friseur in Köln. Modern, warm,",
-    "  mit Preisliste und Terminbutton."
+    "> Bau eine Website für [Laden],",
+    "  [Branche] in [Stadt]. Stil: [Stil].",
+    "  Mit Preisliste und Kontakt-Button."
    ],
-   "voice": "Im ersten Prompt beschreibe ich den Laden so, wie ich es einem Menschen erklären würde. Name, Stadt, Stil und was auf die Seite soll. Je genauer die Beschreibung, desto weniger muss ich später nachbessern."
-  },
-  {
-   "type": "chapter",
-   "num": 2,
-   "label": "Verbessern",
-   "alt": true,
-   "voice": "Prompt zwei: verbessern."
+   "voice": "Prompt eins: beschreiben. Name, Stadt, Stil und was auf die Seite soll.",
+   "title": "Prompt 1 · Beschreiben"
   },
   {
    "type": "terminal",
    "lines": [
     "> Mach die Seite fürs Handy perfekt",
-    "  und füg Karte und Öffnungszeiten ein.",
-    "✓ Mobile Ansicht angepasst",
-    "✓ Karte eingebunden"
+    "  und füg Karte und Öffnungszeiten ein."
    ],
-   "voice": "Im zweiten Prompt geht es ums Handy. Die meisten Kunden eines Friseurs suchen unterwegs. Also lasse ich die mobile Ansicht aufräumen und Karte und Öffnungszeiten einbauen."
-  },
-  {
-   "type": "chapter",
-   "num": 3,
-   "label": "Veröffentlichen",
-   "alt": false,
-   "voice": "Prompt drei: veröffentlichen."
+   "voice": "Prompt zwei: verbessern. Erst das Handy, dann Karte und Öffnungszeiten. Die meisten Kunden suchen unterwegs.",
+   "title": "Prompt 2 · Verbessern"
   },
   {
    "type": "terminal",
    "lines": [
-    "> Veröffentliche die Seite",
-    "✓ Live unter salon-mira.vercel.app"
+    "> Veröffentliche die Seite und erklär",
+    "  mir jeden Schritt."
    ],
-   "voice": "Der dritte Prompt bringt die Seite ins Internet. Claude Code führt mich durch die Schritte, und am Ende habe ich einen Link, den ich dem Laden sofort schicken kann."
+   "voice": "Prompt drei: veröffentlichen. Claude Code führt dich Schritt für Schritt bis zum fertigen Link.",
+   "title": "Prompt 3 · Veröffentlichen"
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Der Haken",
+   "alt": true,
+   "voice": "Der Haken."
   },
   {
    "type": "point",
-   "num": 1,
-   "headline": "Danach kommt der *Feinschliff*",
-   "sub": "Echte Fotos, echte Texte, Impressum – das bleibt Handarbeit.",
-   "voice": "Was danach noch fehlt, ist der Feinschliff. Echte Fotos vom Laden, die richtigen Preise, ein Impressum. Das bleibt Handarbeit, und genau dafür bezahlt dich der Kunde."
-  },
-  {
-   "type": "stat",
-   "value": "1 Nachmittag",
-   "label": "von der Idee bis zum *Link*",
-   "voice": "Rechne für dein erstes Projekt mit einem Nachmittag, von der Idee bis zum fertigen Link. Beim zweiten Mal geht es schon deutlich schneller."
+   "num": 2,
+   "headline": "Der Rest ist *Handarbeit*",
+   "sub": "Echte Fotos, richtige Preise, Impressum.",
+   "voice": "Echte Fotos, richtige Preise und das Impressum bleiben Handarbeit. Genau dafür bezahlt dich der Kunde. Plane dafür eine Stunde ein, bevor du die Seite jemandem zeigst.",
+   "tag": "Der Haken"
   },
   {
    "type": "cta",
-   "headline": "So *verkaufst* du die Seite.",
-   "sub": "Folgen für Teil 2",
-   "voice": "Wie du so eine Seite an einen echten Laden verkaufst, zeige ich dir im nächsten Video. Folg mir dafür."
+   "headline": "Die Prompts gibt's *gratis.*",
+   "sub": "Link in Bio",
+   "voice": "Alle Prompts zum Kopieren bekommst du gratis über den Link in meiner Bio."
   }
  ]
 }

@@ -9,8 +9,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 
 | Phase laut Master-Prompt | Stand | Geprüft wie |
 |---|---|---|
-| 1 Viral Research Agent | **fehlt** – nur `research/ideen-backlog.md` | Dateien |
-| 2 Viral Hook Engine | **fehlt** – Hooks bisher ohne 5er-Auswahl und Bewertung | Skripte |
+| 1 Viral Research Agent | **erste Runde erledigt** (15.11.) – vier Research-Dateien mit Quellen; wöchentliche Automatik fehlt noch | Dateien |
+| 2 Viral Hook Engine | **für v01–v05 erledigt** – je 5 Hooks bewertet, stärkster gewählt; v06–v10 offen | Skripte |
 | 3 Skript-Generator | **teilweise** – 10 Skripte (Entwurf, ~65–69 s, Kapitel-Aufbau); Dramaturgie Problem/Beweis noch nicht durchgängig | `npm run skripte` |
 | 4 ElevenLabs Voiceover | **läuft** – Stimme + Wort-Zeitmarken, eine Version pro Skript, nur nach Freigabe; Sprechregie (Pausen, Betonung) fehlt | 10 Stimmen auf dem PC erzeugt |
 | 5 Assets / echte Terminal-Demos | **fehlt** – Terminal-Szenen sind nachgebaut, keine echten Aufnahmen | Code |
@@ -54,5 +54,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 7. Phase 12: Funnel online (E-Mail-Tool, Impressum, Vercel), E-Book 1.
 8. Phase 11: Posting-Tool, 13: Wochen-Report.
 
+## Testlauf (vom Nutzer am 15.11. angesetzt)
+5 Videos, Ziel 45 s: v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
+
 ## Nächster Arbeitsschritt
-Phase 1 (Recherche) kann ohne den Nutzer starten. Für Skript-Überarbeitung (Phase 2) zuerst die Länge erfragen. Zweiter Lauf gesperrt bis Startsignal.
+Nutzer liest die 5 Skripte und startet den Testlauf. Danach: Kontrolle am echten Ton, dann wöchentliche Recherche automatisieren.

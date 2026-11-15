@@ -113,17 +113,17 @@ const Chapter: React.FC<{ s: Extract<TimedScene, { type: "chapter" }> }> = ({ s 
   );
 };
 
-const StepHead: React.FC<{ num: number; total: number; headline: string }> = ({ num, total, headline }) => {
+const StepHead: React.FC<{ num: number; total: number; headline: string; tag?: string }> = ({ num, total, headline, tag }) => {
   const a = useEnter(0);
   return (
     <div style={{ ...a, display: "flex", gap: 26, alignItems: "flex-start" }}>
-      <div style={{ ...DISPLAY, flex: "none", width: 84, height: 84, borderRadius: 18, background: C.accent, color: C.accentInk, fontSize: 56, display: "flex", alignItems: "center", justifyContent: "center", marginTop: 8 }}>
-        {num}
-      </div>
+      {!tag && (
+        <div style={{ ...DISPLAY, flex: "none", width: 84, height: 84, borderRadius: 18, background: C.accent, color: C.accentInk, fontSize: 56, display: "flex", alignItems: "center", justifyContent: "center", marginTop: 8 }}>
+          {num}
+        </div>
+      )}
       <div>
-        <Label>
-          Schritt {num} von {total}
-        </Label>
+        <Label>{tag ?? `Schritt ${num} von ${total}`}</Label>
         <div style={{ ...DISPLAY, fontSize: 70, lineHeight: 1.05, marginTop: 8 }}>
           <Rich text={headline} />
         </div>
@@ -136,7 +136,7 @@ const Point: React.FC<{ s: Extract<TimedScene, { type: "point" }>; total: number
   const b = useEnter(8);
   return (
     <Stage>
-      <StepHead num={s.num} total={total} headline={s.headline} />
+      <StepHead num={s.num} total={total} headline={s.headline} tag={s.tag} />
       {s.sub && (
         <Panel title="Kurz gesagt" style={{ ...b, marginTop: 50 }}>
           <div style={{ fontSize: 44, lineHeight: 1.3, fontWeight: 500 }}>

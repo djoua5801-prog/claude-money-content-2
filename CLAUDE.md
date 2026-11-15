@@ -37,7 +37,9 @@ Regeln dazu:
 - **Hook-Pflichtprozess:** vor jedem Skript `research/hook-patterns.md` lesen, mindestens fünf Hooks schreiben, jede 1–10 bewerten (Aufmerksamkeit, Neugier, Verständlichkeit, Glaubwürdigkeit, Zielgruppe, Viralität), die stärkste nehmen. Die fünf Hooks mit Bewertung im Skript unter `"hooks"` ablegen. Kein „Hallo zusammen“, kein „Heute zeige ich euch“.
 - Dramaturgie: Hook → Problem → Lösung → Beweis (echte Demo oder nachvollziehbares Ergebnis) → CTA.
 - Szene 1 ist immer `hook`: ein konkreter Satz; Akzent-Wörter in der `headline` mit `*Sternchen*`, letztes Akzent-Wort kurz (wird groß gezeigt).
-- `point`-Szenen werden als „Schritt n von N“ gezeigt; `num` fortlaufend.
+- `point`-Szenen werden als „Schritt n von N“ gezeigt; `num` fortlaufend. Ist die Szene kein Schritt (Problem, Beweis, Haken), `"tag": "Das Problem"` setzen.
+- Terminal-Szenen zeigen nur echte Aufträge oder klar als Beispiel benannte Prompts (`title`). Keine erfundenen Ausgaben, Links oder Ergebnisse. Echte Bildschirmaufnahmen stehen noch aus (Phase 5).
+- Die fünf Hook-Varianten samt Bewertung stehen im Skript unter `hooks`, die gewünschte Länge unter `zielSekunden`.
 - Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
 - Du-Form. Keine Einkommensversprechen, keine erfundenen Ergebnisse, keine erfundenen Zahlen.
 - Ideen aus `research/ideen-backlog.md`; erledigte abhaken. Mit dem Kollegen abgestimmte Themen dort eintragen, damit nichts doppelt entsteht.

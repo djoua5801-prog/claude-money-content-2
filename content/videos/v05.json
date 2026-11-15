@@ -1,8 +1,36 @@
 {
  "id": "v05",
- "title": "Mythos: Du musst programmieren können",
+ "title": "Du kannst nicht programmieren? Gut.",
  "pillar": "Mythen",
  "approved": false,
+ "zielSekunden": 45,
+ "hooks": [
+  {
+   "text": "Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes.",
+   "bewertung": 9,
+   "grund": "spricht die Zielgruppe direkt an, dreht den Einwand um, offene Frage"
+  },
+  {
+   "text": "Für dieses Video habe ich null Zeilen Code geschrieben.",
+   "bewertung": 8,
+   "grund": "konkretes Ergebnis"
+  },
+  {
+   "text": "„Dafür musst du programmieren können.“ Stimmt nur halb.",
+   "bewertung": 8,
+   "grund": "bekannter Einwand, Auflösung angekündigt"
+  },
+  {
+   "text": "Drei Fähigkeiten schlagen Programmierkenntnisse.",
+   "bewertung": 6,
+   "grund": "Liste, wenig Emotion"
+  },
+  {
+   "text": "Die größte Lüge über Claude Code.",
+   "bewertung": 5,
+   "grund": "reißerisch, wenig glaubwürdig"
+  }
+ ],
  "post": {
   "caption": "„Dafür musst du programmieren können“ stimmt nur zur Hälfte. Das brauchst du wirklich – und das nicht.",
   "ziel": "Gratis-PDF",
@@ -19,72 +47,60 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "„Dafür musst du *programmieren* können.“",
-   "voice": "Dafür musst du programmieren können. Den Satz höre ich ständig. Er stimmt nur zur Hälfte."
-  },
-  {
-   "type": "chapter",
-   "num": 1,
-   "label": "Was stimmt",
-   "alt": false,
-   "voice": "Erstens: was daran stimmt."
+   "headline": "Du kannst nicht programmieren? *Gut.*",
+   "voice": "Du kannst nicht programmieren? Gut. Du brauchst etwas ganz anderes."
   },
   {
    "type": "point",
    "num": 1,
-   "headline": "Code *lesen* hilft",
-   "sub": "Du erkennst schneller, wenn etwas schiefläuft.",
-   "voice": "Ein bisschen Code lesen zu können hilft. Du erkennst schneller, wenn etwas schiefläuft, und kannst genauer sagen, was geändert werden soll. Das lernst du nebenbei, einfach indem du zuschaust."
+   "headline": "Viele fangen *gar nicht* an",
+   "sub": "Sie glauben, sie müssten erst eine Programmiersprache lernen.",
+   "voice": "Viele fangen gar nicht erst an, weil sie glauben, sie müssten erst eine Programmiersprache lernen.",
+   "tag": "Das Problem"
   },
   {
    "type": "chapter",
-   "num": 2,
-   "label": "Was nicht stimmt",
-   "alt": true,
-   "voice": "Zweitens: was nicht stimmt."
-  },
-  {
-   "type": "stat",
-   "value": "0 Zeilen",
-   "label": "Code habe ich für *dieses Video* geschrieben",
-   "voice": "Schreiben musst du den Code nicht. Für dieses Video habe ich null Zeilen selbst geschrieben. Ich habe beschrieben, was ich will, und das Ergebnis geprüft."
-  },
-  {
-   "type": "chapter",
-   "num": 3,
+   "num": 1,
    "label": "Was du brauchst",
    "alt": false,
-   "voice": "Drittens: was du wirklich brauchst."
+   "voice": "Das brauchst du wirklich."
   },
   {
    "type": "list",
-   "title": "Die drei Fähigkeiten:",
+   "title": "Drei Fähigkeiten:",
    "items": [
     "*Klar beschreiben*, was du willst",
     "Ergebnisse *prüfen*",
     "*Geduld* bei Fehlern"
    ],
-   "voice": "Du brauchst drei Dinge. Erstens: klar beschreiben, was du willst. Zweitens: Ergebnisse prüfen, statt blind zu vertrauen. Drittens: Geduld, wenn etwas beim ersten Mal nicht klappt."
+   "voice": "Drei Dinge. Klar beschreiben, was du willst. Ergebnisse prüfen, statt blind zu vertrauen. Und Geduld, wenn etwas nicht sofort klappt."
   },
   {
    "type": "point",
    "num": 2,
-   "headline": "Das ist *Übung*, kein Talent",
-   "sub": "Nach zwei Wochen beschreibst du Aufgaben deutlich besser.",
-   "voice": "Alle drei sind Übung und kein Talent. Nach zwei Wochen merkst du, dass deine Aufträge genauer werden und die Ergebnisse besser."
+   "headline": "Code *lesen* hilft",
+   "sub": "Das lernst du nebenbei beim Zuschauen.",
+   "voice": "Ein bisschen Code lesen hilft, damit du schneller siehst, wenn etwas schiefläuft. Das lernst du nebenbei, einfach beim Zuschauen.",
+   "tag": "Tipp"
   },
   {
-   "type": "point",
-   "num": 3,
-   "headline": "Fehler gehören *dazu*",
-   "sub": "Fehlermeldung zurückgeben, und es korrigiert sich.",
-   "voice": "Und wenn doch mal eine Fehlermeldung kommt, gibst du sie einfach zurück. In den meisten Fällen findet Claude Code die Ursache und korrigiert sich selbst."
+   "type": "chapter",
+   "num": 2,
+   "label": "Der Beweis",
+   "alt": true,
+   "voice": "Der Beweis."
+  },
+  {
+   "type": "stat",
+   "value": "0 Zeilen",
+   "label": "Code habe ich für *dieses Video* geschrieben",
+   "voice": "Für dieses Video habe ich null Zeilen Code geschrieben. Ich habe beschrieben, was ich will, und das Ergebnis geprüft."
   },
   {
    "type": "cta",
-   "headline": "Starte mit *guten Prompts.*",
-   "sub": "Gratis-Liste: Link in Bio",
-   "voice": "Am schnellsten lernst du mit guten Beispielen. Meine fünfzehn besten Prompts bekommst du gratis über den Link in meiner Bio."
+   "headline": "15 Prompts, *gratis.*",
+   "sub": "Link in Bio",
+   "voice": "Am schnellsten lernst du mit guten Beispielen. Meine fünfzehn besten Prompts gibt es gratis über den Link in meiner Bio."
   }
  ]
 }

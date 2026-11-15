@@ -65,7 +65,8 @@ for (const f of files) {
       console.log(`= ${spec.id} ist vertont`);
       continue;
     }
-    if (!redo) {
+    // Stimmen aus der Zeit vor der Text-Prüfsumme gehören zu alten Skripten und dürfen ersetzt werden
+    if (!redo && old.hash) {
       console.log(`! ${spec.id}: Text wurde nach dem Vertonen geändert. Die alte Stimme bleibt liegen und wird nicht benutzt.`);
       console.log(`  Bewusst neu vertonen (kostet ${text.length} Zeichen): npm run tts -- ${spec.id} --neu`);
       continue;

@@ -1,8 +1,36 @@
 {
  "id": "v02",
- "title": "3 Wege, mit Claude Code Geld zu verdienen",
+ "title": "3 Dinge, für die Firmen schon bezahlen",
  "pillar": "Geld verdienen",
  "approved": false,
+ "zielSekunden": 45,
+ "hooks": [
+  {
+   "text": "Drei Dinge, für die Firmen heute schon bezahlen – und alle drei baust du mit Claude Code.",
+   "bewertung": 9,
+   "grund": "konkreter Nutzen + Produktname, ohne Betrag zu versprechen"
+  },
+  {
+   "text": "Die meisten nutzen Claude Code nur zum Spielen. Diese drei Dinge kann man verkaufen.",
+   "bewertung": 8,
+   "grund": "Provokation + Liste"
+  },
+  {
+   "text": "Warum zahlen Läden für etwas, das an einem Nachmittag entsteht?",
+   "bewertung": 8,
+   "grund": "offene Frage, etwas lang"
+  },
+  {
+   "text": "Du brauchst keine App-Idee, um mit Claude Code Geld zu verdienen.",
+   "bewertung": 7,
+   "grund": "räumt einen Einwand aus"
+  },
+  {
+   "text": "Drei Wege, mit Claude Code Geld zu verdienen.",
+   "bewertung": 6,
+   "grund": "klar, aber austauschbar"
+  }
+ ],
  "post": {
   "caption": "Drei Wege, mit Claude Code Geld zu verdienen – ohne Programmieren, aber auch nicht ohne Arbeit. Welcher passt zu dir?",
   "ziel": "Kommentar",
@@ -19,73 +47,62 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "3 Wege, mit Claude Code *Geld* zu *verdienen.*",
-   "voice": "Drei Wege, mit Claude Code Geld zu verdienen. Und für keinen davon musst du programmieren können."
-  },
-  {
-   "type": "chapter",
-   "num": 1,
-   "label": "Websites",
-   "alt": false,
-   "voice": "Weg eins: Websites."
+   "headline": "3 Dinge, für die Firmen schon *bezahlen.*",
+   "voice": "Drei Dinge, für die Firmen heute schon bezahlen. Und alle drei baust du mit Claude Code."
   },
   {
    "type": "point",
    "num": 1,
-   "headline": "Websites für *lokale Läden*",
-   "sub": "Friseur, Café, Handwerker – viele haben keine gute Seite.",
-   "voice": "Friseure, Cafés, Handwerker. Viele kleine Läden haben keine Website oder eine, die seit zehn Jahren niemand angefasst hat. Mit Claude Code baust du so eine Seite an einem Nachmittag, zeigst sie dem Laden und verkaufst sie zum Festpreis."
+   "headline": "Die meisten bauen *irgendwas*",
+   "sub": "Und verdienen nichts, weil niemand danach gefragt hat.",
+   "voice": "Die meisten probieren Claude Code aus, bauen irgendwas und verdienen damit nichts. Weil niemand danach gefragt hat.",
+   "tag": "Das Problem"
   },
   {
    "type": "chapter",
-   "num": 2,
-   "label": "Videos",
-   "alt": true,
-   "voice": "Weg zwei: Videos."
-  },
-  {
-   "type": "point",
-   "num": 2,
-   "headline": "Kurzvideos für *Firmen*",
-   "sub": "Erklärvideos und Social-Media-Clips in Serie.",
-   "voice": "Firmen brauchen ständig Kurzvideos, haben aber weder Zeit noch Leute dafür. Du baust einmal eine Vorlage und lieferst danach jede Woche neue Clips. Genau so ist dieses Video entstanden."
-  },
-  {
-   "type": "chapter",
-   "num": 3,
-   "label": "Produkte",
+   "num": 1,
+   "label": "Was sich verkauft",
    "alt": false,
-   "voice": "Weg drei: eigene Produkte."
-  },
-  {
-   "type": "point",
-   "num": 3,
-   "headline": "Eigene *digitale Produkte*",
-   "sub": "E-Books, Vorlagen, kleine Tools.",
-   "voice": "E-Books, Vorlagen oder kleine Tools. Du baust sie einmal und kannst sie beliebig oft verkaufen. Das dauert am längsten, weil du erst ein Publikum brauchst, macht dich aber unabhängig von einzelnen Kunden."
+   "voice": "Das hier wird gebraucht."
   },
   {
    "type": "list",
-   "title": "Ehrlich gesagt:",
+   "title": "Dafür wird bezahlt:",
    "items": [
-    "Kein Weg geht *von allein*",
-    "Du brauchst echte Kunden",
-    "Starte mit *einem* Weg"
+    "*Websites* für lokale Läden",
+    "*Kurzvideos* in Serie",
+    "*Vorlagen* und E-Books"
    ],
-   "voice": "Ehrlich gesagt: Keiner dieser Wege läuft von allein. Du musst Leute ansprechen und Ergebnisse prüfen. Such dir einen Weg aus und bleib dabei."
+   "voice": "Erstens: Websites für lokale Läden. Viele haben keine oder eine völlig veraltete. Zweitens: Kurzvideos in Serie. Firmen brauchen sie ständig und haben keine Zeit dafür. Drittens: eigene Vorlagen und E-Books. Einmal bauen, mehrfach verkaufen."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Der Beweis",
+   "alt": true,
+   "voice": "Der Beweis."
   },
   {
    "type": "point",
-   "num": 4,
-   "headline": "Fang mit *Weg eins* an",
-   "sub": "Am schnellsten zum ersten zahlenden Kunden.",
-   "voice": "Mein Tipp für den Anfang ist Weg eins, weil du dort am schnellsten einen ersten zahlenden Kunden findest."
+   "num": 2,
+   "headline": "Dieses Video ist *so ein Produkt*",
+   "sub": "Komplett mit Claude Code gebaut, ohne Schnittprogramm.",
+   "voice": "Dieses Video ist selbst so ein Produkt. Komplett mit Claude Code gebaut, ohne Schnittprogramm.",
+   "tag": "Der Beweis"
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Von allein läuft *nichts*",
+   "sub": "Leute ansprechen, Ergebnisse prüfen.",
+   "voice": "Von allein läuft trotzdem nichts. Du musst Leute ansprechen und jedes Ergebnis prüfen.",
+   "tag": "Ehrlich gesagt"
   },
   {
    "type": "cta",
    "headline": "Welchen Weg zuerst?",
    "sub": "Schreib 1, 2 oder 3",
-   "voice": "Welchen Weg soll ich dir zuerst Schritt für Schritt zeigen? Schreib eins, zwei oder drei in die Kommentare."
+   "voice": "Welchen Weg soll ich zuerst zeigen? Schreib eins, zwei oder drei in die Kommentare."
   }
  ]
 }

@@ -4,7 +4,7 @@
 export type SceneVisual =
   | { type: "hook"; headline: string; kicker?: string }
   | { type: "chapter"; num: number; label: string; alt?: boolean } // vollflächige Kapitelkarte
-  | { type: "point"; num: number; headline: string; sub?: string }
+  | { type: "point"; num: number; headline: string; sub?: string; tag?: string } // tag ersetzt „Schritt n von N“ (z. B. „Das Problem“)
   | { type: "stat"; value: string; label: string }
   | { type: "terminal"; lines: string[]; title?: string }
   | { type: "list"; title?: string; items: string[] }

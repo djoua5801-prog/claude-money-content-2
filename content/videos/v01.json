@@ -1,8 +1,36 @@
 {
  "id": "v01",
- "title": "Dieses Video hat kein Mensch geschnitten",
+ "title": "Dieses Video ist nur eine Textdatei",
  "pillar": "Videos automatisieren",
  "approved": false,
+ "zielSekunden": 45,
+ "hooks": [
+  {
+   "text": "Dieses Video ist eigentlich nur eine Textdatei.",
+   "bewertung": 9,
+   "grund": "Neugier + Widerspruch: ein Video kann keine Textdatei sein"
+  },
+  {
+   "text": "Dieses Video hat kein Mensch geschnitten.",
+   "bewertung": 8,
+   "grund": "Überraschung, aber inzwischen häufig gehört"
+  },
+  {
+   "text": "Für dieses Video habe ich null Zeilen Code geschrieben.",
+   "bewertung": 7,
+   "grund": "konkretes Ergebnis, spricht eher Technik-Interessierte an"
+  },
+  {
+   "text": "Kein Schnittprogramm. Kein Editor. Trotzdem fertig.",
+   "bewertung": 7,
+   "grund": "rhythmisch, aber ohne offene Frage"
+  },
+  {
+   "text": "So entstehen zehn Videos aus einem Befehl.",
+   "bewertung": 6,
+   "grund": "Tutorial-Versprechen, wenig Spannung"
+  }
+ ],
  "post": {
   "caption": "Kein Schnittprogramm, kein Editor: Dieses Video ist aus einer Textdatei entstanden. Im Video siehst du die drei Bausteine dahinter.",
   "ziel": "Folgen",
@@ -19,76 +47,60 @@
  "scenes": [
   {
    "type": "hook",
-   "headline": "Dieses Video hat *kein Mensch* *geschnitten.*",
-   "voice": "Dieses Video hat kein Mensch geschnitten. Kein Schnittprogramm, kein Editor, keine Timeline."
+   "headline": "Dieses Video ist eigentlich nur eine *Textdatei.*",
+   "voice": "Dieses Video ist eigentlich nur eine Textdatei. Kein Mensch hat es geschnitten."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Schneiden kostet *Stunden*",
+   "sub": "Clips schieben, Untertitel setzen, exportieren – jedes Mal neu.",
+   "voice": "Videos schneiden kostet Stunden. Clips schieben, Untertitel setzen, exportieren. Und beim nächsten Video wieder von vorn.",
+   "tag": "Das Problem"
   },
   {
    "type": "chapter",
    "num": 1,
-   "label": "Der Auftrag",
+   "label": "Die Lösung",
    "alt": false,
-   "voice": "Erstens: der Auftrag."
+   "voice": "So geht es ohne."
   },
   {
    "type": "terminal",
    "lines": [
-    "> Mach aus Skript 01 ein Hochkant-Video",
-    "✓ Voiceover erstellt",
-    "✓ 9 Szenen animiert",
-    "✓ Untertitel synchron",
-    "✓ out/v01.mp4"
+    "> Mach aus Skript 01 ein Hochkant-Video"
    ],
-   "voice": "Ich gebe Claude Code einen einzigen Auftrag in normalem Deutsch. Den Rest erledigt es selbst: Es liest das Skript, holt die Stimme, baut jede Szene und setzt die Untertitel wortgenau darunter."
-  },
-  {
-   "type": "chapter",
-   "num": 2,
-   "label": "Die Werkzeuge",
-   "alt": true,
-   "voice": "Zweitens: die Werkzeuge."
+   "voice": "Ich schreibe nur den Text und gebe Claude Code einen Auftrag. Es holt die Stimme, baut jede Szene und setzt die Untertitel wortgenau.",
+   "title": "Mein Auftrag"
   },
   {
    "type": "list",
    "title": "Drei Bausteine:",
    "items": [
-    "*Claude Code* steuert alles",
-    "*Remotion* baut die Animation",
-    "*ElevenLabs* spricht den Text"
+    "*Claude Code* steuert",
+    "*Remotion* animiert",
+    "*ElevenLabs* spricht"
    ],
-   "voice": "Dahinter stecken drei Bausteine. Claude Code ist das Gehirn und steuert alles. Remotion baut aus Code die Animation. Und ElevenLabs spricht den Text ein."
-  },
-  {
-   "type": "point",
-   "num": 1,
-   "headline": "Das Skript ist eine *Textdatei*",
-   "sub": "Text ändern, neu rendern – fertig ist die neue Version.",
-   "voice": "Der Trick dabei: Das ganze Video ist nur eine Textdatei. Wenn mir ein Satz nicht gefällt, ändere ich den Text und lasse neu rendern. Kein Nachschneiden, kein Verschieben von Clips."
+   "voice": "Dahinter stecken drei Bausteine: Claude Code steuert, Remotion animiert, ElevenLabs spricht."
   },
   {
    "type": "chapter",
-   "num": 3,
-   "label": "Der Effekt",
-   "alt": false,
-   "voice": "Drittens: der Effekt."
+   "num": 2,
+   "label": "Der Beweis",
+   "alt": true,
+   "voice": "Der Beweis."
   },
   {
    "type": "stat",
-   "value": "10 Videos",
-   "label": "aus *einem* Befehl",
-   "voice": "Weil alles aus Vorlagen entsteht, mache ich statt einem Video zehn auf einmal. Meine Arbeit ist dann nur noch: ansehen, aussortieren, posten."
-  },
-  {
-   "type": "point",
-   "num": 2,
-   "headline": "Jedes Video sieht *gleich* aus",
-   "sub": "Farben, Schrift und Aufbau kommen aus einer Vorlage.",
-   "voice": "Und weil Farben, Schrift und Aufbau aus einer Vorlage kommen, sieht jedes Video gleich aus. Das sorgt dafür, dass man meine Videos im Feed sofort wiedererkennt."
+   "value": "0 Schnitte",
+   "label": "von Hand in *diesem* Video",
+   "voice": "Du siehst ihn gerade. In diesem Video steckt kein einziger Schnitt von Hand. Passt ein Satz nicht, ändere ich den Text und rendere neu. Das dauert Minuten statt Stunden."
   },
   {
    "type": "cta",
-   "headline": "Ich zeig dir das *ganze Setup.*",
-   "sub": "Folgen für Teil 2",
-   "voice": "In den nächsten Videos zeige ich dir das komplette Setup, Schritt für Schritt und ohne Vorkenntnisse. Folg mir, damit du Teil zwei nicht verpasst."
+   "headline": "Teil 2: das *ganze Setup.*",
+   "sub": "Folgen",
+   "voice": "Im nächsten Video zeige ich das komplette Setup. Folg mir, damit du Teil zwei nicht verpasst."
   }
  ]
 }

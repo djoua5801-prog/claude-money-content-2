@@ -12,6 +12,16 @@
 - [x] v09 Der größte Fehler am Anfang
 - [x] v10 Was du am ersten Tag brauchst
 
+## Offen – aus der Recherche vom 15.11.2026
+- [ ] 3 Dinge, die du sofort einstellen solltest, wenn du Claude Code öffnest (Muster „Einrichtung“)
+- [ ] Das Terminal ist leichter als einen Drucker zu installieren (Angst vor dem schwarzen Fenster)
+- [ ] Claude im Chat oder Claude Code – wann nimmt man was? (Muster „Vergleich“)
+- [ ] Brauche ich ein Abo? Was Claude Code wirklich kostet
+- [ ] Chaos-Tabelle in 2 Minuten aufgeräumt (CSV/Excel)
+- [ ] Claude Code gegen Website-Baukasten: der Unterschied
+- [ ] Skills installieren in 30 Sekunden
+- [ ] Ich lasse Claude Code meine Videos planen (Blick hinter die Kulissen)
+
 ## Offen
 - [ ] Claude Code installieren in 60 Sekunden (Windows)
 - [ ] Meine Nachricht-Vorlage für Website-Kunden
