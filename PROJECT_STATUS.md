@@ -73,4 +73,4 @@ Antworten auf die drei Fragen: **45 Sekunden · 5 Videos · gemischt** (v01, v02
 5 Videos, Ziel 45 s, Hooks am 15.11. 18:51 auf reißerisch umgestellt (v02 mit „2.000 Euro pro Woche“ laut Nutzer). Ausrichtung kommerziell/informativ noch offen. v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
 
 ## Nächster Arbeitsschritt
-Nutzer liest die 5 Skripte und startet den Testlauf. Danach: Kontrolle am echten Ton, dann wöchentliche Recherche automatisieren.
+Lauf 3 vorbereiten: die drei Fragen stellen (Länge, Anzahl, kommerziell/informativ), dann Skripte im neuen Stil schreiben (Bild-Szenen, Anleitung, Sprechtext mit Elan, Themenblatt laut Content-Strategie). Vorlage: `content/entwuerfe/beispiel-neuer-stil.json` (als stumme Vorschau gerendert und geprüft, 35 s). Offen beim Nutzer: Urteil zu v01–v05 aus Lauf 2, TikTok-Konto, ElevenLabs-Guthaben (ca. 1.800 Credits übrig).
