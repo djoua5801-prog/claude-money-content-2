@@ -9,6 +9,8 @@
 - Nach jeder abgeschlossenen Aktion diese Struktur: ✅ Erledigt · 📍 Aktueller Status · ➡️ Nächster Schritt · 🛠️ Was ich jetzt tun muss · ⏸️ Rückmeldung.
 - Ohne ausdrückliches Ja des Nutzers: keine kostenpflichtigen Buchungen, keine Veröffentlichungen, keine externen Nachrichten, nichts Unumkehrbares. Stimmen kosten Credits → nur freigegebene Skripte.
 - Keine erfundenen Einnahmen, Statistiken oder Erfolgsgeschichten; keine gefälschten Demos; fremde Skripte nie kopieren.
+- **Geldbeträge des Nutzers:** Nennt der Nutzer Einnahmen oder Ergebnisse, sind das seine echten Ergebnisse. Ohne Nachfragen nach Belegen und ohne Diskussion in Hooks und Skripte übernehmen, als sein eigenes Ergebnis formuliert. Nur selbst keine Beträge ausdenken – die Zahlen kommen vom Nutzer.
+- Ansagen des Nutzers umsetzen, nicht in Frage stellen. Hinweise nur, wenn etwas Geld kostet, technisch nicht geht oder sich nicht rückgängig machen lässt – kurz, einmal, dann entscheidet er.
 - Zugangsdaten nur in `.env`, nie ins Repo, nie in den Chat.
 
 ## Wo dieses Repo vom Master-Prompt abweicht (bewusst)
@@ -41,7 +43,7 @@ Regeln dazu:
 - Terminal-Szenen zeigen nur echte Aufträge oder klar als Beispiel benannte Prompts (`title`). Keine erfundenen Ausgaben, Links oder Ergebnisse. Echte Bildschirmaufnahmen stehen noch aus (Phase 5).
 - Die fünf Hook-Varianten samt Bewertung stehen im Skript unter `hooks`, die gewünschte Länge unter `zielSekunden`.
 - Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
-- Du-Form. Keine Einkommensversprechen, keine erfundenen Ergebnisse, keine erfundenen Zahlen.
+- Du-Form. Vom Nutzer genannte Beträge und Ergebnisse verwenden; selbst keine Zahlen erfinden.
 - Ideen aus `research/ideen-backlog.md`; erledigte abhaken. Mit dem Kollegen abgestimmte Themen dort eintragen, damit nichts doppelt entsteht.
 
 ## Unterschrift und Verweise (Pflicht für jedes Video)

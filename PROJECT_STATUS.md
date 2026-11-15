@@ -43,6 +43,7 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 - Vor jeder Erstellung nach der Durchschnittslänge fragen.
 - Jedes Video braucht Unterschrift, Verweis und angepinnten Kommentar, die Zuschauer zu Leads aufwärmen → Feld `post`, für v01–v10 angelegt.
 - **Zweiter Lauf erst auf ausdrückliches Startsignal.**
+- (18:47) Geldbeträge, die der Nutzer nennt, sind seine echten Ergebnisse und werden ohne Rückfrage in Hooks übernommen. Ansagen umsetzen, nicht hinterfragen.
 
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).
