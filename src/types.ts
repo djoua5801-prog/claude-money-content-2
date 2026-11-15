@@ -17,6 +17,7 @@ export type VideoSpec = {
   pillar: string;
   caption: string; // Posting-Text für TikTok
   hashtags: string[];
+  kineticHook?: boolean; // Standard: an. false = klassische Hook-Szene
   scenes: SceneSpec[];
 };
 

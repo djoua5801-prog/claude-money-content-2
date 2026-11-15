@@ -9,7 +9,8 @@
     "render": "tsx tools/render-all.ts",
     "videos": "npm run tts && npm run build:data && npm run render",
     "preview": "npm run build:data && npm run render",
-    "kinetic": "tsx tools/kinetic.ts"
+    "kinetic": "tsx tools/kinetic.ts",
+    "leadmagnet": "tsx tools/build-leadmagnet.ts"
   },
   "keywords": [],
   "author": "",

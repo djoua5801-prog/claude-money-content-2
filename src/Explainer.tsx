@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Captions } from "./Captions";
+import { KineticHook } from "./KineticHook";
 import { SceneView } from "./scenes/Scenes";
 import { C, FONT_MONO, SAFE } from "./theme";
 import type { TimedVideo } from "./types";
@@ -39,20 +40,32 @@ export const Explainer: React.FC<{ video: TimedVideo }> = ({ video }) => {
   return (
     <AbsoluteFill>
       <Background />
-      <Progress />
-      <AbsoluteFill style={{ top: SAFE.top - 30, left: SAFE.left, height: 40, fontFamily: FONT_MONO, fontSize: 26, color: C.muted, letterSpacing: 2 }}>
-        {video.pillar.toUpperCase()}
-      </AbsoluteFill>
+
       {video.scenes.map((s, i) => {
         const from = Math.round(s.start * fps);
         const to = Math.round(s.end * fps);
         return (
           <Sequence key={i} from={from} durationInFrames={Math.max(1, to - from)}>
-            <SceneView scene={s} />
+            {i === 0 && s.type === "hook" && video.kineticHook !== false ? (
+              <KineticHook scene={s} words={video.words} />
+            ) : (
+              <SceneView scene={s} />
+            )}
           </Sequence>
         );
       })}
-      <Captions words={video.words} />
+      {/* Während des Kinetic-Hooks ist der Text selbst die Untertitelung */}
+      <Captions
+        words={
+          video.kineticHook !== false && video.scenes[0]?.type === "hook"
+            ? video.words.filter((w) => w.start >= video.scenes[0].end)
+            : video.words
+        }
+      />
+      <Progress />
+      <AbsoluteFill style={{ top: SAFE.top - 30, left: SAFE.left, height: 40, fontFamily: FONT_MONO, fontSize: 26, color: C.muted, letterSpacing: 2 }}>
+        {video.pillar.toUpperCase()}
+      </AbsoluteFill>
       {video.audio && <Audio src={staticFile(video.audio)} />}
     </AbsoluteFill>
   );

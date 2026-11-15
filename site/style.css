@@ -1,0 +1,62 @@
+@font-face{font-family:SG;font-weight:500;font-display:swap;src:url(fonts/space-grotesk-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:SG;font-weight:700;font-display:swap;src:url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:JM;font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-latin-500-normal.woff2) format("woff2")}
+
+:root{--bg:#0B0B0F;--surface:#15151C;--line:#26262f;--text:#F4F4F0;--muted:#8C8C99;--accent:#C6FF3D;--ink:#0B0B0F}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:SG,system-ui,sans-serif;font-weight:500;font-size:18px;line-height:1.5;
+  background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:64px 64px}
+a{color:inherit}
+main,.top,footer{max-width:1040px;margin:0 auto;padding:0 24px}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:28px;padding-bottom:28px}
+.brand{font-family:JM,monospace;font-size:14px;letter-spacing:2px;color:var(--accent)}
+.toplink{font-size:15px;text-decoration:none;border-bottom:1px solid var(--muted)}
+
+.hero{padding:56px 0 88px;max-width:820px}
+.kicker,.tag{font-family:JM,monospace;font-size:13px;letter-spacing:2px;color:var(--accent)}
+h1{font-size:clamp(40px,7vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:700;margin:20px 0 24px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+h1 .num{font-family:JM,monospace;font-weight:500;color:var(--accent)}
+.lead{font-size:clamp(18px,2.2vw,22px);color:var(--muted);max-width:620px}
+
+.signup{margin-top:40px;max-width:620px}
+.signup>label:first-child{display:block;font-size:14px;color:var(--muted);margin-bottom:8px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+input[type=email]{flex:1 1 260px;min-height:56px;padding:0 18px;font:inherit;color:var(--text);background:var(--surface);border:1.5px solid var(--line);border-radius:12px}
+input[type=email]:focus{outline:2px solid var(--accent);outline-offset:2px}
+button,.btn{min-height:56px;padding:0 26px;font:inherit;font-weight:700;color:var(--ink);background:var(--accent);border:0;border-radius:12px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+button:hover,.btn:hover{filter:brightness(1.08)}
+button:focus-visible,.btn:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+.consent{display:flex;gap:10px;margin-top:14px;font-size:14px;color:var(--muted);align-items:flex-start}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent);flex:none}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+.hero{border-top:0}
+h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.02em;line-height:1.1;font-weight:700;margin-bottom:32px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.cols h3{font-size:24px;font-weight:700;margin:10px 0 8px}
+.cols p{color:var(--muted)}
+
+.term{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px}
+.dots{display:flex;gap:8px;padding:14px 18px;border-bottom:1.5px solid var(--line)}
+.dots i{width:12px;height:12px;border-radius:50%;background:#3a3a46}
+pre{font-family:JM,monospace;font-size:clamp(13px,1.9vw,17px);line-height:1.65;padding:22px;white-space:pre-wrap;color:var(--text)}
+pre b{font-weight:500;color:var(--accent)}
+.note{margin-top:16px;color:var(--muted)}
+
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px}
+.fit h2{font-size:28px;margin-bottom:18px}
+ul{list-style:none;padding:0}
+li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line)}
+li::before{content:"→";position:absolute;left:0;font-family:JM,monospace;color:var(--accent)}
+.no li::before{content:"×";color:var(--muted)}
+
+.cta{text-align:left}
+footer{display:flex;flex-wrap:wrap;gap:20px;padding-top:28px;padding-bottom:48px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+
+.legal{max-width:720px;padding:56px 24px}
+.legal h1{font-size:44px}
+.legal p{margin-bottom:16px;color:var(--muted)}
+.todo{background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:16px 18px;color:var(--text)}

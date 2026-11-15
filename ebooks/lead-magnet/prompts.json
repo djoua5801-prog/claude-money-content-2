@@ -1,0 +1,38 @@
+{
+  "title": "15 Claude-Code-Prompts, mit denen du Geld verdienen kannst",
+  "subtitle": "Kopieren, anpassen, loslegen. Für Websites, Videos und digitale Produkte.",
+  "intro": "Diese Prompts sind Startpunkte, keine Zaubersprüche. Ersetze alles in [eckigen Klammern] durch deine eigenen Angaben. Je genauer du beschreibst, was du willst, desto besser wird das Ergebnis. Prüfe jedes Ergebnis, bevor du es einem Kunden zeigst.",
+  "sections": [
+    {
+      "name": "Websites für Kunden",
+      "prompts": [
+        { "title": "Demo-Website für einen lokalen Laden", "prompt": "Bau eine einseitige Website für [Name des Ladens], [Branche] in [Stadt]. Stil: [modern/warm/edel]. Abschnitte: Start mit klarer Aussage, Leistungen mit Preisen, Öffnungszeiten, Anfahrt, Kontakt-Button. Mobil zuerst. Nutze Platzhalter für Fotos und markiere sie deutlich.", "tip": "Nimm echte Angaben vom Google-Profil des Ladens. Eine Demo mit echtem Namen überzeugt mehr als jede Erklärung." },
+        { "title": "Alte Website modernisieren", "prompt": "Hier ist der Text der aktuellen Website von [Laden]: [Text einfügen]. Bau daraus eine neue, moderne Version. Behalte alle Inhalte und Fakten, verbessere Aufbau, Lesbarkeit und mobile Ansicht. Liste am Ende auf, was du geändert hast.", "tip": "Die Änderungsliste kannst du direkt als Verkaufsargument an den Kunden schicken." },
+        { "title": "Seite veröffentlichen", "prompt": "Veröffentliche dieses Projekt auf Vercel. Erkläre mir jeden Schritt, bei dem ich selbst etwas anklicken oder bestätigen muss, und gib mir am Ende den Link.", "tip": "Ein kostenloses Vercel-Konto reicht für Demos völlig aus." },
+        { "title": "Angebot für den Kunden schreiben", "prompt": "Schreib ein kurzes Angebot für [Laden] über eine neue Website. Leistungen: [Liste]. Preis: [Betrag] einmalig plus [Betrag] pro Monat für Pflege. Ton: freundlich, klar, ohne Fachwörter. Maximal eine Seite.", "tip": "Nenne immer einen festen Preis. Stundensätze schrecken kleine Läden ab." },
+        { "title": "Erste Nachricht an den Laden", "prompt": "Schreib eine kurze Nachricht an [Laden], in der ich die Demo-Website zeige, die ich für sie gebaut habe: [Link]. Kein Verkaufsdruck, drei Sätze, ehrliche Frage am Ende, ob sie Interesse haben.", "tip": "Schicke sie per E-Mail oder gib sie persönlich ab. Massen-Nachrichten ohne Einwilligung sind in Deutschland nicht erlaubt." }
+      ]
+    },
+    {
+      "name": "Videos und Content",
+      "prompts": [
+        { "title": "Skript für ein Kurzvideo", "prompt": "Schreib ein Skript für ein Kurzvideo von 35 Sekunden zum Thema [Thema]. Erster Satz: eine konkrete, überraschende Aussage. Dann drei kurze Punkte, am Ende eine klare Handlungsaufforderung. Du-Form, einfache Sätze, keine Übertreibungen.", "tip": "Lies das Skript laut vor. Was beim Sprechen holpert, holpert auch im Video." },
+        { "title": "10 Video-Ideen aus einem Thema", "prompt": "Gib mir 10 Ideen für Kurzvideos zum Thema [Thema] für [Zielgruppe]. Pro Idee: Titel, erster Satz, Kernaussage. Mische Anleitungen, Fehler, Mythen und Vorher-Nachher-Beispiele.", "tip": "Fragen aus deinen Kommentaren sind die besten Ideen. Füge sie einfach in den Prompt ein." },
+        { "title": "Animiertes Erklärvideo bauen", "prompt": "Bau mit Remotion ein Hochkant-Video (1080 mal 1920) aus diesem Skript: [Skript]. Jede Szene bekommt eine große Überschrift, passende Animation und Untertitel. Farben: [Farben]. Rendere das Video als MP4.", "tip": "Remotion ist für Einzelpersonen kostenlos. Firmen ab einer bestimmten Größe brauchen eine Lizenz." },
+        { "title": "Karussell-Post aus einem Video", "prompt": "Mach aus diesem Video-Skript ein Karussell mit 6 Bildern im Hochformat: [Skript]. Bild 1 ist der Aufhänger, Bild 6 die Handlungsaufforderung. Wenig Text pro Bild, große Schrift.", "tip": "Ein Video und ein Karussell aus derselben Idee verdoppeln deine Reichweite bei gleicher Recherche." },
+        { "title": "Posting-Texte und Hashtags", "prompt": "Schreib für dieses Video einen Posting-Text mit maximal zwei Sätzen und fünf passende Hashtags: [Skript]. Der Text soll neugierig machen, ohne den Inhalt zu verraten.", "tip": "Fünf genaue Hashtags sind besser als zwanzig allgemeine." }
+      ]
+    },
+    {
+      "name": "Eigene digitale Produkte",
+      "prompts": [
+        { "title": "Gliederung für ein E-Book", "prompt": "Erstelle eine Gliederung für ein E-Book zum Thema [Thema] für [Zielgruppe]. 6 bis 8 Kapitel, pro Kapitel drei Stichpunkte und ein konkretes Ergebnis, das der Leser danach erreicht hat.", "tip": "Schreib nur über Dinge, die du selbst gemacht hast. Leser merken den Unterschied." },
+        { "title": "Kapitel schreiben", "prompt": "Schreib Kapitel [Nummer] aus dieser Gliederung: [Gliederung]. Meine eigenen Erfahrungen dazu: [Stichpunkte]. Einfache Sprache, kurze Absätze, ein Beispiel pro Abschnitt, am Ende eine Checkliste.", "tip": "Deine eigenen Stichpunkte sind der wertvollste Teil des Prompts. Ohne sie wird der Text austauschbar." },
+        { "title": "Landingpage für dein Produkt", "prompt": "Bau eine Landingpage für mein Produkt [Name]. Zielgruppe: [Zielgruppe]. Nutzen: [drei Punkte]. Preis: [Betrag]. Abschnitte: Versprechen, Inhalt, für wen es ist und für wen nicht, Kauf-Button. Keine erfundenen Bewertungen oder Zahlen.", "tip": "Der Abschnitt »für wen es nicht ist« schafft Vertrauen und senkt Rückgaben." },
+        { "title": "E-Mail-Folge nach der Anmeldung", "prompt": "Schreib fünf kurze E-Mails für neue Abonnenten. Mail 1 liefert das Gratis-PDF. Mail 2 bis 4 geben je einen nützlichen Tipp zu [Thema]. Mail 5 stellt mein Produkt [Name] vor. Jede Mail unter 120 Wörtern.", "tip": "In Deutschland brauchst du eine bestätigte Anmeldung (Double-Opt-in) und einen Abmeldelink in jeder Mail." },
+        { "title": "Vorlagen-Paket bauen", "prompt": "Erstelle ein Paket aus [Anzahl] wiederverwendbaren Vorlagen für [Zweck], jeweils als eigene Datei mit kurzer Anleitung. Lege eine Übersichtsdatei an, die erklärt, wann man welche Vorlage nutzt.", "tip": "Vorlagen verkaufen sich oft besser als Texte, weil der Käufer sofort etwas in der Hand hat." }
+      ]
+    }
+  ],
+  "outro": "Mehr dazu, wie du daraus ein komplettes System baust, zeige ich in meinen Videos und im E-Book."
+}

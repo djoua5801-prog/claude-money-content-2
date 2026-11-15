@@ -17,6 +17,7 @@ cp .env.example .env      # ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID eintragen
 | `npm run tts` | Voiceover für alle Skripte ohne Audio holen |
 | `npm run videos` | Voiceover → Daten → Rendern, alles in einem |
 | `npm run render -- v03` | Nur ein Video neu rendern |
+| `npm run leadmagnet` | Gratis-PDF neu bauen → `site/downloads/15-prompts.pdf` |
 | `npm run studio` | Remotion Studio im Browser zum Anschauen/Feintunen |
 
 Fertige Dateien landen in `out/` (`v01.mp4`, `v01-cover.png`).
@@ -39,6 +40,14 @@ ebooks/  site/    ← E-Books und Landingpage (folgen)
 - **Remotion Bits** – [av/remotion-bits](https://github.com/av/remotion-bits) (MIT), als npm-Paket installiert. Beispiele finden: `npx remotion-bits find "typewriter terminal"`.
 
 Beide Skills liegen in `.claude/skills/` und werden von Claude Code in diesem Ordner automatisch erkannt.
+
+## Kinetic-Hook
+
+Die erste Szene (`hook`) jedes Videos wird automatisch als Kinetic-Typografie gezeigt, wortgenau zur Stimme. Wörter in `*Sternchen*` in der Headline werden zu Akzent-Wörtern. Abschalten pro Video: `"kineticHook": false`.
+
+## Landingpage + Gratis-PDF
+
+Siehe `site/README.md`. Inhalte des PDFs: `ebooks/lead-magnet/prompts.json`.
 
 ## Szenentypen
 
