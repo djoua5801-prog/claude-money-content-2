@@ -1,14 +1,86 @@
 {
-  "id": "v02",
-  "title": "3 Wege, mit Claude Code Geld zu verdienen",
-  "pillar": "Geld verdienen",
-  "caption": "Kein Hype, keine 10k-Versprechen – drei Wege, die real funktionieren. Welchen willst du zuerst sehen?",
-  "hashtags": ["claudecode", "geldverdienen", "ki", "selbststaendig", "sidehustle"],
-  "scenes": [
-    { "type": "hook", "kicker": "Ohne Programmieren", "headline": "3 Wege, mit *Claude Code* Geld zu verdienen.", "voice": "Drei Wege, mit Claude Code Geld zu verdienen. Ohne dass du programmieren kannst." },
-    { "type": "point", "num": 1, "headline": "Websites für *lokale Läden*", "sub": "Friseur, Café, Handwerker – viele haben keine gute Seite.", "voice": "Erstens: Websites für lokale Läden. Friseure, Cafés, Handwerker. Viele haben keine oder eine furchtbare Website." },
-    { "type": "point", "num": 2, "headline": "Kurzvideos für *Firmen*", "sub": "Erklärvideos, Produktclips, Social-Media-Serien.", "voice": "Zweitens: Kurzvideos für Firmen. Erklärvideos und Social-Media-Clips, automatisch produziert, so wie dieses hier." },
-    { "type": "point", "num": 3, "headline": "Eigene *digitale Produkte*", "sub": "E-Books, Vorlagen, kleine Tools.", "voice": "Drittens: eigene digitale Produkte. E-Books, Vorlagen oder kleine Tools, die du einmal baust und oft verkaufst." },
-    { "type": "cta", "headline": "Welchen Weg zuerst?", "sub": "Schreib 1, 2 oder 3", "voice": "Welchen Weg soll ich dir zuerst Schritt für Schritt zeigen? Schreib eins, zwei oder drei in die Kommentare." }
-  ]
+ "id": "v02",
+ "title": "3 Wege, mit Claude Code Geld zu verdienen",
+ "pillar": "Geld verdienen",
+ "approved": false,
+ "caption": "Kein Hype, keine Versprechen – drei Wege, die real funktionieren. Welchen willst du zuerst sehen?",
+ "hashtags": [
+  "claudecode",
+  "geldverdienen",
+  "ki",
+  "selbststaendig",
+  "sidehustle"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "3 Wege, mit Claude Code *Geld* zu *verdienen.*",
+   "voice": "Drei Wege, mit Claude Code Geld zu verdienen. Und für keinen davon musst du programmieren können."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Websites",
+   "alt": false,
+   "voice": "Weg eins: Websites."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Websites für *lokale Läden*",
+   "sub": "Friseur, Café, Handwerker – viele haben keine gute Seite.",
+   "voice": "Friseure, Cafés, Handwerker. Viele kleine Läden haben keine Website oder eine, die seit zehn Jahren niemand angefasst hat. Mit Claude Code baust du so eine Seite an einem Nachmittag, zeigst sie dem Laden und verkaufst sie zum Festpreis."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Videos",
+   "alt": true,
+   "voice": "Weg zwei: Videos."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Kurzvideos für *Firmen*",
+   "sub": "Erklärvideos und Social-Media-Clips in Serie.",
+   "voice": "Firmen brauchen ständig Kurzvideos, haben aber weder Zeit noch Leute dafür. Du baust einmal eine Vorlage und lieferst danach jede Woche neue Clips. Genau so ist dieses Video entstanden."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Produkte",
+   "alt": false,
+   "voice": "Weg drei: eigene Produkte."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Eigene *digitale Produkte*",
+   "sub": "E-Books, Vorlagen, kleine Tools.",
+   "voice": "E-Books, Vorlagen oder kleine Tools. Du baust sie einmal und kannst sie beliebig oft verkaufen. Das dauert am längsten, weil du erst ein Publikum brauchst, macht dich aber unabhängig von einzelnen Kunden."
+  },
+  {
+   "type": "list",
+   "title": "Ehrlich gesagt:",
+   "items": [
+    "Kein Weg geht *von allein*",
+    "Du brauchst echte Kunden",
+    "Starte mit *einem* Weg"
+   ],
+   "voice": "Ehrlich gesagt: Keiner dieser Wege läuft von allein. Du musst Leute ansprechen und Ergebnisse prüfen. Such dir einen Weg aus und bleib dabei."
+  },
+  {
+   "type": "point",
+   "num": 4,
+   "headline": "Fang mit *Weg eins* an",
+   "sub": "Am schnellsten zum ersten zahlenden Kunden.",
+   "voice": "Mein Tipp für den Anfang ist Weg eins, weil du dort am schnellsten einen ersten zahlenden Kunden findest."
+  },
+  {
+   "type": "cta",
+   "headline": "Welchen Weg zuerst?",
+   "sub": "Schreib 1, 2 oder 3",
+   "voice": "Welchen Weg soll ich dir zuerst Schritt für Schritt zeigen? Schreib eins, zwei oder drei in die Kommentare."
+  }
+ ]
 }

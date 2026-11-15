@@ -1,14 +1,85 @@
 {
-  "id": "v05",
-  "title": "Mythos: Du musst programmieren können",
-  "pillar": "Mythen",
-  "caption": "Was du wirklich können musst – und was nicht.",
-  "hashtags": ["claudecode", "ki", "mythos", "programmieren", "nocode"],
-  "scenes": [
-    { "type": "hook", "kicker": "Mythos", "headline": "„Dafür musst du *programmieren* können.“", "voice": "Dafür musst du programmieren können. Das höre ich ständig. Stimmt nur halb." },
-    { "type": "list", "title": "Was du *wirklich* brauchst:", "items": ["Klar beschreiben, was du willst", "Ergebnisse prüfen", "Geduld bei Fehlern"], "voice": "Was du wirklich brauchst: klar beschreiben, was du willst. Ergebnisse prüfen. Und Geduld, wenn mal etwas nicht klappt." },
-    { "type": "point", "num": 1, "headline": "Code *lesen* hilft.", "sub": "Schreiben musst du ihn nicht.", "voice": "Ehrlich gesagt: Ein bisschen Code lesen zu können hilft. Schreiben musst du ihn nicht." },
-    { "type": "stat", "value": "0 Zeilen", "label": "Code habe ich für *dieses Video* geschrieben", "voice": "Für dieses Video habe ich null Zeilen Code selbst geschrieben." },
-    { "type": "cta", "headline": "Die wichtigste Fähigkeit: *gute Prompts*.", "sub": "Gratis-Liste: Link in Bio", "voice": "Die wichtigste Fähigkeit sind gute Prompts. Meine besten bekommst du gratis über den Link in meiner Bio." }
-  ]
+ "id": "v05",
+ "title": "Mythos: Du musst programmieren können",
+ "pillar": "Mythen",
+ "approved": false,
+ "caption": "Was du wirklich können musst – und was nicht.",
+ "hashtags": [
+  "claudecode",
+  "ki",
+  "mythos",
+  "programmieren",
+  "nocode"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "„Dafür musst du *programmieren* können.“",
+   "voice": "Dafür musst du programmieren können. Den Satz höre ich ständig. Er stimmt nur zur Hälfte."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Was stimmt",
+   "alt": false,
+   "voice": "Erstens: was daran stimmt."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Code *lesen* hilft",
+   "sub": "Du erkennst schneller, wenn etwas schiefläuft.",
+   "voice": "Ein bisschen Code lesen zu können hilft. Du erkennst schneller, wenn etwas schiefläuft, und kannst genauer sagen, was geändert werden soll. Das lernst du nebenbei, einfach indem du zuschaust."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Was nicht stimmt",
+   "alt": true,
+   "voice": "Zweitens: was nicht stimmt."
+  },
+  {
+   "type": "stat",
+   "value": "0 Zeilen",
+   "label": "Code habe ich für *dieses Video* geschrieben",
+   "voice": "Schreiben musst du den Code nicht. Für dieses Video habe ich null Zeilen selbst geschrieben. Ich habe beschrieben, was ich will, und das Ergebnis geprüft."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Was du brauchst",
+   "alt": false,
+   "voice": "Drittens: was du wirklich brauchst."
+  },
+  {
+   "type": "list",
+   "title": "Die drei Fähigkeiten:",
+   "items": [
+    "*Klar beschreiben*, was du willst",
+    "Ergebnisse *prüfen*",
+    "*Geduld* bei Fehlern"
+   ],
+   "voice": "Du brauchst drei Dinge. Erstens: klar beschreiben, was du willst. Zweitens: Ergebnisse prüfen, statt blind zu vertrauen. Drittens: Geduld, wenn etwas beim ersten Mal nicht klappt."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Das ist *Übung*, kein Talent",
+   "sub": "Nach zwei Wochen beschreibst du Aufgaben deutlich besser.",
+   "voice": "Alle drei sind Übung und kein Talent. Nach zwei Wochen merkst du, dass deine Aufträge genauer werden und die Ergebnisse besser."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Fehler gehören *dazu*",
+   "sub": "Fehlermeldung zurückgeben, und es korrigiert sich.",
+   "voice": "Und wenn doch mal eine Fehlermeldung kommt, gibst du sie einfach zurück. In den meisten Fällen findet Claude Code die Ursache und korrigiert sich selbst."
+  },
+  {
+   "type": "cta",
+   "headline": "Starte mit *guten Prompts.*",
+   "sub": "Gratis-Liste: Link in Bio",
+   "voice": "Am schnellsten lernst du mit guten Beispielen. Meine fünfzehn besten Prompts bekommst du gratis über den Link in meiner Bio."
+  }
+ ]
 }

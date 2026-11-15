@@ -9,18 +9,17 @@ npm install
 cp .env.example .env      # ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID eintragen
 ```
 
-## Täglicher Ablauf
+## Ablauf: erst Skript, dann Stimme
 
-| Befehl | Was passiert |
-|---|---|
-| `npm run preview` | Stumme Vorschau aller Videos (geschätztes Timing, ohne ElevenLabs) |
-| `npm run tts` | Voiceover für alle Skripte ohne Audio holen |
-| `npm run videos` | Voiceover → Daten → Rendern, alles in einem |
-| `npm run render -- v03` | Nur ein Video neu rendern |
-| `npm run leadmagnet` | Gratis-PDF neu bauen → `site/downloads/15-prompts.pdf` |
-| `npm run studio` | Remotion Studio im Browser zum Anschauen/Feintunen |
+| Schritt | Befehl | Was passiert |
+|---|---|---|
+| 1 | `npm run skripte` | Zeigt alle Skripte mit Status, Länge und Zeichenzahl |
+| 2 | `npm run preview -- v01` | Stumme Vorschau eines Skripts (kostet nichts) |
+| 3 | `npm run freigeben -- v01 v02` | Skripte freigeben – erst danach gibt es eine Stimme |
+| 4 | `npm run videos` | Vertont freigegebene Skripte **einmal** und rendert sie nach `out/` |
 
-Fertige Dateien landen in `out/` (`v01.mp4`, `v01-cover.png`).
+Ein vertontes Skript wird nie automatisch neu vertont. Nach einer Textänderung bewusst: `npm run tts -- v03 --neu`.
+Weitere Befehle: `npm run studio` (Vorschau im Browser), `npm run leadmagnet` (Gratis-PDF).
 
 ## Ordner
 

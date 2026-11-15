@@ -1,14 +1,92 @@
 {
-  "id": "v09",
-  "title": "Der größte Fehler am Anfang",
-  "pillar": "Mythen",
-  "caption": "Bauen ist leicht geworden. Verkaufen nicht.",
-  "hashtags": ["claudecode", "business", "fehler", "selbststaendig", "ki"],
-  "scenes": [
-    { "type": "hook", "kicker": "Fehler Nr. 1", "headline": "Der größte Fehler: *nur bauen*.", "voice": "Der größte Fehler, den ich bei Anfängern sehe: Sie bauen nur." },
-    { "type": "point", "num": 1, "headline": "Bauen ist *leicht* geworden.", "sub": "Mit Claude Code dauert es Stunden statt Wochen.", "voice": "Mit Claude Code ist Bauen leicht geworden. Stunden statt Wochen." },
-    { "type": "point", "num": 2, "headline": "Verkaufen *nicht*.", "sub": "Niemand kauft, was er nicht sieht.", "voice": "Verkaufen ist aber nicht leichter geworden. Niemand kauft etwas, das er nie zu sehen bekommt." },
-    { "type": "stat", "value": "50/50", "label": "Zeit fürs *Bauen* und fürs *Zeigen*", "voice": "Meine Regel: halbe Zeit bauen, halbe Zeit zeigen. Posten, Leute anschreiben, Feedback holen." },
-    { "type": "cta", "headline": "Was baust du gerade?", "sub": "Schreib's in die Kommentare", "voice": "Was baust du gerade? Schreib es in die Kommentare, ich schau es mir an." }
-  ]
+ "id": "v09",
+ "title": "Der größte Fehler am Anfang",
+ "pillar": "Mythen",
+ "approved": false,
+ "caption": "Bauen ist leicht geworden. Verkaufen nicht.",
+ "hashtags": [
+  "claudecode",
+  "business",
+  "fehler",
+  "selbststaendig",
+  "ki"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Der größte Fehler: *nur* *bauen.*",
+   "voice": "Der größte Fehler, den ich bei Anfängern sehe: Sie bauen nur."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Das Problem",
+   "alt": false,
+   "voice": "Erstens: das Problem."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Bauen ist *leicht* geworden",
+   "sub": "Stunden statt Wochen.",
+   "voice": "Mit Claude Code ist Bauen leicht geworden. Eine Website, ein Tool, ein Video dauern Stunden statt Wochen. Das fühlt sich produktiv an, also baut man einfach das nächste Ding."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Verkaufen *nicht*",
+   "sub": "Niemand kauft, was er nie zu sehen bekommt.",
+   "voice": "Verkaufen ist aber kein Stück leichter geworden. Niemand kauft etwas, das er nie zu sehen bekommt. Und fünf fertige Projekte auf deiner Festplatte bringen dir genau null Kunden."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Die Regel",
+   "alt": true,
+   "voice": "Zweitens: meine Regel."
+  },
+  {
+   "type": "stat",
+   "value": "50/50",
+   "label": "Zeit fürs *Bauen* und fürs *Zeigen*",
+   "voice": "Meine Regel lautet fünfzig zu fünfzig. Die halbe Zeit baue ich. Die andere Hälfte zeige ich, was ich gebaut habe."
+  },
+  {
+   "type": "list",
+   "title": "Zeigen heißt:",
+   "items": [
+    "Ergebnisse *posten*",
+    "Leute persönlich *anschreiben*",
+    "Nach *Feedback* fragen"
+   ],
+   "voice": "Zeigen heißt: Ergebnisse posten, auch wenn sie nicht perfekt sind. Leute persönlich anschreiben. Und nach Feedback fragen, bevor du weiterbaust."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Der Test",
+   "alt": false,
+   "voice": "Drittens: der Test."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Erst *fragen*, dann fertig bauen",
+   "sub": "Eine Demo reicht, um Interesse zu prüfen.",
+   "voice": "Bau nur eine Demo und frag, ob jemand das haben will. Wenn niemand reagiert, hast du einen Tag verloren und nicht einen Monat."
+  },
+  {
+   "type": "point",
+   "num": 4,
+   "headline": "Kleine Schritte *zeigen*",
+   "sub": "Schon ein Zwischenstand bringt dir Rückmeldung.",
+   "voice": "Du musst dafür nichts Fertiges haben. Schon ein Zwischenstand bringt dir Rückmeldung, und oft meldet sich genau darüber der erste Interessent."
+  },
+  {
+   "type": "cta",
+   "headline": "Was baust du gerade?",
+   "sub": "Schreib's in die Kommentare",
+   "voice": "Was baust du gerade? Schreib es in die Kommentare, ich schaue es mir an."
+  }
+ ]
 }

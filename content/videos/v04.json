@@ -1,14 +1,89 @@
 {
-  "id": "v04",
-  "title": "Was ist Claude Code überhaupt?",
-  "pillar": "Grundlagen",
-  "caption": "Claude Code in 40 Sekunden erklärt – für alle, die keine Programmierer sind.",
-  "hashtags": ["claudecode", "ki", "anthropic", "tech", "lernen"],
-  "scenes": [
-    { "type": "hook", "kicker": "In 40 Sekunden", "headline": "Claude Code ist *kein Chatbot*.", "voice": "Claude Code ist kein Chatbot. Und genau das ist der Unterschied, der Geld bringt." },
-    { "type": "point", "num": 1, "headline": "Ein Chatbot *antwortet*.", "sub": "Du kopierst, du klickst, du machst die Arbeit.", "voice": "Ein Chatbot antwortet dir. Danach kopierst du, klickst und machst die Arbeit selbst." },
-    { "type": "point", "num": 2, "headline": "Claude Code *arbeitet*.", "sub": "Legt Dateien an, führt Programme aus, baut fertige Projekte.", "voice": "Claude Code arbeitet selbst. Es legt Dateien an, führt Programme aus und baut fertige Projekte auf deinem Rechner." },
-    { "type": "terminal", "lines": ["> Erstelle 10 Instagram-Grafiken", "  aus meiner Preisliste", "✓ 10 Dateien in /grafiken"], "voice": "Du sagst, was du willst. Es erledigt die Schritte, bis das Ergebnis da ist." },
-    { "type": "cta", "headline": "Stell es dir vor wie einen *Mitarbeiter*.", "sub": "Folgen für mehr", "voice": "Stell es dir vor wie einen Mitarbeiter, der nie müde wird. Folg mir, ich zeig dir, was man damit verkaufen kann." }
-  ]
+ "id": "v04",
+ "title": "Was ist Claude Code überhaupt?",
+ "pillar": "Grundlagen",
+ "approved": false,
+ "caption": "Claude Code in einer Minute erklärt – für alle, die keine Programmierer sind.",
+ "hashtags": [
+  "claudecode",
+  "ki",
+  "anthropic",
+  "tech",
+  "lernen"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Claude Code ist *kein* *Chatbot.*",
+   "voice": "Claude Code ist kein Chatbot. Und genau dieser Unterschied entscheidet, ob du damit Geld verdienen kannst."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Der Unterschied",
+   "alt": false,
+   "voice": "Erstens: der Unterschied."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Ein Chatbot *antwortet*",
+   "sub": "Du kopierst, klickst und machst die Arbeit selbst.",
+   "voice": "Ein Chatbot gibt dir eine Antwort. Danach sitzt du da, kopierst Text hin und her, legst Dateien an und machst die eigentliche Arbeit selbst."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Claude Code *arbeitet*",
+   "sub": "Legt Dateien an, führt Programme aus, baut fertige Projekte.",
+   "voice": "Claude Code arbeitet direkt auf deinem Rechner. Es legt Dateien an, führt Programme aus, findet eigene Fehler und macht so lange weiter, bis das Ergebnis da ist."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Ein Beispiel",
+   "alt": true,
+   "voice": "Zweitens: ein Beispiel."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Erstelle 10 Instagram-Grafiken",
+    "  aus meiner Preisliste",
+    "✓ Preisliste gelesen",
+    "✓ 10 Dateien in /grafiken"
+   ],
+   "voice": "Ich schreibe zum Beispiel: Erstelle zehn Grafiken aus meiner Preisliste. Claude Code liest die Liste, baut die Grafiken und legt sie als fertige Dateien in einen Ordner."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Die Grenzen",
+   "alt": false,
+   "voice": "Drittens: die Grenzen."
+  },
+  {
+   "type": "list",
+   "title": "Das bleibt bei dir:",
+   "items": [
+    "Klar sagen, was du willst",
+    "Ergebnisse *prüfen*",
+    "Entscheiden, was rausgeht"
+   ],
+   "voice": "Zaubern kann es nicht. Du musst klar sagen, was du willst, die Ergebnisse prüfen und entscheiden, was rausgeht. Es macht Fehler, so wie ein neuer Mitarbeiter auch."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Du gibst das *Ziel* vor",
+   "sub": "Den Weg dorthin sucht es sich selbst.",
+   "voice": "Der wichtigste Unterschied im Alltag: Du gibst nur noch das Ziel vor. Den Weg dorthin, also die vielen kleinen Schritte, sucht es sich selbst."
+  },
+  {
+   "type": "cta",
+   "headline": "Denk an einen *Mitarbeiter.*",
+   "sub": "Folgen für mehr",
+   "voice": "Stell es dir vor wie einen fleißigen Mitarbeiter, dem du Aufgaben gibst. Folg mir, ich zeige dir, welche Aufgaben sich verkaufen lassen."
+  }
+ ]
 }

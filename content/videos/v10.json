@@ -1,14 +1,96 @@
 {
-  "id": "v10",
-  "title": "Was du am ersten Tag brauchst",
-  "pillar": "Grundlagen",
-  "caption": "Die komplette Start-Checkliste. Speichern für später.",
-  "hashtags": ["claudecode", "anfaenger", "ki", "setup", "checkliste"],
-  "scenes": [
-    { "type": "hook", "kicker": "Speichern", "headline": "Das brauchst du an *Tag 1*.", "voice": "Das brauchst du an Tag eins, wenn du mit Claude Code starten willst. Speicher dir das." },
-    { "type": "list", "title": "Die Basis:", "items": ["Claude-Abo oder API-Zugang", "Claude Code installiert", "Einen Ordner pro Projekt"], "voice": "Die Basis: ein Claude Abo oder API Zugang, Claude Code installiert und einen eigenen Ordner für jedes Projekt." },
-    { "type": "list", "title": "Für Websites:", "items": ["GitHub-Konto", "Vercel-Konto (gratis)"], "voice": "Für Websites: ein GitHub Konto und ein kostenloses Vercel Konto zum Veröffentlichen." },
-    { "type": "list", "title": "Für Videos:", "items": ["Remotion", "ElevenLabs für die Stimme"], "voice": "Für Videos: Remotion für die Animation und ElevenLabs für die Stimme." },
-    { "type": "cta", "headline": "Die Installation zeig ich dir *Schritt für Schritt*.", "sub": "Folgen", "voice": "Die Installation zeige ich dir im nächsten Video Schritt für Schritt. Folg mir." }
-  ]
+ "id": "v10",
+ "title": "Was du am ersten Tag brauchst",
+ "pillar": "Grundlagen",
+ "approved": false,
+ "caption": "Die komplette Start-Checkliste. Speichern für später.",
+ "hashtags": [
+  "claudecode",
+  "anfaenger",
+  "ki",
+  "setup",
+  "checkliste"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Das brauchst du an *Tag 1.*",
+   "voice": "Das brauchst du an Tag eins, wenn du mit Claude Code starten willst. Speicher dir das Video."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Die Basis",
+   "alt": false,
+   "voice": "Erstens: die Basis."
+  },
+  {
+   "type": "list",
+   "title": "Die Basis:",
+   "items": [
+    "Ein Claude-Abo",
+    "Claude Code installiert",
+    "Ein *Ordner* pro Projekt"
+   ],
+   "voice": "Du brauchst ein Claude Abo und Claude Code auf deinem Rechner. Und leg für jedes Projekt einen eigenen Ordner an. Claude Code arbeitet immer in dem Ordner, in dem du es startest."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Für Websites",
+   "alt": true,
+   "voice": "Zweitens: für Websites."
+  },
+  {
+   "type": "list",
+   "title": "Für Websites:",
+   "items": [
+    "Ein GitHub-Konto",
+    "Ein Vercel-Konto"
+   ],
+   "voice": "Für Websites kommen zwei Konten dazu. GitHub speichert deine Projekte und ihre Versionen. Über Vercel stellst du die Seite ins Internet. Beide reichen für den Anfang in der kostenlosen Stufe."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Für Videos",
+   "alt": false,
+   "voice": "Drittens: für Videos."
+  },
+  {
+   "type": "list",
+   "title": "Für Videos:",
+   "items": [
+    "*Remotion* für die Animation",
+    "*ElevenLabs* für die Stimme"
+   ],
+   "voice": "Für Videos brauchst du Remotion für die Animation und ElevenLabs für die Stimme. Achte bei beiden auf die Lizenz, sobald du Geld damit verdienst."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Fang *klein* an",
+   "sub": "Ein Projekt, ein Ordner, ein Ziel für die erste Woche.",
+   "voice": "Und dann fang klein an. Ein Projekt, ein Ordner, ein Ziel für die erste Woche. Zum Beispiel: eine einzige Website für einen Laden, den du kennst."
+  },
+  {
+   "type": "stat",
+   "value": "1 Woche",
+   "label": "bis zum *ersten* fertigen Projekt",
+   "voice": "Wenn du jeden Tag eine Stunde dranbleibst, hast du nach einer Woche dein erstes fertiges Projekt zum Zeigen."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Lies, was es *tut*",
+   "sub": "Am Anfang jede Aktion kurz ansehen und bestätigen.",
+   "voice": "Lass dir am Anfang jede Aktion zeigen und bestätige sie einzeln. So verstehst du schnell, wie es arbeitet."
+  },
+  {
+   "type": "cta",
+   "headline": "Die Installation, *Schritt für Schritt.*",
+   "sub": "Folgen",
+   "voice": "Die Installation zeige ich dir im nächsten Video Schritt für Schritt. Folg mir, damit du es nicht verpasst."
+  }
+ ]
 }

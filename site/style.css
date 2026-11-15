@@ -2,7 +2,7 @@
 @font-face{font-family:SG;font-weight:700;font-display:swap;src:url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:JM;font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-latin-500-normal.woff2) format("woff2")}
 
-:root{--bg:#07122B;--surface:#0F1D40;--line:#1E2F5C;--text:#FFFFFF;--muted:#9FB2D9;--accent:#4D8DFF;--ink:#07122B}
+:root{--bg:#0F1115;--surface:#171A21;--line:#2A2F3A;--text:#F5F5F2;--muted:#8A8F9C;--accent:#FFB020;--ink:#0F1115}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:SG,system-ui,sans-serif;font-weight:500;font-size:18px;line-height:1.5;
@@ -41,7 +41,7 @@ h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.02em;line-height:1.1;font-wei
 
 .term{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px}
 .dots{display:flex;gap:8px;padding:14px 18px;border-bottom:1.5px solid var(--line)}
-.dots i{width:12px;height:12px;border-radius:50%;background:#2C4078}
+.dots i{width:12px;height:12px;border-radius:50%;background:#3A404D}
 pre{font-family:JM,monospace;font-size:clamp(13px,1.9vw,17px);line-height:1.65;padding:22px;white-space:pre-wrap;color:var(--text)}
 pre b{font-weight:500;color:var(--accent)}
 .note{margin-top:16px;color:var(--muted)}

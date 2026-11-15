@@ -1,14 +1,85 @@
 {
-  "id": "v06",
-  "title": "So verkaufst du Websites an lokale Läden",
-  "pillar": "Websites verkaufen",
-  "caption": "Der Trick: Bau die Seite, BEVOR du fragst.",
-  "hashtags": ["claudecode", "webdesign", "kundengewinnung", "freelancer", "selbststaendig"],
-  "scenes": [
-    { "type": "hook", "kicker": "Kundengewinnung", "headline": "Bau die Website, *bevor* du fragst.", "voice": "Der beste Trick, um Websites zu verkaufen: Bau sie, bevor du überhaupt fragst." },
-    { "type": "point", "num": 1, "headline": "Läden mit *schlechter* Website finden", "sub": "Google Maps → Website anklicken → veraltet?", "voice": "Schritt eins: Such auf Google Maps Läden in deiner Stadt mit veralteter oder gar keiner Website." },
-    { "type": "point", "num": 2, "headline": "Mit Claude Code eine *Demo* bauen", "sub": "Echter Name, echte Infos, echte Fotos vom Laden.", "voice": "Schritt zwei: Bau mit Claude Code eine Demo mit ihrem echten Namen und ihren echten Infos." },
-    { "type": "point", "num": 3, "headline": "Link schicken, *nicht* pitchen", "sub": "„Ich hab das mal für euch gebaut – gefällt's?“", "voice": "Schritt drei: Schick einfach den Link. Kein Verkaufsgespräch. Ich hab das mal für euch gebaut, gefällt es euch?" },
-    { "type": "cta", "headline": "Eine fertige Seite verkauft sich *selbst*.", "sub": "Folgen für die Nachricht-Vorlage", "voice": "Eine fertige Seite verkauft sich fast von selbst. Im nächsten Video bekommst du meine Nachricht-Vorlage." }
-  ]
+ "id": "v06",
+ "title": "So verkaufst du Websites an lokale Läden",
+ "pillar": "Websites verkaufen",
+ "approved": false,
+ "caption": "Der Trick: Bau die Seite, bevor du fragst.",
+ "hashtags": [
+  "claudecode",
+  "webdesign",
+  "kundengewinnung",
+  "freelancer",
+  "selbststaendig"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Bau die Website, *bevor* du *fragst.*",
+   "voice": "Der beste Weg, Websites zu verkaufen: Bau sie, bevor du überhaupt fragst."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Finden",
+   "alt": false,
+   "voice": "Schritt eins: Läden finden."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Läden mit *schlechter* Website finden",
+   "sub": "Kartendienst öffnen, Website anklicken, veraltet?",
+   "voice": "Öffne einen Kartendienst und such Läden in deiner Stadt. Klick bei jedem auf die Website. Ist sie veraltet, am Handy kaputt oder gar nicht vorhanden, kommt der Laden auf deine Liste."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Bauen",
+   "alt": true,
+   "voice": "Schritt zwei: Demo bauen."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Eine *Demo* mit echten Infos bauen",
+   "sub": "Echter Name, echte Leistungen, echte Öffnungszeiten.",
+   "voice": "Dann baust du mit Claude Code eine Demo. Mit dem echten Namen, den echten Leistungen und den echten Öffnungszeiten. Das dauert eine Stunde und zeigt dem Inhaber sofort, was er bekommen würde."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Zeigen",
+   "alt": false,
+   "voice": "Schritt drei: zeigen."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Link schicken, *nicht* pitchen",
+   "sub": "„Ich hab das mal für euch gebaut – gefällt's?“",
+   "voice": "Schick den Link per E-Mail oder geh einfach vorbei. Kein Verkaufsgespräch. Ein Satz reicht: Ich habe das mal für euch gebaut, gefällt es euch?"
+  },
+  {
+   "type": "list",
+   "title": "Wichtig dabei:",
+   "items": [
+    "Fester Preis statt Stundensatz",
+    "Nur persönlich ansprechen",
+    "Nicht jeder sagt Ja"
+   ],
+   "voice": "Nenn einen festen Preis, das verstehen kleine Läden besser als Stundensätze. Schreib jeden persönlich an, Massenmails sind nicht erlaubt. Und rechne damit, dass die meisten erst mal nicht antworten."
+  },
+  {
+   "type": "stat",
+   "value": "10 Läden",
+   "label": "anschreiben, bevor du *aufgibst*",
+   "voice": "Schreib mindestens zehn Läden an, bevor du ein Urteil fällst. Ein einzelnes Nein sagt nichts darüber, ob dein Angebot gut ist."
+  },
+  {
+   "type": "cta",
+   "headline": "Eine fertige Seite *überzeugt.*",
+   "sub": "Folgen für die Vorlage",
+   "voice": "Eine fertige Seite überzeugt mehr als jede Erklärung. Im nächsten Video bekommst du meine Nachricht als Vorlage."
+  }
+ ]
 }

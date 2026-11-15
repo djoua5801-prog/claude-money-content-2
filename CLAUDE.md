@@ -1,35 +1,36 @@
 # Anweisungen für Claude Code in diesem Repo
 
-Projekt: automatisierte TikTok-Erklärvideos (Deutsch) zum Thema „Mit Claude Code Geld verdienen“, plus E-Books und Landingpage.
+Projekt: automatisierte TikTok-Erklärvideos (Deutsch) zum Thema „Mit Claude Code Geld verdienen“, plus E-Books und Landingpage. Zwei Personen posten im selben Stil; die Videos sollen gleich aussehen und sich inhaltlich ergänzen.
 
-## Neue Videos erstellen
-Wenn der Nutzer z. B. „mach 10 neue Videos“ sagt:
-1. Ideen aus `research/ideen-backlog.md` nehmen (erledigte abhaken) oder neue vorschlagen.
-2. Pro Video eine Datei `content/videos/vNN.json` im Format von `src/types.ts` anlegen (fortlaufende Nummer).
-3. Regeln für Skripte:
-   - 30–45 Sekunden, ca. 80–110 gesprochene Wörter, Du-Form, Deutsch.
-   - Szene 1 ist immer `hook`: provokanter, konkreter Satz in den ersten 2 Sekunden.
-   - Letzte Szene ist immer `cta`.
-   - Bildschirmtext kurz (max. ~8 Wörter pro Headline); der gesprochene Text (`voice`) darf ausführlicher sein.
-   - Zahlen im `voice`-Feld ausschreiben („zehn“ statt „10“), damit die Stimme sie richtig spricht.
-   - Keine Einkommensversprechen, keine erfundenen Ergebnisse. Echte Demos statt Hype.
-4. `npm run videos` ausführen, dann Cover in `out/` prüfen.
+## Ablauf – immer in dieser Reihenfolge
+1. **Skript schreiben** (`content/videos/vNN.json`, `"approved": false`). Keine Stimme, kein Render.
+2. **Freigabe durch den Nutzer.** Erst wenn er das Skript gelesen hat: `npm run freigeben -- vNN`.
+3. **Stimme – genau eine Version pro Skript:** `npm run tts`. Vertont nur freigegebene Skripte, nie doppelt.
+4. **Rendern:** `npm run videos` (vertont fehlende, rendert nur vertonte Videos).
 
-## Hook
-Szene 1 wird automatisch als Kinetic-Typografie gerendert (`src/KineticHook.tsx`). Der gesprochene Hook-Satz sollte deshalb kurz sein (max. ~12 Wörter); Wörter, die im Bild hervorgehoben werden sollen, in der `headline` mit `*Sternchen*` markieren.
+Regeln dazu:
+- Nie ein Skript vertonen, das der Nutzer nicht freigegeben hat. Nie `approved` selbst auf true setzen, außer der Nutzer sagt es ausdrücklich.
+- Textänderungen gehören VOR die Freigabe. Ein vertontes Skript nicht mehr ändern. Wenn doch nötig: dem Nutzer sagen, dass das neu kostet, und nur auf sein Ja `npm run tts -- vNN --neu`.
+- Keine Varianten derselben Stimme erzeugen, Stimme/Modell in `brand/brand.json` und `.env` nicht wechseln.
+- Stand ansehen: `npm run skripte` (Entwurf / freigegeben / vertont / Text geändert, Länge, Zeichen).
 
-## Landingpage und Gratis-PDF
-`site/` ist statisch (kein Build). PDF-Inhalte in `ebooks/lead-magnet/prompts.json`, bauen mit `npm run leadmagnet`. Keine erfundenen Bewertungen, Zahlen oder Einkommensversprechen auf der Seite.
+## Skript-Regeln
+- Länge: **mindestens 61 Sekunden**, Ziel 65–70 s. Das sind bei dieser Stimme ca. 1.080–1.150 Zeichen Sprechtext (≈ 16,5 Zeichen/Sekunde). `npm run skripte` zeigt die Zeichenzahl.
+- Aufbau wie in v01–v10: `hook` → 3 Kapitel (`chapter` 01/02/03, abwechselnd `"alt": true`) mit je 1–2 Szenen → `cta`.
+- Szene 1 ist immer `hook`: ein konkreter Satz; Akzent-Wörter in der `headline` mit `*Sternchen*`, letztes Akzent-Wort kurz (wird groß gezeigt).
+- `point`-Szenen werden als „Schritt n von N“ gezeigt; `num` fortlaufend.
+- Bildschirmtext kurz (max. ~8 Wörter); `voice` ausführlicher. Zahlen im `voice` ausschreiben.
+- Du-Form. Keine Einkommensversprechen, keine erfundenen Ergebnisse, keine erfundenen Zahlen.
+- Ideen aus `research/ideen-backlog.md`; erledigte abhaken. Mit dem Kollegen abgestimmte Themen dort eintragen, damit nichts doppelt entsteht.
 
-## Animations-Pakete
-- **Kinetic Typography** (`story.json`, `src/kinetic/`, `npm run kinetic`): Wort-für-Wort-Typo-Videos, z. B. als Intro oder eigenständiger Clip. Regeln im Skill `kinetic-storytelling` — nur die dort gelisteten Enum-Werte verwenden. Rendern: `npx remotion render src/index.ts KineticStory out/kinetic.mp4`. Recraft-Formen kosten Geld: nie `--force` ohne Rückfrage.
-- **Remotion Bits** (npm `remotion-bits`): fertige Bausteine wie `AnimatedText`, `AnimatedCounter`, `TypeWriter`, `CodeBlock`, `StaggeredMotion`, `Particles`, `Scene3D`. Für neue Szenentypen in `src/scenes/` zuerst passende Beispiele suchen (`npx remotion-bits find "<effekt>"`), siehe Skill `remotion-bits`. Projektfarben aus `brand/brand.json` statt der Bits-Standardfarben.
+## Stil (gemeinsam mit dem Kollegen)
+Dunkler Grund, Amber als Akzent, Violett als Zweitfarbe, schmale fette Überschriften (Archivo), kleine Mono-Labels, Eck-Markierungen, Kapitelkarten vollflächig, Untertitel als dunkle Pille. Alles in `brand/brand.json`, `src/Explainer.tsx`, `src/scenes/Scenes.tsx`. Stil nicht ohne Rückfrage ändern.
 
-## Remotion-Skills
-Offizielle Skills aus `remotion-dev/skills` liegen in `.claude/skills/` (`remotion-best-practices` ist der Einstieg). Vor neuem Remotion-Code dort nachsehen.
-
-## Figur
-Eigener Roboterhund in Weiß-Blau: animierte Komponente `src/Dog.tsx` (Props `size`, `mood`, `talking`), statische SVGs in `brand/figur/`. Erscheint in der CTA-Szene und auf der Landingpage. Eigenes Design – nicht an fremde Maskottchen oder Produkte angleichen.
+## Weitere Bausteine
+- Kinetic-Hook (`"kineticHook": true` pro Video) und Kinetic-Clips: `src/kinetic/`, Skill `kinetic-storytelling`. Recraft-Formen kosten Geld: nie `--force` ohne Rückfrage.
+- Remotion Bits (npm `remotion-bits`) und offizielle Remotion-Skills in `.claude/skills/` (`remotion-best-practices` ist der Einstieg).
+- Figur: eigener Roboterhund `src/Dog.tsx`, derzeit aus (`"mascot": false` in `brand/brand.json`). Nicht an fremde Maskottchen oder Produkte angleichen.
+- Landingpage `site/` (statisch), Gratis-PDF aus `ebooks/lead-magnet/prompts.json` mit `npm run leadmagnet`. Keine erfundenen Bewertungen oder Zahlen.
 
 ## Marke
-Farben/Schriften/Stimme in `brand/brand.json`. Keine Emojis im Video, kein Anthropic-Logo, „Claude“ nur beschreibend nennen.
+Keine Emojis im Video, kein Anthropic-Logo, „Claude“ nur beschreibend nennen.

@@ -1,15 +1,88 @@
 {
-  "id": "v03",
-  "title": "Eine Website mit 3 Prompts",
-  "pillar": "Websites verkaufen",
-  "caption": "Von null zur fertigen Friseur-Website. Die Prompts stehen im Video.",
-  "hashtags": ["claudecode", "webdesign", "website", "ki", "freelancer"],
-  "scenes": [
-    { "type": "hook", "kicker": "Live-Test", "headline": "Eine komplette Website mit *3 Prompts*.", "voice": "Eine komplette Website mit nur drei Prompts. Ich zeig dir genau welche." },
-    { "type": "terminal", "lines": ["> Bau eine Website für Salon Mira,", "  Friseur in Köln. Modern, warm,", "  mit Preisliste und Terminbutton."], "voice": "Prompt eins: Ich beschreibe den Laden. Name, Stadt, Stil und was drauf soll." },
-    { "type": "terminal", "lines": ["> Mach die Startseite mobil", "  perfekt und füg Google-Maps", "  und Öffnungszeiten ein."], "voice": "Prompt zwei: mobil optimieren, Karte und Öffnungszeiten rein. Die meisten Kunden kommen übers Handy." },
-    { "type": "terminal", "lines": ["> Veröffentliche die Seite", "✓ Live unter salon-mira.vercel.app"], "voice": "Prompt drei: veröffentlichen. Die Seite ist live und der Kunde kann sie sofort ansehen." },
-    { "type": "stat", "value": "3 Prompts", "label": "statt *Wochen* mit einer Agentur", "voice": "Drei Prompts statt wochenlanger Abstimmung mit einer Agentur. Feinschliff kommt natürlich noch dazu." },
-    { "type": "cta", "headline": "Wie du sie *verkaufst*, zeig ich im nächsten Video.", "sub": "Folgen", "voice": "Wie du so eine Seite an echte Kunden verkaufst, zeige ich dir im nächsten Video." }
-  ]
+ "id": "v03",
+ "title": "Eine Website mit 3 Prompts",
+ "pillar": "Websites verkaufen",
+ "approved": false,
+ "caption": "Von null zur fertigen Friseur-Website. Die drei Prompts stehen im Video.",
+ "hashtags": [
+  "claudecode",
+  "webdesign",
+  "website",
+  "ki",
+  "freelancer"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Eine komplette Website mit nur *3 Prompts.*",
+   "voice": "Eine komplette Website mit nur drei Prompts. Ich zeige dir genau, welche das sind."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Beschreiben",
+   "alt": false,
+   "voice": "Prompt eins: beschreiben."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Bau eine Website für Salon Mira,",
+    "  Friseur in Köln. Modern, warm,",
+    "  mit Preisliste und Terminbutton."
+   ],
+   "voice": "Im ersten Prompt beschreibe ich den Laden so, wie ich es einem Menschen erklären würde. Name, Stadt, Stil und was auf die Seite soll. Je genauer die Beschreibung, desto weniger muss ich später nachbessern."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Verbessern",
+   "alt": true,
+   "voice": "Prompt zwei: verbessern."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Mach die Seite fürs Handy perfekt",
+    "  und füg Karte und Öffnungszeiten ein.",
+    "✓ Mobile Ansicht angepasst",
+    "✓ Karte eingebunden"
+   ],
+   "voice": "Im zweiten Prompt geht es ums Handy. Die meisten Kunden eines Friseurs suchen unterwegs. Also lasse ich die mobile Ansicht aufräumen und Karte und Öffnungszeiten einbauen."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Veröffentlichen",
+   "alt": false,
+   "voice": "Prompt drei: veröffentlichen."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Veröffentliche die Seite",
+    "✓ Live unter salon-mira.vercel.app"
+   ],
+   "voice": "Der dritte Prompt bringt die Seite ins Internet. Claude Code führt mich durch die Schritte, und am Ende habe ich einen Link, den ich dem Laden sofort schicken kann."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Danach kommt der *Feinschliff*",
+   "sub": "Echte Fotos, echte Texte, Impressum – das bleibt Handarbeit.",
+   "voice": "Was danach noch fehlt, ist der Feinschliff. Echte Fotos vom Laden, die richtigen Preise, ein Impressum. Das bleibt Handarbeit, und genau dafür bezahlt dich der Kunde."
+  },
+  {
+   "type": "stat",
+   "value": "1 Nachmittag",
+   "label": "von der Idee bis zum *Link*",
+   "voice": "Rechne für dein erstes Projekt mit einem Nachmittag, von der Idee bis zum fertigen Link. Beim zweiten Mal geht es schon deutlich schneller."
+  },
+  {
+   "type": "cta",
+   "headline": "So *verkaufst* du die Seite.",
+   "sub": "Folgen für Teil 2",
+   "voice": "Wie du so eine Seite an einen echten Laden verkaufst, zeige ich dir im nächsten Video. Folg mir dafür."
+  }
+ ]
 }

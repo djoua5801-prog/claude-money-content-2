@@ -7,10 +7,12 @@
     "build:data": "tsx tools/build-data.ts",
     "tts": "tsx tools/tts.ts",
     "render": "tsx tools/render-all.ts",
-    "videos": "npm run tts && npm run build:data && npm run render",
+    "videos": "npm run tts && npm run build:data && tsx tools/render-all.ts --nur-vertont",
     "preview": "npm run build:data && npm run render",
     "kinetic": "tsx tools/kinetic.ts",
-    "leadmagnet": "tsx tools/build-leadmagnet.ts"
+    "leadmagnet": "tsx tools/build-leadmagnet.ts",
+    "skripte": "tsx tools/build-data.ts",
+    "freigeben": "tsx tools/approve.ts"
   },
   "keywords": [],
   "author": "",

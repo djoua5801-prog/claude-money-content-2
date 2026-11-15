@@ -1,14 +1,91 @@
 {
-  "id": "v07",
-  "title": "30 Videos aus einem Prompt",
-  "pillar": "Content-Maschine",
-  "caption": "Ein Monat Content an einem Nachmittag. So ist das System aufgebaut.",
-  "hashtags": ["claudecode", "contentstrategie", "automatisierung", "tiktokgrowth", "ki"],
-  "scenes": [
-    { "type": "hook", "kicker": "Content-Maschine", "headline": "Ein Monat Content an *einem* Nachmittag.", "voice": "Ein ganzer Monat Content an einem einzigen Nachmittag. So baue ich das." },
-    { "type": "list", "title": "Die Pipeline:", "items": ["Ideen-Liste", "Skripte", "KI-Stimme", "Animation + Untertitel", "Fertige MP4s"], "voice": "Die Pipeline: eine Ideen-Liste, daraus Skripte, dann die KI-Stimme, dann Animation mit Untertiteln, am Ende fertige Videos." },
-    { "type": "terminal", "lines": ["> Nimm die nächsten 30 Ideen", "  und mach daraus Videos", "✓ 30 Skripte", "✓ 30 Voiceovers", "✓ 30 Videos in /out"], "voice": "Und gestartet wird das Ganze mit einem einzigen Auftrag an Claude Code." },
-    { "type": "point", "num": 1, "headline": "Du machst nur noch die *Freigabe*.", "sub": "Durchsehen, aussortieren, posten.", "voice": "Deine Arbeit ist nur noch die Freigabe. Durchsehen, Schlechtes aussortieren, posten." },
-    { "type": "cta", "headline": "Das ganze System gibt's als *E-Book*.", "sub": "Link in Bio", "voice": "Das komplette System mit allen Vorlagen erkläre ich in meinem E-Book. Link in der Bio." }
-  ]
+ "id": "v07",
+ "title": "30 Videos aus einem Prompt",
+ "pillar": "Content-Maschine",
+ "approved": false,
+ "caption": "Ein Monat Content an einem Nachmittag. So ist das System aufgebaut.",
+ "hashtags": [
+  "claudecode",
+  "contentstrategie",
+  "automatisierung",
+  "tiktoktipps",
+  "ki"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Ein Monat Content an *einem* *Nachmittag.*",
+   "voice": "Ein ganzer Monat Content an einem einzigen Nachmittag. So ist mein System aufgebaut."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Die Pipeline",
+   "alt": false,
+   "voice": "Erstens: die Pipeline."
+  },
+  {
+   "type": "list",
+   "title": "Fünf Stationen:",
+   "items": [
+    "Ideen-Liste",
+    "Skripte",
+    "KI-Stimme",
+    "Animation + Untertitel",
+    "Fertige Videos"
+   ],
+   "voice": "Das System hat fünf Stationen. Eine Ideen-Liste. Daraus entstehen Skripte. Die Skripte bekommen eine Stimme. Dann kommen Animation und Untertitel dazu. Am Ende liegen fertige Videos im Ordner."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Der Start",
+   "alt": true,
+   "voice": "Zweitens: der Start."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Nimm die nächsten 30 Ideen",
+    "  und schreib die Skripte",
+    "✓ 30 Skripte geschrieben",
+    "> Vertone und rendere alle",
+    "✓ 30 Videos in /out"
+   ],
+   "voice": "Gestartet wird das mit zwei Aufträgen an Claude Code. Erst die Skripte. Die lese ich durch und gebe sie frei. Erst danach kommen Stimme und Video, damit ich nichts doppelt bezahle."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Deine Rolle",
+   "alt": false,
+   "voice": "Drittens: deine Rolle."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Du machst die *Freigabe*",
+   "sub": "Durchlesen, aussortieren, eigene Beispiele ergänzen.",
+   "voice": "Deine Arbeit ist die Freigabe. Du liest die Skripte, streichst die schwachen und ergänzt eigene Beispiele. Ohne diesen Schritt klingt alles gleich."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Qualität vor *Menge*",
+   "sub": "Lieber zehn gute Videos als dreißig austauschbare.",
+   "voice": "Und bitte nicht übertreiben. Zehn gute Videos bringen mehr als dreißig austauschbare. Die Maschine spart dir den Schnitt, nicht das Nachdenken."
+  },
+  {
+   "type": "stat",
+   "value": "1 Stimme",
+   "label": "pro Skript – *einmal* vertont",
+   "voice": "Jedes freigegebene Skript wird genau einmal vertont. So bleibt die Stimme überall gleich, und das Guthaben beim Stimm-Anbieter reicht deutlich länger. Änderungen mache ich deshalb immer am Text, bevor die Stimme entsteht."
+  },
+  {
+   "type": "cta",
+   "headline": "Das System gibt's als *E-Book.*",
+   "sub": "Link in Bio",
+   "voice": "Das komplette System mit allen Vorlagen erkläre ich in meinem E-Book. Den Link findest du in meiner Bio."
+  }
+ ]
 }

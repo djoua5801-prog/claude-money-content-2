@@ -1,8 +1,10 @@
 // ElevenLabs-Voiceover mit Wort-Zeitmarken erzeugen.
-// Nutzung:  npm run tts            → alle Videos ohne vorhandenes Audio
-//           npm run tts -- v01 v02 → nur diese IDs
-//           npm run tts -- --force → alles neu
+// Regel: erst Skript, dann Stimme – und pro Skript genau EINE Stimm-Version.
+//   - Vertont werden nur Skripte mit "approved": true (freigeben: npm run freigeben -- v01).
+//   - Ein vertontes Skript wird nie automatisch neu vertont.
+//   - Wurde der Text danach geändert, muss das bewusst passieren: npm run tts -- v03 --neu
 import "dotenv/config";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import brand from "../brand/brand.json";
@@ -16,11 +18,15 @@ if (!KEY || !VOICE) {
 }
 
 const args = process.argv.slice(2);
-const force = args.includes("--force");
+const redo = args.includes("--neu");
 const only = args.filter((a) => !a.startsWith("--"));
+if (redo && !only.length) {
+  console.error("--neu braucht die Video-IDs, z. B.: npm run tts -- v03 --neu");
+  process.exit(1);
+}
 
 const dir = "content/videos";
-const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort();
 
 const toWords = (chars: string[], starts: number[], ends: number[]): Word[] => {
   const words: Word[] = [];
@@ -41,36 +47,42 @@ const toWords = (chars: string[], starts: number[], ends: number[]): Word[] => {
   return words;
 };
 
+let chars = 0;
 for (const f of files) {
   const spec: VideoSpec = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
   if (only.length && !only.includes(spec.id)) continue;
   const audioPath = `public/audio/${spec.id}.mp3`;
   const timingPath = `content/timing/${spec.id}.json`;
-  if (!force && fs.existsSync(audioPath) && fs.existsSync(timingPath)) {
-    console.log(`= ${spec.id} (vorhanden)`);
+  const text = spec.scenes.map((s) => s.voice.trim()).join(" ");
+  const hash = createHash("sha1").update(text).digest("hex");
+  if (!spec.approved) {
+    console.log(`· ${spec.id} wartet auf Freigabe (npm run freigeben -- ${spec.id})`);
     continue;
   }
-  const text = spec.scenes.map((s) => s.voice.trim()).join(" ");
-  console.log(`→ ${spec.id}: ${text.split(/\s+/).length} Wörter`);
-  const res = await fetch(
-    `https://api.elevenlabs.io/v1/text-to-speech/${VOICE}/with-timestamps?output_format=mp3_44100_128`,
-    {
-      method: "POST",
-      headers: { "xi-api-key": KEY, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        text,
-        model_id: brand.voice.model,
-        language_code: "de",
-        voice_settings: brand.voice.settings,
-      }),
-    },
-  );
+  if (fs.existsSync(audioPath) && fs.existsSync(timingPath)) {
+    const old = JSON.parse(fs.readFileSync(timingPath, "utf8"));
+    if (old.hash === hash) {
+      console.log(`= ${spec.id} ist vertont`);
+      continue;
+    }
+    if (!redo) {
+      console.log(`! ${spec.id}: Text wurde nach dem Vertonen geändert. Die alte Stimme bleibt liegen und wird nicht benutzt.`);
+      console.log(`  Bewusst neu vertonen (kostet ${text.length} Zeichen): npm run tts -- ${spec.id} --neu`);
+      continue;
+    }
+  }
+  console.log(`→ ${spec.id}: ${text.length} Zeichen`);
+  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE}/with-timestamps?output_format=mp3_44100_128`, {
+    method: "POST",
+    headers: { "xi-api-key": KEY, "Content-Type": "application/json" },
+    body: JSON.stringify({ text, model_id: brand.voice.model, language_code: "de", voice_settings: brand.voice.settings }),
+  });
   if (!res.ok) {
     const body = await res.text();
     console.error(`✗ ${spec.id}: ${res.status} ${body}`);
     if (body.includes("voice_not_found")) console.error("  → ELEVENLABS_VOICE_ID in .env ist keine gültige Voice-ID (ca. 20 Zeichen, in ElevenLabs unter Voices → ⋯ → Copy voice ID).");
-    if (res.status === 401) console.error("  → ELEVENLABS_API_KEY in .env ist ungültig.");
-    console.error("Abbruch: Es wird nichts gerendert, solange die Stimme fehlt.");
+    if (res.status === 401) console.error("  → ELEVENLABS_API_KEY in .env ist ungültig oder das Guthaben ist aufgebraucht.");
+    console.error("Abbruch.");
     process.exit(1);
   }
   const data = (await res.json()) as {
@@ -82,6 +94,9 @@ for (const f of files) {
   fs.writeFileSync(audioPath, Buffer.from(data.audio_base64, "base64"));
   const a = data.alignment;
   const words = toWords(a.characters, a.character_start_times_seconds, a.character_end_times_seconds);
-  fs.writeFileSync(timingPath, JSON.stringify({ words }, null, 1));
-  console.log(`✓ ${spec.id}: ${words.length} Wörter, ${words.at(-1)?.end.toFixed(1)} s`);
+  fs.writeFileSync(timingPath, JSON.stringify({ hash, voiceId: VOICE, model: brand.voice.model, words }, null, 1));
+  chars += text.length;
+  const secs = words.at(-1)?.end ?? 0;
+  console.log(`✓ ${spec.id}: ${secs.toFixed(1)} s${secs < 61 ? "  (unter 61 s – Skript etwas verlängern, falls über 1 Minute nötig)" : ""}`);
 }
+if (chars) console.log(`Verbraucht in diesem Lauf: ${chars} Zeichen.`);

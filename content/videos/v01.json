@@ -1,14 +1,89 @@
 {
-  "id": "v01",
-  "title": "Dieses Video hat kein Mensch geschnitten",
-  "pillar": "Videos automatisieren",
-  "caption": "Skript, Stimme, Schnitt, Untertitel – alles aus einem System. So funktioniert's 👇",
-  "hashtags": ["claudecode", "ki", "automatisierung", "contentcreator", "nebeneinkommen"],
-  "scenes": [
-    { "type": "hook", "kicker": "Ehrlich jetzt", "headline": "Dieses Video hat *kein Mensch* geschnitten.", "voice": "Dieses Video hat kein Mensch geschnitten. Kein Schnittprogramm, kein Editor." },
-    { "type": "terminal", "lines": ["> Mach aus Skript 01 ein TikTok-Video", "✓ Voiceover erstellt", "✓ 6 Szenen animiert", "✓ Untertitel synchron", "✓ out/v01.mp4"], "voice": "Ich gebe Claude Code einen einzigen Auftrag. Es schreibt das Skript, holt die Stimme, animiert jede Szene und setzt die Untertitel." },
-    { "type": "list", "title": "Das System:", "items": ["*Claude Code* steuert alles", "*Remotion* baut die Animation", "*ElevenLabs* liefert die Stimme"], "voice": "Dahinter stecken drei Werkzeuge: Claude Code als Gehirn, Remotion für die Animation und ElevenLabs für die Stimme." },
-    { "type": "stat", "value": "10 Videos", "label": "aus *einem* Befehl", "voice": "Und statt einem Video mache ich so zehn auf einmal." },
-    { "type": "cta", "headline": "Ich zeig dir das *ganze Setup*.", "sub": "Folgen für Teil 2", "voice": "In den nächsten Videos zeige ich dir das komplette Setup. Folg mir, damit du es nicht verpasst." }
-  ]
+ "id": "v01",
+ "title": "Dieses Video hat kein Mensch geschnitten",
+ "pillar": "Videos automatisieren",
+ "approved": false,
+ "caption": "Skript, Stimme, Schnitt, Untertitel – alles aus einem System. So ist es aufgebaut.",
+ "hashtags": [
+  "claudecode",
+  "ki",
+  "automatisierung",
+  "contentcreator",
+  "remotion"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Dieses Video hat *kein Mensch* *geschnitten.*",
+   "voice": "Dieses Video hat kein Mensch geschnitten. Kein Schnittprogramm, kein Editor, keine Timeline."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Der Auftrag",
+   "alt": false,
+   "voice": "Erstens: der Auftrag."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Mach aus Skript 01 ein Hochkant-Video",
+    "✓ Voiceover erstellt",
+    "✓ 9 Szenen animiert",
+    "✓ Untertitel synchron",
+    "✓ out/v01.mp4"
+   ],
+   "voice": "Ich gebe Claude Code einen einzigen Auftrag in normalem Deutsch. Den Rest erledigt es selbst: Es liest das Skript, holt die Stimme, baut jede Szene und setzt die Untertitel wortgenau darunter."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Die Werkzeuge",
+   "alt": true,
+   "voice": "Zweitens: die Werkzeuge."
+  },
+  {
+   "type": "list",
+   "title": "Drei Bausteine:",
+   "items": [
+    "*Claude Code* steuert alles",
+    "*Remotion* baut die Animation",
+    "*ElevenLabs* spricht den Text"
+   ],
+   "voice": "Dahinter stecken drei Bausteine. Claude Code ist das Gehirn und steuert alles. Remotion baut aus Code die Animation. Und ElevenLabs spricht den Text ein."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Das Skript ist eine *Textdatei*",
+   "sub": "Text ändern, neu rendern – fertig ist die neue Version.",
+   "voice": "Der Trick dabei: Das ganze Video ist nur eine Textdatei. Wenn mir ein Satz nicht gefällt, ändere ich den Text und lasse neu rendern. Kein Nachschneiden, kein Verschieben von Clips."
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Der Effekt",
+   "alt": false,
+   "voice": "Drittens: der Effekt."
+  },
+  {
+   "type": "stat",
+   "value": "10 Videos",
+   "label": "aus *einem* Befehl",
+   "voice": "Weil alles aus Vorlagen entsteht, mache ich statt einem Video zehn auf einmal. Meine Arbeit ist dann nur noch: ansehen, aussortieren, posten."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Jedes Video sieht *gleich* aus",
+   "sub": "Farben, Schrift und Aufbau kommen aus einer Vorlage.",
+   "voice": "Und weil Farben, Schrift und Aufbau aus einer Vorlage kommen, sieht jedes Video gleich aus. Das sorgt dafür, dass man meine Videos im Feed sofort wiedererkennt."
+  },
+  {
+   "type": "cta",
+   "headline": "Ich zeig dir das *ganze Setup.*",
+   "sub": "Folgen für Teil 2",
+   "voice": "In den nächsten Videos zeige ich dir das komplette Setup, Schritt für Schritt und ohne Vorkenntnisse. Folg mir, damit du Teil zwei nicht verpasst."
+  }
+ ]
 }

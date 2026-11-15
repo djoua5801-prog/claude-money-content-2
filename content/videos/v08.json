@@ -1,14 +1,95 @@
 {
-  "id": "v08",
-  "title": "Skills: das Feature, das kaum einer nutzt",
-  "pillar": "Grundlagen",
-  "caption": "Skills = Claude einmal etwas beibringen, für immer nutzen.",
-  "hashtags": ["claudecode", "ki", "produktivitaet", "automatisierung", "tipps"],
-  "scenes": [
-    { "type": "hook", "kicker": "Unterschätzt", "headline": "Das Claude-Code-Feature, das *kaum einer* nutzt.", "voice": "Das Claude Code Feature, das kaum einer nutzt, und das alles verändert: Skills." },
-    { "type": "point", "num": 1, "headline": "Ein Skill ist eine *Anleitung*.", "sub": "Einmal schreiben – Claude hält sich jedes Mal dran.", "voice": "Ein Skill ist eine Anleitung, die du einmal schreibst. Claude hält sich danach jedes Mal daran." },
-    { "type": "list", "title": "Zum Beispiel:", "items": ["Deine Markenfarben + Schriften", "Dein Video-Stil", "Deine Kunden-Angebote"], "voice": "Zum Beispiel deine Markenfarben, dein Video-Stil oder wie deine Angebote für Kunden aussehen sollen." },
-    { "type": "stat", "value": "1 Mal", "label": "erklären statt *jedes Mal* neu", "voice": "Du erklärst es einmal, statt jedes Mal von vorne." },
-    { "type": "cta", "headline": "Meine Skills zeig ich dir *einzeln*.", "sub": "Folgen", "voice": "Meine wichtigsten Skills zeige ich dir in den nächsten Videos einzeln. Folg mir." }
-  ]
+ "id": "v08",
+ "title": "Skills: das Feature, das kaum einer nutzt",
+ "pillar": "Grundlagen",
+ "approved": false,
+ "caption": "Skills = Claude einmal etwas beibringen und immer wieder nutzen.",
+ "hashtags": [
+  "claudecode",
+  "ki",
+  "produktivitaet",
+  "automatisierung",
+  "tipps"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Das Feature, das *kaum einer* *nutzt.*",
+   "voice": "Das Claude Code Feature, das kaum einer nutzt und das alles verändert: Skills."
+  },
+  {
+   "type": "chapter",
+   "num": 1,
+   "label": "Was es ist",
+   "alt": false,
+   "voice": "Erstens: was ein Skill ist."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "headline": "Ein Skill ist eine *Anleitung*",
+   "sub": "Einmal schreiben – Claude hält sich jedes Mal daran.",
+   "voice": "Ein Skill ist eine Anleitung in einer Textdatei. Du schreibst einmal auf, wie etwas gemacht werden soll, und Claude hält sich danach jedes Mal daran. Ohne dass du es wieder erklären musst."
+  },
+  {
+   "type": "chapter",
+   "num": 2,
+   "label": "Beispiele",
+   "alt": true,
+   "voice": "Zweitens: Beispiele."
+  },
+  {
+   "type": "list",
+   "title": "Zum Beispiel:",
+   "items": [
+    "Deine *Markenfarben* und Schriften",
+    "Dein *Video-Stil*",
+    "Deine *Angebote* für Kunden"
+   ],
+   "voice": "Zum Beispiel deine Markenfarben und Schriften. Oder dein Video-Stil, also wie lang ein Skript ist und wie es aufgebaut wird. Oder wie deine Angebote für Kunden aussehen."
+  },
+  {
+   "type": "terminal",
+   "lines": [
+    "> Mach 5 neue Videos",
+    "✓ Skill „Video-Stil“ geladen",
+    "✓ 5 Skripte im richtigen Format"
+   ],
+   "voice": "Wenn ich dann schreibe: Mach fünf neue Videos, lädt Claude Code den passenden Skill von selbst und liefert Skripte im richtigen Format.",
+   "title": "Claude Code"
+  },
+  {
+   "type": "chapter",
+   "num": 3,
+   "label": "Der Nutzen",
+   "alt": false,
+   "voice": "Drittens: der Nutzen."
+  },
+  {
+   "type": "stat",
+   "value": "1 Mal",
+   "label": "erklären statt *jedes Mal* neu",
+   "voice": "Du erklärst es ein Mal statt jedes Mal neu. Und deine Ergebnisse sehen immer gleich aus, egal ob heute oder in drei Monaten."
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "headline": "Skills kann man *teilen*",
+   "sub": "Im Team arbeiten dann alle nach denselben Regeln.",
+   "voice": "Außerdem kannst du Skills teilen. Arbeitet ihr zu zweit, nutzt ihr dieselbe Datei, und eure Videos passen zusammen."
+  },
+  {
+   "type": "point",
+   "num": 3,
+   "headline": "Starte mit *einem* Skill",
+   "sub": "Schreib auf, was du Claude am häufigsten erklärst.",
+   "voice": "Fang mit einem einzigen Skill an. Schreib das auf, was du Claude am häufigsten erklären musst. Das ist meistens dein Stil."
+  },
+  {
+   "type": "cta",
+   "headline": "Meine Skills zeig ich *einzeln.*",
+   "sub": "Folgen",
+   "voice": "Meine wichtigsten Skills zeige ich dir in den nächsten Videos einzeln. Folg mir dafür."
+  }
+ ]
 }
