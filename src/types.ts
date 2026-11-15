@@ -33,6 +33,7 @@ export type VideoSpec = {
   tools?: string[]; // benötigte KI-Tools
   demo?: string; // praktische Demonstration oder "keine" mit Grund
   wirkung?: "Reichweite" | "Vertrauen" | "Monetarisierung";
+  belege?: string; // eigener Test · belegte Tatsache · Vermutung
   zielSekunden?: number;
   ebookBezug?: string; // zu welchem E-Book / Angebot dieses Video hinführt
   hooks?: { text: string; bewertung: number; grund: string }[];

@@ -1,0 +1,147 @@
+{
+ "id": "v13",
+ "title": "Mit Claude Code zum ersten Kunden",
+ "pillar": "KI-Monetarisierung",
+ "approved": false,
+ "zielSekunden": 45,
+ "problem": "Wer mit KI Websites bauen kann, weiß meist nicht, wie er den ersten zahlenden Kunden findet.",
+ "infowert": "Der Zuschauer kennt vier Dinge, die er braucht, und vier Schritte von der Suche bis zum Preis.",
+ "tools": [
+  "Claude Code",
+  "ein Kartendienst",
+  "ein Hosting-Dienst"
+ ],
+ "demo": "keine – es gibt noch keine Aufnahme eines echten Kundenfalls; der Ablauf wird als Anleitung gezeigt.",
+ "wirkung": "Monetarisierung",
+ "belege": "Vorgehen als Anleitung, keine Ergebnis-Zahlen im Video.",
+ "ebookBezug": "E-Book 2 (Websites bauen und verkaufen)",
+ "hooks": [
+  {
+   "text": "Dein erster zahlender Kunde mit Claude Code? Bau die Website, bevor du fragst!",
+   "bewertung": 9,
+   "grund": "Ziel der Zuschauer + Produktname + überraschende Anweisung"
+  },
+  {
+   "text": "Kaltakquise ist tot. So bekommst du Website-Kunden mit Claude Code!",
+   "bewertung": 8,
+   "grund": "Muster „ist tot“, schon mehrfach benutzt"
+  },
+  {
+   "text": "Diese eine Nachricht bringt dich ins Gespräch mit jedem Ladenbesitzer.",
+   "bewertung": 8,
+   "grund": "Neugier, verspricht viel"
+  },
+  {
+   "text": "Hör auf zu pitchen. Zeig einfach die fertige Website!",
+   "bewertung": 8,
+   "grund": "Befehl + Gegensatz"
+  },
+  {
+   "text": "Vier Schritte zum ersten Website-Kunden.",
+   "bewertung": 6,
+   "grund": "klar, wenig Reibung"
+  }
+ ],
+ "post": {
+  "caption": "Vom Laden ohne gute Website bis zum Festpreis: was du brauchst und die vier Schritte.",
+  "ziel": "Gratis-PDF",
+  "verweis": "Die Nachricht an den Laden gibt es als Vorlage im Gratis-PDF – Link in meiner Bio.",
+  "pinnedComment": "Vorlage für die erste Nachricht: im Gratis-PDF, Prompt Nummer 5 (Link in Bio). Für welche Branche würdest du starten?"
+ },
+ "hashtags": [
+  "claudecode",
+  "kundengewinnung",
+  "webdesign",
+  "kibusiness",
+  "selbststaendig"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Mit Claude Code zum ersten *Kunden.*",
+   "voice": "[excited] Dein erster zahlender Kunde mit Claude Code? Bau die Website, bevor du fragst!"
+  },
+  {
+   "type": "brauchst",
+   "title": "Das brauchst du:",
+   "items": [
+    {
+     "icon": "lupe",
+     "label": "Kartendienst",
+     "note": "findet die Läden"
+    },
+    {
+     "icon": "terminal",
+     "label": "Claude Code",
+     "note": "baut die Demo"
+    },
+    {
+     "icon": "web",
+     "label": "Hosting",
+     "note": "stellt sie online"
+    },
+    {
+     "icon": "mail",
+     "label": "E-Mail",
+     "note": "für den ersten Kontakt"
+    }
+   ],
+   "voice": "Du brauchst vier Dinge: einen Kartendienst, Claude Code, ein Hosting und eine E-Mail-Adresse. Mehr nicht!"
+  },
+  {
+   "type": "flow",
+   "title": "So gehst du vor:",
+   "steps": [
+    {
+     "icon": "lupe",
+     "label": "Laden mit *alter* Website finden"
+    },
+    {
+     "icon": "terminal",
+     "label": "*Demo* mit echtem Namen bauen"
+    },
+    {
+     "icon": "mail",
+     "label": "*Link* schicken"
+    },
+    {
+     "icon": "euro",
+     "label": "*Festpreis* nennen"
+    }
+   ],
+   "voice": "[confident] Schritt eins: Such einen Laden mit alter Website. Schritt zwei: Bau mit Claude Code eine Demo mit seinem echten Namen. Schritt drei: Schick den Link – ganz ohne Verkaufsgespräch! Schritt vier: Nenn einen Festpreis."
+  },
+  {
+   "type": "vergleich",
+   "left": {
+    "title": "Agentur",
+    "items": [
+     "Wochen Wartezeit",
+     "Viele Abstimmungen"
+    ]
+   },
+   "right": {
+    "title": "Du",
+    "items": [
+     "Demo am *selben Tag*",
+     "Kunde sieht das Ergebnis"
+    ]
+   },
+   "voice": "|Und warum zahlt der Laden dafür? Eine Agentur braucht Wochen. |Du zeigst die fertige Demo noch am selben Tag!"
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "tag": "Ehrlich gesagt",
+   "headline": "Nicht jeder sagt *Ja*",
+   "sub": "Schreib zehn Läden an, bevor du urteilst.",
+   "voice": "Ehrlich gesagt: Nicht jeder sagt Ja. Schreib zehn Läden an, bevor du urteilst. Und bleib freundlich, wenn keine Antwort kommt."
+  },
+  {
+   "type": "cta",
+   "headline": "Die Nachricht gibt's als *Vorlage.*",
+   "sub": "Link in Bio",
+   "voice": "[excited] Die Nachricht an den Laden gibt es als Vorlage – gratis über den Link in meiner Bio!"
+  }
+ ]
+}

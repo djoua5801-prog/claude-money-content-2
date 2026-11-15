@@ -76,7 +76,7 @@ const cuesFor = (s: VideoSpec["scenes"][number], sw: Word[], sceneStart: number,
     }
     // Bei Listen: zum Anfang des Satzteils zurückgehen, in dem das Stichwort fällt
     let begin = hit;
-    if (!isHook) while (begin > j && !/[.,!?:;–-]$/.test(sw[begin - 1].text)) begin--;
+    if (!isHook) while (begin > j && !/[.,!?:;–-]$/.test(sw[begin - 1].text) && !["und", "oder"].includes(norm(sw[begin - 1].text))) begin--;
     found.push(at(begin));
     j = hit + 1;
   }
@@ -127,7 +127,7 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
     return { ...s, voice: clean(s.voice), start, end, cues: cuesFor(s, sw, start, end) };
   });
   out.push({ ...spec, scenes, words, duration, audio: hasAudio ? audioFile : null });
-  console.log(`${status} ${spec.id}  ${hasAudio ? "" : "~"}${duration.toFixed(0)} s  ${fullText.length} Zeichen  ${spec.title}`);
+  console.log(`${status} ${spec.id}  ${hasAudio ? "" : "~"}${duration.toFixed(0)} s  ${clean(fullText).length} Zeichen  ${spec.title}`);
 }
 fs.mkdirSync("src/generated", { recursive: true });
 fs.writeFileSync("src/generated/videos.json", JSON.stringify(out));

@@ -1,0 +1,135 @@
+{
+ "id": "v12",
+ "title": "Videos ohne Kamera, ohne Schnitt",
+ "pillar": "Creator-Workflow",
+ "approved": false,
+ "zielSekunden": 45,
+ "problem": "Viele wollen regelmäßig Videos posten, haben aber weder Lust auf die Kamera noch Zeit für den Schnitt.",
+ "infowert": "Der Zuschauer kennt die vier Bausteine einer Video-Pipeline ohne Kamera und die Reihenfolge der vier Arbeitsschritte.",
+ "tools": [
+  "Claude Code",
+  "Remotion",
+  "ElevenLabs"
+ ],
+ "demo": "Dieses Video selbst ist mit genau dieser Pipeline entstanden (eigener Test).",
+ "wirkung": "Vertrauen",
+ "belege": "Eigener Test: komplette Pipeline in diesem Projekt.",
+ "ebookBezug": "E-Book 1 (Videos auf Autopilot)",
+ "hooks": [
+  {
+   "text": "Videos ohne Kamera, ohne Schnitt, ohne Gesicht? Diese Pipeline macht's möglich!",
+   "bewertung": 9,
+   "grund": "dreifache Verneinung + Versprechen, Thema sofort klar"
+  },
+  {
+   "text": "Videoerstellung mit Claude Code: vier Bausteine, null Schnitte!",
+   "bewertung": 8,
+   "grund": "Muster Thema + Produktname, schon in v01 benutzt"
+  },
+  {
+   "text": "Ich stehe nie vor der Kamera. Trotzdem poste ich Videos.",
+   "bewertung": 8,
+   "grund": "persönlich, Neugier"
+  },
+  {
+   "text": "Schnittprogramme sind tot. So entstehen Videos 2026!",
+   "bewertung": 8,
+   "grund": "Muster „ist tot“, laut"
+  },
+  {
+   "text": "Die komplette Video-Pipeline in 45 Sekunden.",
+   "bewertung": 6,
+   "grund": "sachlich"
+  }
+ ],
+ "post": {
+  "caption": "Die komplette Pipeline für Videos ohne Kamera: vier Bausteine, vier Schritte.",
+  "ziel": "Folgen",
+  "verweis": "Teil zwei zeigt das Setup Schritt für Schritt – folg mir, damit du ihn siehst.",
+  "pinnedComment": "Welchen der vier Bausteine soll ich zuerst genauer zeigen?"
+ },
+ "hashtags": [
+  "claudecode",
+  "faceless",
+  "videoautomation",
+  "remotion",
+  "contentcreator"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Videos ohne Kamera, ohne *Schnitt.*",
+   "voice": "[excited] Videos ohne Kamera, ohne Schnitt, ohne Gesicht? Diese Pipeline macht's möglich!"
+  },
+  {
+   "type": "brauchst",
+   "title": "Das brauchst du:",
+   "items": [
+    {
+     "icon": "terminal",
+     "label": "Claude Code",
+     "note": "steuert alles"
+    },
+    {
+     "icon": "video",
+     "label": "Remotion",
+     "note": "baut die Bilder"
+    },
+    {
+     "icon": "mikro",
+     "label": "ElevenLabs",
+     "note": "spricht den Text"
+    },
+    {
+     "icon": "ordner",
+     "label": "Projektordner",
+     "note": "hält alles zusammen"
+    }
+   ],
+   "voice": "Du brauchst vier Dinge: Claude Code als Steuerung, Remotion für die Bilder, ElevenLabs für die Stimme – und einen Projektordner, der alles zusammenhält."
+  },
+  {
+   "type": "flow",
+   "title": "So gehst du vor:",
+   "steps": [
+    {
+     "icon": "stift",
+     "label": "Skript *schreiben* lassen"
+    },
+    {
+     "icon": "haken",
+     "label": "Skript *freigeben*"
+    },
+    {
+     "icon": "mikro",
+     "label": "Stimme *erzeugen*"
+    },
+    {
+     "icon": "video",
+     "label": "Video *rendern*"
+    }
+   ],
+   "voice": "[confident] Schritt eins: Skript schreiben lassen. Schritt zwei: Skript lesen und freigeben – erst danach kostet es etwas! Schritt drei: Stimme erzeugen, genau einmal. Schritt vier: Video rendern, mit Untertiteln auf jedes Wort."
+  },
+  {
+   "type": "stat",
+   "value": "0 Schnitte",
+   "label": "von Hand – auch in *diesem* Video",
+   "voice": "Der Beweis? Dieses Video! Null Schnitte von Hand. Ändere ich einen Satz, ändere ich nur den Text."
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "tag": "Der Haken",
+   "headline": "Prüfen musst du *selbst*",
+   "sub": "Jedes Skript lesen, jedes Video ansehen.",
+   "voice": "Der Haken: Prüfen musst du selbst. Jedes Skript lesen, jedes Video ansehen."
+  },
+  {
+   "type": "cta",
+   "headline": "Teil 2: das *Setup.*",
+   "sub": "Folgen",
+   "voice": "[excited] Soll ich dir das Setup Schritt für Schritt zeigen? Dann folg mir für Teil zwei!"
+  }
+ ]
+}

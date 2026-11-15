@@ -1,0 +1,148 @@
+{
+ "id": "v11",
+ "title": "Dieses Video spricht eine KI",
+ "pillar": "KI-Voiceover",
+ "approved": false,
+ "zielSekunden": 45,
+ "problem": "Selbst einsprechen kostet Zeit und klingt ohne Übung und gutes Mikrofon unsauber.",
+ "infowert": "Der Zuschauer weiß, was er für eine KI-Stimme braucht und in welchen vier Schritten er sie in sein Video bekommt.",
+ "tools": [
+  "ElevenLabs"
+ ],
+ "demo": "Dieses Video selbst: Die Stimme ist mit ElevenLabs erzeugt (eigener Test).",
+ "wirkung": "Reichweite",
+ "belege": "Eigener Test: Stimme, Voice-ID, Zeichenabrechnung. Belegt: kostenloser Tarif vorhanden, laut Preisübersichten nur für private Nutzung (Stand 15.11.2026).",
+ "ebookBezug": "E-Book 1 (Videos auf Autopilot)",
+ "hooks": [
+  {
+   "text": "Dieses Video spricht eine KI! Ohne Mikrofon, ohne Studio. So geht's!",
+   "bewertung": 9,
+   "grund": "Überraschung + Beweis im Video selbst + Versprechen"
+  },
+  {
+   "text": "KI-Stimme für deine Videos? In vier Schritten, ohne Mikrofon!",
+   "bewertung": 8,
+   "grund": "Thema + Zahl, etwas brav"
+  },
+  {
+   "text": "Dein Mikrofon ist tot. Diese Stimme spricht jedes Skript in Sekunden!",
+   "bewertung": 8,
+   "grund": "Muster „ist tot“, schon zweimal benutzt"
+  },
+  {
+   "text": "Du hasst deine eigene Stimme? Dann nimm diese!",
+   "bewertung": 8,
+   "grund": "spricht ein echtes Gefühl an, Thema erst spät klar"
+  },
+  {
+   "text": "So klingt eine KI-Stimme, die nicht nach KI klingt.",
+   "bewertung": 7,
+   "grund": "Neugier, aber angreifbar"
+  }
+ ],
+ "post": {
+  "caption": "Eine KI-Stimme für deine Videos: was du brauchst und die vier Schritte bis zur fertigen Tonspur.",
+  "ziel": "Kommentar",
+  "verweis": "Welche Stimme soll ich als Nächstes testen? Schreib es in die Kommentare.",
+  "pinnedComment": "Wichtig: Sobald du mit den Videos Geld verdienst, brauchst du bei ElevenLabs einen bezahlten Tarif. Welche Stimme soll ich testen?"
+ },
+ "hashtags": [
+  "kistimme",
+  "elevenlabs",
+  "voiceover",
+  "contentcreator",
+  "kitools"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "headline": "Dieses Video spricht eine *KI.*",
+   "voice": "[excited] Dieses Video spricht eine KI! Ohne Mikrofon, ohne Studio. So geht's!"
+  },
+  {
+   "type": "point",
+   "num": 1,
+   "tag": "Das Problem",
+   "headline": "Selbst einsprechen kostet *Zeit*",
+   "sub": "Versprecher, Rauschen, zehn Anläufe pro Satz.",
+   "voice": "Selbst einsprechen kostet Zeit. Versprecher, Rauschen, zehn Anläufe pro Satz!"
+  },
+  {
+   "type": "brauchst",
+   "title": "Das brauchst du:",
+   "items": [
+    {
+     "icon": "mikro",
+     "label": "ElevenLabs-Konto",
+     "note": "kostenlos zum Testen"
+    },
+    {
+     "icon": "text",
+     "label": "Fertiges Skript",
+     "note": "als reiner Text"
+    },
+    {
+     "icon": "kunde",
+     "label": "Eine Stimme",
+     "note": "aus der Bibliothek"
+    }
+   ],
+   "voice": "Du brauchst nur drei Dinge: ein ElevenLabs-Konto, ein fertiges Skript und eine Stimme aus der Bibliothek."
+  },
+  {
+   "type": "flow",
+   "title": "So gehst du vor:",
+   "steps": [
+    {
+     "icon": "lupe",
+     "label": "Stimme *aussuchen*"
+    },
+    {
+     "icon": "text",
+     "label": "Skript *einfügen*"
+    },
+    {
+     "icon": "zahnrad",
+     "label": "Lebhaftigkeit *einstellen*"
+    },
+    {
+     "icon": "video",
+     "label": "Datei ins Video *legen*"
+    }
+   ],
+   "voice": "[confident] Schritt eins: Stimme aussuchen und probehören. Schritt zwei: Skript einfügen – mit kurzen Sätzen und Ausrufezeichen! Schritt drei: Lebhaftigkeit einstellen, damit es nicht vorgelesen klingt. Schritt vier: Datei ins Video legen."
+  },
+  {
+   "type": "vergleich",
+   "left": {
+    "title": "Selbst sprechen",
+    "items": [
+     "Zehn Anläufe",
+     "Rauschen im Ton"
+    ]
+   },
+   "right": {
+    "title": "KI-Stimme",
+    "items": [
+     "*Ein* Durchlauf",
+     "Klingt immer gleich"
+    ]
+   },
+   "voice": "|Selbst sprechen heißt: zehn Anläufe. |Die KI-Stimme braucht einen Durchlauf – und klingt jedes Mal gleich!"
+  },
+  {
+   "type": "point",
+   "num": 2,
+   "tag": "Wichtig",
+   "headline": "Geld verdienen? *Bezahlter* Tarif",
+   "sub": "Der kostenlose Tarif ist nur zum Testen gedacht.",
+   "voice": "Wichtig: Sobald du mit den Videos Geld verdienst, brauchst du einen bezahlten Tarif."
+  },
+  {
+   "type": "cta",
+   "headline": "Welche Stimme soll ich *testen?*",
+   "sub": "Schreib's in die Kommentare",
+   "voice": "[excited] Welche Stimme soll ich als Nächstes testen? Schreib es in die Kommentare!"
+  }
+ ]
+}

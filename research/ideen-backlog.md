@@ -12,6 +12,11 @@
 - [x] v09 Der größte Fehler am Anfang
 - [x] v10 Was du am ersten Tag brauchst
 
+## In Arbeit (Lauf 3)
+- [x] v11 Dieses Video spricht eine KI (Themenfeld 1)
+- [x] v12 Videos ohne Kamera, ohne Schnitt (Themenfeld 8)
+- [x] v13 Mit Claude Code zum ersten Kunden (Themenfeld 7)
+
 ## Offen – aus der Recherche vom 15.11.2026
 - [ ] 3 Dinge, die du sofort einstellen solltest, wenn du Claude Code öffnest (Muster „Einrichtung“)
 - [ ] Das Terminal ist leichter als einen Drucker zu installieren (Angst vor dem schwarzen Fenster)

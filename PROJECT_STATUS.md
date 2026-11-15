@@ -76,5 +76,10 @@ Antworten auf die drei Fragen: **45 Sekunden · 5 Videos · gemischt** (v01, v02
 ## Testlauf (vom Nutzer am 15.11. angesetzt)
 5 Videos, Ziel 45 s, Hooks am 15.11. 18:51 auf reißerisch umgestellt (v02 mit „2.000 Euro pro Woche“ laut Nutzer). Ausrichtung kommerziell/informativ noch offen. v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
 
+## Lauf 3 – gestartet vom Nutzer am 15.11., 19:56
+Antworten: **45 Sekunden · 3 Videos · gemischt**. Neue Skripte im neuen Stil, mit Themenblatt: v11 „Dieses Video spricht eine KI“ (Voiceover, informativ), v12 „Videos ohne Kamera, ohne Schnitt“ (Workflow, informativ), v13 „Mit Claude Code zum ersten Kunden“ (Monetarisierung, Gratis-PDF). 703–745 Zeichen, zusammen ca. 2.170. Stumme Vorschauen aller drei ohne Fehler gerendert; Einblendungen liegen auf den gesprochenen Stichwörtern (geschätztes Timing). Lesefassung: `content/LAUF-3-SKRIPTE.md`.
+Hinweis Guthaben: ca. 1.800 Credits übrig – reicht für zwei der drei Videos; das dritte bricht ab, bis das Guthaben aufgestockt ist.
+Offen: Nutzer liest, gibt frei und startet `npm run videos`.
+
 ## Nächster Arbeitsschritt
-Lauf 3 vorbereiten: die drei Fragen stellen (Länge, Anzahl, kommerziell/informativ), dann Skripte im neuen Stil schreiben (Bild-Szenen, Anleitung, Sprechtext mit Elan, Themenblatt laut Content-Strategie). Vorlage: `content/entwuerfe/beispiel-neuer-stil.json` (als stumme Vorschau gerendert und geprüft, 35 s). Offen beim Nutzer: Urteil zu v01–v05 aus Lauf 2, TikTok-Konto, ElevenLabs-Guthaben (ca. 1.800 Credits übrig).
+Nutzer startet Lauf 3 auf dem PC. Danach Kontrolle am echten Ton. Offen außerdem: Urteil zu v01–v05, TikTok-Konto.
