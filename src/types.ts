@@ -42,7 +42,7 @@ export type VideoSpec = {
 
 export type Word = { text: string; start: number; end: number }; // Sekunden
 
-export type TimedScene = SceneSpec & { start: number; end: number };
+export type TimedScene = SceneSpec & { start: number; end: number; cues?: number[] }; // cues: Einblend-Zeitpunkte der Elemente in Sekunden ab Szenenbeginn
 
 export type TimedVideo = Omit<VideoSpec, "scenes"> & {
   scenes: TimedScene[];

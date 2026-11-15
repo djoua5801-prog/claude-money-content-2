@@ -58,6 +58,8 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 
 - (19:48) Folien-Übergänge und Effekt-Töne eingebaut und am Beispielvideo geprüft (Übergang im Bild, Tonspur vorhanden). Gilt für alle künftigen Renders; v01–v05 bekommen sie durch erneutes Rendern ohne neue Stimme.
 
+- (19:53) Bild und Stimme synchron: Elemente innerhalb einer Szene erscheinen jetzt genau, wenn die Stimme sie nennt (`cues`). Geprüft an v02 mit der echten Stimme: „Kurzvideos“ und „Vorlagen“ erscheinen im selben Moment wie das gesprochene Wort. Wirkt für v01–v05 beim erneuten Rendern, ohne neue Stimme.
+
 ## Roadmap (priorisiert)
 1. Länge für v01–v10 erfragen (Nutzer).
 2. Phase 1: Research-Dateien anlegen, erste Recherche zu viralen Videos und Hooks, wöchentliche geplante Aufgabe.

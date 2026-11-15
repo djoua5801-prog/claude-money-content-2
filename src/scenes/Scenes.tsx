@@ -14,6 +14,9 @@ const useEnter = (delay = 0) => {
   return { opacity: s, transform: `translateY(${(1 - s) * 50}px)` };
 };
 
+// Einblend-Zeitpunkt eines Elements in Frames: aus der Stimme (cues), sonst der gleichmäßige Ersatzwert
+const cueFrame = (s: TimedScene, i: number, fallback: number, fps = 30) => (s.cues && s.cues[i] !== undefined ? Math.round(s.cues[i] * fps) : fallback);
+
 const Stage: React.FC<{ children: React.ReactNode; center?: boolean }> = ({ children, center }) => (
   <AbsoluteFill
     style={{
@@ -79,7 +82,7 @@ const Hook: React.FC<{ s: Extract<TimedScene, { type: "hook" }> }> = ({ s }) => 
     <Stage>
       <div style={{ ...DISPLAY, fontSize: 104, lineHeight: 1.04, textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: 22 }}>
         {tokens.map((t, i) => {
-          const at = 4 + (i / tokens.length) * span;
+          const at = s.cues && s.cues.length === tokens.length ? Math.round(s.cues[i] * fps) : 4 + (i / tokens.length) * span;
           const p = spring({ frame: frame - at, fps, config: { damping: 16, stiffness: 180 } });
           const big = bigLast && i === lastAccent;
           return (
@@ -219,8 +222,8 @@ const List: React.FC<{ s: Extract<TimedScene, { type: "list" }> }> = ({ s }) => 
       <Panel title="Checkliste" style={p}>
         {s.items.map((it, i) => (
           <React.Fragment key={i}>
-            <Sfx name="pop" at={10 + i * step} />
-            <ListItem delay={10 + i * step} text={it} />
+            <Sfx name="pop" at={cueFrame(s, i, 10 + i * step)} />
+            <ListItem delay={cueFrame(s, i, 10 + i * step)} text={it} />
           </React.Fragment>
         ))}
       </Panel>
@@ -259,11 +262,13 @@ const Flow: React.FC<{ s: Extract<TimedScene, { type: "flow" }> }> = ({ s }) => 
       )}
       <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
         {s.steps.map((st, i) => {
-          const p = spring({ frame: frame - (6 + i * per), fps, config: { damping: 16, stiffness: 150 } });
-          const active = frame >= 6 + i * per && (i === s.steps.length - 1 || frame < 6 + (i + 1) * per);
+          const t0 = cueFrame(s, i, 6 + i * per);
+          const t1 = cueFrame(s, i + 1, 6 + (i + 1) * per);
+          const p = spring({ frame: frame - t0, fps, config: { damping: 16, stiffness: 150 } });
+          const active = frame >= t0 && (i === s.steps.length - 1 || frame < t1);
           return (
             <React.Fragment key={i}>
-              <Sfx name="pop" at={6 + i * per} />
+              <Sfx name="pop" at={cueFrame(s, i, 6 + i * per)} />
               {i > 0 && <div style={{ width: 4, height: 34, marginLeft: 78, background: p > 0.5 ? C.accent : C.line }} />}
               <div style={{ opacity: p, transform: `translateX(${(1 - p) * -60}px)`, display: "flex", alignItems: "center", gap: 30, background: C.surface, border: `3px solid ${active ? C.accent : C.line}`, borderRadius: 24, padding: "22px 28px", boxShadow: active ? `0 0 50px ${C.accent}33` : "none" }}>
                 <div style={{ flex: "none", width: 104, height: 104, borderRadius: 22, background: active ? C.accent : "#ffffff0d", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -294,11 +299,11 @@ const Brauchst: React.FC<{ s: Extract<TimedScene, { type: "brauchst" }> }> = ({ 
         <Rich text={s.title ?? "Das brauchst du:"} />
       </div>
       {s.items.map((_, i) => (
-        <Sfx key={i} name="pop" at={8 + i * per} />
+        <Sfx key={i} name="pop" at={cueFrame(s, i, 8 + i * per)} />
       ))}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
         {s.items.map((it, i) => {
-          const p = spring({ frame: frame - (8 + i * per), fps, config: { damping: 14, stiffness: 160 } });
+          const p = spring({ frame: frame - cueFrame(s, i, 8 + i * per), fps, config: { damping: 14, stiffness: 160 } });
           return (
             <div key={i} style={{ opacity: p, transform: `scale(${0.8 + p * 0.2})`, background: C.surface, border: `2px solid ${C.line}`, borderRadius: 24, padding: "30px 26px", minHeight: 250 }}>
               <Icon name={it.icon} size={84} color={C.accent} />
@@ -316,8 +321,8 @@ const Brauchst: React.FC<{ s: Extract<TimedScene, { type: "brauchst" }> }> = ({ 
 
 // Zwei Spalten gegeneinander, die rechte hervorgehoben
 const Vergleich: React.FC<{ s: Extract<TimedScene, { type: "vergleich" }> }> = ({ s }) => {
-  const a = useEnter(0);
-  const b = useEnter(Math.round(((s.end - s.start) * 30) / 2.4));
+  const a = useEnter(cueFrame(s, 0, 0));
+  const b = useEnter(cueFrame(s, 1, Math.round(((s.end - s.start) * 30) / 2.4)));
   const col = (side: typeof s.left, good: boolean, st: React.CSSProperties) => (
     <div style={{ ...st, flex: 1, background: C.surface, border: `3px solid ${good ? C.accent : C.line}`, borderRadius: 24, padding: "28px 24px", boxShadow: good ? `0 0 60px ${C.accent}33` : "none" }}>
       <Icon name={side.icon ?? (good ? "haken" : "kreuz")} size={76} color={good ? C.accent : C.muted} />

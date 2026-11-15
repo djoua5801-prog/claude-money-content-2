@@ -95,6 +95,14 @@ Der Sprecher informiert mit Schwung, nicht wie ein Vorleser. Das `voice`-Feld is
 - Symbole aus `src/scenes/Icons.tsx` (text, mikro, video, bild, web, euro, uhr, ordner, terminal, handy, kunde, rakete, haken, kreuz, zahnrad, stift, kalender, mail, buch, lupe). Fehlt eines, dort ergänzen. Keine Marken-Logos.
 - Vorlage zum Abschauen: `content/entwuerfe/beispiel-neuer-stil.json`.
 
+## Bild und Stimme synchron (Vorgabe des Nutzers, 15.11. 19:53)
+Nichts darf im Bild erscheinen, bevor oder lange nachdem die Stimme es nennt.
+- Szenenwechsel liegen automatisch auf dem ersten Wort der Szene (Zeitmarken von ElevenLabs).
+- **Elemente innerhalb einer Szene** (Listenpunkte, Ablauf-Schritte, Kacheln, Vergleichs-Spalten, Hook-Wörter) erscheinen in dem Moment, in dem die Stimme sie nennt. `tools/build-data.ts` berechnet dafür `cues` pro Szene: Es sucht das erste Stichwort jedes Elements im gesprochenen Text.
+- Beim Schreiben darauf achten: Die Stimme nennt die Elemente **in derselben Reihenfolge** wie im Bild und benutzt dabei ein Wort aus der Beschriftung (Bild „Kurzvideos in Serie“ → Stimme sagt „Kurzvideos“). So viele Elemente im Bild wie in der Stimme – nicht mehr, nicht weniger.
+- Wenn die Automatik nicht reicht: im `voice`-Text ein `|` direkt vor das Wort setzen, bei dem das nächste Element erscheinen soll (genau ein `|` pro Element). Das Zeichen wird nie gesprochen und nie angezeigt und ändert die Stimme nicht.
+- Prüfen: nach `npm run build:data` Einzelbilder kurz vor und kurz nach einem Einblend-Zeitpunkt rendern und mit dem Untertitel vergleichen.
+
 ## Übergänge und Effekt-Töne (15.11. 19:48)
 - **Folien-Übergang:** Jede Szene schiebt von rechts herein und nach links hinaus (`"uebergang": "slide"` in `brand/brand.json`). Kapitelkarten wischen von oben auf.
 - **Effekt-Töne** (`src/Sfx.tsx`, Dateien in `public/sfx/`, selbst erzeugt, keine Lizenzfragen): Anschwellen am Anfang, Wischen bei jedem Szenenwechsel, Schlag bei Kapitelkarten, Klick bei jedem Listen-, Ablauf- und Kachel-Punkt, Glocke bei Zahl und Schluss. An/aus und Lautstärke unter `"sfx"` in `brand/brand.json`.

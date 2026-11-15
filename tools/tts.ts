@@ -59,7 +59,8 @@ for (const f of files) {
   if (only.length && !only.includes(spec.id)) continue;
   const audioPath = `public/audio/${spec.id}.mp3`;
   const timingPath = `content/timing/${spec.id}.json`;
-  const raw = spec.scenes.map((s) => s.voice.trim()).join(" ");
+  // "|" sind Einblend-Marker fürs Bild und werden nie gesprochen
+  const raw = spec.scenes.map((s) => s.voice.trim()).join(" ").replace(/\s*\|\s*/g, " ").replace(/\s+/g, " ").trim();
   // Regie-Anweisungen in [Klammern] versteht nur Eleven v3; bei anderen Modellen vor dem Senden entfernen
   const text = brand.voice.model === "eleven_v3" ? raw : raw.replace(/\[[^\]]*\]/g, " ").replace(/\s+/g, " ").trim();
   const hash = createHash("sha1").update(raw).digest("hex");
