@@ -87,7 +87,7 @@ v11 (48,1 s), v12 (47,2 s) und v13 (43,2 s) sind auf dem PC freigegeben, vertont
 ## Einzelvideo v14 – „volle Lebhaftigkeit“ (angesetzt 15.11., 20:29)
 Antworten: **60 Sekunden · 1 Video · kommerziell (Gratis-PDF)**, Stimme mit **Eleven v3** nur für dieses Video (`"stimme"` im Skript, Regie-Anweisungen wie [excited] werden mitgeschickt). Skript `content/videos/v14.json` fertig als Entwurf (ca. 1.000 Zeichen), Lesefassung `content/V14-SKRIPT.md`. `tools/tts.ts` kann jetzt ein Modell pro Video.
 **Ungetestet:** ob Eleven v3 über unsere Schnittstelle Zeitmarken liefert. Wenn nicht, bricht `npm run tts` mit einer klaren Meldung ab, ohne Audio zu speichern.
-**Pause um 20:34:** Nutzer fährt den PC herunter. Stand ist auf GitHub, aber noch NICHT in den Projektordner auf dem PC kopiert. Die stumme Vorschau von v14 war beim Abbruch noch nicht fertig geprüft.
+**Pause um 20:34:** Nutzer fährt den PC herunter. Stand ist auf GitHub, aber noch NICHT in den Projektordner auf dem PC kopiert. Die stumme Vorschau von v14 ist inzwischen gerendert und geprüft (60,2 s, ohne Fehler, Ablauf-Schritte liegen auf den Markern).
 
 ## Nächster Arbeitsschritt
-Beim Weitermachen: 1) Projektordner auf dem PC auf den GitHub-Stand bringen. 2) Stumme Vorschau von v14 rendern und ansehen. 3) Nutzer liest `content/V14-SKRIPT.md`, dann `npm run freigeben -- v14 && npm run videos`. 4) v11–v13 und v14 am echten Ton prüfen. Offen außerdem: Urteil zu v01–v05, TikTok-Konto.
+Beim Weitermachen: 1) Projektordner auf dem PC auf den GitHub-Stand bringen. 2) Nutzer liest `content/V14-SKRIPT.md`, dann `npm run freigeben -- v14 && npm run videos`. 3) v11–v13 und v14 am echten Ton prüfen. Offen außerdem: Urteil zu v01–v05, TikTok-Konto.
