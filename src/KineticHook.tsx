@@ -65,6 +65,7 @@ export const buildHookStory = (scene: TimedScene, words: Word[]): Story => {
       exitKind: isLast ? "none" : EXIT[i % EXIT.length],
       dynamics: c.accent ? 0.85 : 0.6,
       staggerSeconds: 0.025,
+      scale: Math.min(1, 9 / clean.length), // lange Wörter verkleinern, damit sie ins Bild passen
       fontFamily: "RobotoFlex",
       ...(c.accent ? { color: C.accent } : {}),
     };
