@@ -63,7 +63,7 @@ Bestandsaufnahme abgeschlossen. Als Nächstes: Phase 1 (Viral Research) und Phas
 8. Phase 11: Posting-Tool, 13: Wochen-Report.
 
 ## Lauf 2 – gestartet vom Nutzer am 15.11., 18:54
-Antworten auf die drei Fragen: **45 Sekunden · 5 Videos · gemischt** (v01, v02, v04 informativ; v03, v05 mit Verweis auf das Gratis-PDF). Skripte v01–v05 passen ohne Änderung. Offen: Nutzer führt Freigabe + `npm run videos` auf dem PC aus.
+Antworten auf die drei Fragen: **45 Sekunden · 5 Videos · gemischt** (v01, v02, v04 informativ; v03, v05 mit Verweis auf das Gratis-PDF). Skripte v01–v05 passen ohne Änderung. **Ergebnis (19:14):** alle fünf vom Nutzer freigegeben, vertont und gerendert (v01 43,7 s · v02 44,5 s · v03 46,7 s · v04 41,0 s · v05 39,4 s, alle mit Ton). Bei v02 und v03 an je fünf Stellen geprüft: Untertitel und Szenen liegen wortgenau auf der Stimme. Aussprache nicht prüfbar (kein Abhören möglich). Lautstärke eher leise (Mittel −23 dB) – ggf. anheben. Offen: Nutzer sieht die Videos an und gibt pro Video „passt“ oder „ändern“.
 
 ## Testlauf (vom Nutzer am 15.11. angesetzt)
 5 Videos, Ziel 45 s, Hooks am 15.11. 18:51 auf reißerisch umgestellt (v02 mit „2.000 Euro pro Woche“ laut Nutzer). Ausrichtung kommerziell/informativ noch offen. v01–v05 neu geschrieben (700–750 Zeichen, zusammen ca. 3.600 Zeichen). Lesefassung: `content/TESTLAUF-5-SKRIPTE.md`. Wartet auf Freigabe durch den Nutzer: `npm run freigeben -- v01 v02 v03 v04 v05`, dann `npm run videos`. v06–v10 sind noch die langen Entwürfe und nicht Teil des Testlaufs.
