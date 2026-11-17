@@ -2,7 +2,7 @@
  "id": "v11",
  "title": "Dieses Video spricht eine KI",
  "pillar": "KI-Voiceover",
- "approved": false,
+ "approved": true,
  "zielSekunden": 45,
  "problem": "Selbst einsprechen kostet Zeit und klingt ohne Übung und gutes Mikrofon unsauber.",
  "infowert": "Der Zuschauer weiß, was er für eine KI-Stimme braucht und in welchen vier Schritten er sie in sein Video bekommt.",

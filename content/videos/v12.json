@@ -2,7 +2,7 @@
  "id": "v12",
  "title": "Videos ohne Kamera, ohne Schnitt",
  "pillar": "Creator-Workflow",
- "approved": false,
+ "approved": true,
  "zielSekunden": 45,
  "problem": "Viele wollen regelmäßig Videos posten, haben aber weder Lust auf die Kamera noch Zeit für den Schnitt.",
  "infowert": "Der Zuschauer kennt die vier Bausteine einer Video-Pipeline ohne Kamera und die Reihenfolge der vier Arbeitsschritte.",
